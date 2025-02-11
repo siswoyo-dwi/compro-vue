@@ -1,0 +1,52 @@
+<template>
+        <div class="container mx-auto px-4 py-10">
+        <!-- Title -->
+        <h1 class="text-2xl font-bold text-red-500 mb-6">About US</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Left Section (Text) -->
+            <div class="space-y-4  items-center">
+                <h2 class="text-xl font-bold text-red-500">Fosan</h2>
+                <p class="text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem voluptas expedita excepturi porro obcaecati libero, reiciendis commodi enim quibusdam vitae fugiat necessitatibus perspiciatis. Corporis, repellat blanditiis delectus incidunt dolorem at.                </p>
+
+                <h3 class="text-lg font-bold text-black">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe autem amet ratione nisi quod quaerat cupiditate, placeat ullam, pariatur recusandae quisquam accusantium? Necessitatibus exercitationem repellat et, nostrum porro enim pariatur! Digital Marketing Plan & Consultation
+                </h3>
+                <p class="text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, accusantium animi. Tempore vero, nesciunt amet temporibus hic, tempora ullam blanditiis et veniam eligendi nulla magni, suscipit vel officia facilis nobis?                </p>
+                <!-- Contact Form -->
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-gray-700">Your Name*</label>
+                        <input type="text" class="w-full border border-gray-300 p-2 rounded-md" placeholder="Enter your name">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700">Your Email*</label>
+                        <input type="email" class="w-full border border-gray-300 p-2 rounded-md" placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700">Company*</label>
+                        <input type="text" class="w-full border border-gray-300 p-2 rounded-md" placeholder="Your company name">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700">Your Message</label>
+                        <textarea class="w-full border border-gray-300 p-2 rounded-md" rows="4" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button class="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Right Section -->
+
+            <div class="flex flex-col items-center">
+                <img src="https://difitech.id/wp-content/uploads/2020/04/womanhi-1024x857.png" alt="Illustration" class="w-full md:w-[400px] lg:w-[450px]">
+            </div>
+        </div>
+    </div>
+</template>
+<style>
+    .container{
+        margin-top: 100px;
+    }
+</style>
