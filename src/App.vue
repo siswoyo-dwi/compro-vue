@@ -1,6 +1,6 @@
 <template>
-	<div>
-		<Navbar/>
+  <div class="w-full min-h-screen bg-white">
+	<Navbar/>
 		<router-view></router-view>
 		<Footer/>
 	</div>
@@ -8,14 +8,15 @@
 
 <script setup>
 	import { ref, onMounted } from "vue";
-	import Navbar from "./components/navbar/Navbar.vue";
-	import Footer from "./components/footer/Footer.vue";
 
 	onMounted(() => {
 	});
 </script>
 
 <style>
+    .container{
+        margin-top: 200px;
+    }
 	::-webkit-scrollbar {
 		width: 5px;
 		height: 5px;

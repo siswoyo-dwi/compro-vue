@@ -1,5 +1,5 @@
 <template>
-        <div class="container mx-auto px-4 py-10">
+        <div class="container mx-auto px-4 py-10 ">
         <!-- Title -->
         <h1 class="text-2xl font-bold text-red-500 mb-6">About US</h1>
 
@@ -45,8 +45,3 @@
         </div>
     </div>
 </template>
-<style>
-    .container{
-        margin-top: 100px;
-    }
-</style>

@@ -63,7 +63,8 @@ export default {
       { name: 'Services', link: '/services' },
       { name: 'Contact Us', link: 'https://api.whatsapp.com/send/?phone=6282227470745' },
       { name: 'Portfolio', link: '/portfolio' },
-      { name: 'About Us', link: '/about_us' }
+      { name: 'About Us', link: '/about_us' },
+      { name: 'Alumni', link: '/alumni' }
     ]);
     
     const toggleMenu = () => {

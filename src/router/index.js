@@ -46,8 +46,42 @@ const routes = [
 		component: () => import("../views/pages/About_us.vue"),
 		meta: {
 		},
+	},	{
+		path: "/portfolio",
+		name: "portfolio",
+		exact: true,
+		component: () => import("../views/pages/portfolio/Portfolio.vue"),
+		meta: {
+		},
+	},	{
+		path: "/portfolio/kategori/:id",
+		name: "portfolio_kategori",
+		exact: true,
+		component: () => import("../views/pages/portfolio/Portfolio_kategori.vue"),
+		meta: {
+		},
+	},	{
+		path: "/portfolio/detail/:id",
+		name: "Detail_portfolio",
+		exact: true,
+		component: () => import("../views/pages/portfolio/Detail_portfolio.vue"),
+		meta: {
+		},
+	},	{
+		path: "/services",
+		name: "services",
+		exact: true,
+		component: () => import("../views/pages/services/Services.vue"),
+		meta: {
+		},
+	},	{
+		path: "/alumni",
+		name: "alumni",
+		exact: true,
+		component: () => import("../views/pages/alumni/Alumni.vue"),
+		meta: {
+		},
 	},
-
 ];
 
 const router = createRouter({
