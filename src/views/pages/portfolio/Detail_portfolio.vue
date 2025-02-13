@@ -21,10 +21,12 @@
 
       <!-- Teknologi yang Digunakan -->
       <div class="mb-6">
-        <h3 class="text-xl font-semibold mb-2">Teknologi:</h3>
-        <ul class="list-disc list-inside">
-          <li v-for="tech in project.technologies" :key="tech">{{ tech }}</li>
-        </ul>
+        <h3 class="text-xl font-semibold mb-4">Teknologi:</h3>
+        <div class="grid grid-cols-2 gap-4">
+          <div v-for="tech in project.technologies" :key="tech" class="bg-gray-100 p-3 rounded-lg shadow-sm text-center text-gray-700 font-medium">
+            {{ tech }}
+          </div>
+        </div>
       </div>
     </div>
 
