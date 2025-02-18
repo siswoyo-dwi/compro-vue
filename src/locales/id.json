@@ -1,0 +1,12 @@
+{
+    "navbar": {
+      "home": "Beranda",
+      "about": "Tentang",
+      "contact": "Kontak",
+      "services": "Layanan",
+      "graduate": "Alumni",
+      "portfolio": "Portofolio"
+    },
+    "welcome": "Selamat datang di website kami!"
+  }
+  

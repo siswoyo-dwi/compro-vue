@@ -2,3 +2,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* global.css */
+:root {
+  --bg-light: #ffffff;
+  --text-light: #333;
+  --bg-dark: #1a1a1a;
+  --text-dark: #f0f0f0;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark body {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}

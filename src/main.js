@@ -6,13 +6,21 @@ import router from "./router";
 import { createPinia } from "pinia";
 import piniaPluginPersistedstate from "pinia-plugin-persistedstate";
 import "moment/dist/locale/id";
+import { createI18n } from 'vue-i18n';
 
 const pinia = createPinia();
 pinia.use(piniaPluginPersistedstate);
+import en from './locales/en.json';
+import id from './locales/id.json';
 
 import "./index.css";
-
-const app = createApp(App).use(router).use(pinia);
+// Konfigurasi i18n
+const i18n = createI18n({
+	locale: 'en', // Bahasa default
+	fallbackLocale: 'en', // Jika tidak ada terjemahan, pakai ini
+	messages: { en, id }
+  });
+const app = createApp(App).use(router).use(pinia).use(i18n);
 function extractName(filePath) {
 	return filePath
 		.split("/")

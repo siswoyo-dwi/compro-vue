@@ -1,7 +1,7 @@
 <template>
   <div class="w-full min-h-screen bg-white">
 
-		<div class="bg-gradient-to-r from-gray-100 to-blue-50 flex justify-center items-center min-h-screen">
+		<div class="bg-gradient-to-r from-gray-300 to-blue-50 flex justify-center items-center min-h-screen">
 			<div class="text-center max-w-3xl px-4">
 				<h1 class="text-4xl md:text-5xl font-bold text-gray-900 mt-4">
 					Pre-built AI Agents you can deploy <br> and use in minutes
@@ -10,7 +10,7 @@
 				<p class="text-gray-600 text-lg mt-2">AI Agents that are ready to add to your project</p>
 			</div>
 		</div>
-		<div class="flex items-center justify-center min-h-screen bg-gradient-to-r from-gray-200 to-gray-100">
+		<div class="flex items-center justify-center min-h-screen bg-gradient-to-r from-gray-200 to-gray-300">
 
 			<div class="relative max-w-4xl p-4 rounded-3xl bg-white shadow-2xl border border-gray-300">
 				<!-- Outer Box Background -->
@@ -26,7 +26,7 @@
 			</div>
 
 		</div>
-		<div class="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
+		<div class="flex flex-col items-center justify-center min-h-screen bg-gray-300 p-6">
 
 			<!-- Heading -->
 			<h2 class="text-lg font-semibold text-gray-700 mb-4">
@@ -60,7 +60,7 @@
 			</div>
 
 		</div>
-		<div class="flex items-center justify-center min-h-screen bg-gradient-to-r from-gray-200 to-gray-100">
+		<div class="flex items-center justify-center min-h-screen bg-gradient-to-r from-gray-200 to-gray-300">
 
 			<div class="relative max-w-4xl p-4 rounded-3xl bg-white shadow-2xl border border-gray-300">
 				<!-- Outer Box Background -->
@@ -76,7 +76,7 @@
 			</div>
 
 		</div>
-		<div class="bg-gray-100 flex items-center justify-center min-h-screen p-6">
+		<div class="bg-gray-300 flex items-center justify-center min-h-screen p-6">
 
 			<!-- Card Container -->
 			<div class="bg-white rounded-4xl shadow-xl overflow-hidden max-w-4xl w-full">
@@ -190,7 +190,7 @@
 			</div>
 
 		</div>
-		<div class="bg-gradient-to-r from-gray-100 to-gray-50 flex items-center justify-center min-h-screen p-6">
+		<div class="bg-gradient-to-r from-gray-300 to-gray-50 flex items-center justify-center min-h-screen p-6">
 			<div class="max-w-4xl w-full text-center">
 				<!-- Title Section -->
 				<h2 class="text-3xl font-semibold text-gray-800 mb-6">Wall of Love</h2>
@@ -271,4 +271,5 @@ import { ref } from "vue";
     .container{
         margin-top: 0px;
     }
+	
 </style>

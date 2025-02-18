@@ -1,0 +1,12 @@
+{
+    "navbar": {
+      "home": "Home",
+      "services": "Services",
+      "contact": "Contact Us",
+      "graduate": "Graduate",
+      "about": "About Us",
+      "portfolio": "Portfolio"
+    },
+    "welcome": "Welcome to our website!"
+  }
+  
