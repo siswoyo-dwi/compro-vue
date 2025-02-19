@@ -7,6 +7,12 @@
       "graduate": "Alumni",
       "portfolio": "Portofolio"
     },
-    "welcome": "Selamat datang di website kami!"
+    "welcome": "Selamat datang di website kami!",
+    "kategori":{
+      "hospitality":"Kesehatan",
+      "education":"Pendidikan",
+      "WMS":"Pengelola operasional gudang",
+      "HR":"Sumber Daya Manusia"
+    }
   }
   

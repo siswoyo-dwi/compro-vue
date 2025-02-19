@@ -1,13 +1,13 @@
 <template>
   <div class="w-full min-h-screen bg-white">
 
-		<div class="bg-gradient-to-r from-gray-300 to-blue-50 flex justify-center items-center min-h-screen">
+		<div class="bg-gradient-to-r from-gray-300 to-blue-50 dark:from-slate-900 dark:to-blue-800 flex justify-center items-center min-h-screen">
 			<div class="text-center max-w-3xl px-4">
-				<h1 class="text-4xl md:text-5xl font-bold text-gray-900 mt-4">
+				<h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mt-4">
 					Pre-built AI Agents you can deploy <br> and use in minutes
 				</h1>
 
-				<p class="text-gray-600 text-lg mt-2">AI Agents that are ready to add to your project</p>
+				<p class="text-gray-600 dark:text-gray-200 text-lg mt-2">AI Agents that are ready to add to your project</p>
 			</div>
 		</div>
 		<div class="flex items-center justify-center min-h-screen bg-gradient-to-r from-gray-200 to-gray-300">

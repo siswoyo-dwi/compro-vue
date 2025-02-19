@@ -1,13 +1,13 @@
 <template>
-    <div class="container mx-auto px-4">
-      <div class="flex flex-wrap justify-center">
-        <div v-for="item in item" :key="item.id" class="w-full sm:w-1/3 p-4">
-          <a :href="`/portfolio/detail/${item.id}`" class="block bg-white shadow-lg rounded-lg p-6 text-center transform transition-transform hover:scale-105">
-            <div class="flex justify-center">
-              <img :src="item.foto" alt="" class="h-24 w-auto">
-            </div>
-            <h6 class="mt-4 text-gray-800 font-semibold">{{ item.portfolio }}</h6>
-          </a>
+		<div class="bg-gradient-to-r from-gray-300 to-blue-50 dark:from-slate-900 dark:to-blue-800 flex justify-center items-center min-h-screen">
+      <div class="flex  justify-center">
+        <div v-for="item in categories" :key="item.id"  class="mx-4">
+            <RouterLink v-if="item.kategori_id == route.params.id" :to="`/portfolio/detail/${item.id}`" class="block bg-white shadow-lg rounded-lg p-6 text-center transform transition-transform hover:scale-105">
+              <div  class="flex justify-center">
+                <img :src="item.foto" alt="" class="h-24 w-auto">
+              </div>
+              <h6 class="mt-4 text-gray-800 font-semibold">{{ item.portfolio }}</h6>
+            </RouterLink>
         </div>
       </div>
     </div>
@@ -27,11 +27,9 @@
     { id: 5, kategori_id: 3, portfolio: "MD CLINIC", foto: "https://fosan.id/images/fosanlogo.png" },
     { id: 6, kategori_id: 3, portfolio: "BAJ", foto: "https://fosan.id/images/fosanlogo.png" },
   ]);
-  
-  // Filter kategori berdasarkan route params
-  const item = computed(() => {
-    return categories.value.filter(cat => cat.kategori_id == route.params.id);
-  });
+    // const item = computed(() => {
+  //   return categories.value.filter(cat => cat.kategori_id == route.params.id);
+  // });
   </script>
   
   <style scoped>

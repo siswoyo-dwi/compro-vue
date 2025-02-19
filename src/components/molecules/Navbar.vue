@@ -4,7 +4,7 @@
   <header class="fixed top-2 z-30 w-full md:top-6">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
 
-      <nav class="shadow-lg rounded-2xl p-3 mx-4 mt-4 flex  bg-white dark:bg-gray-900 items-center justify-between">
+      <nav class="shadow-lg rounded-2xl p-3 mx-4 mt-4 flex  bg-gray-100 dark:bg-gray-900 items-center justify-between">
       <!-- <nav :class="['shadow-lg rounded-2xl p-3 mx-4 mt-4 flex items-center justify-between', theme.isDark ? 'bg-gray-900 text-white' : 'bg-white text-gray-900']"> -->
         <!-- Logo -->
         <div class="flex items-center">
