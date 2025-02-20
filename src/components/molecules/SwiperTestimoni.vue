@@ -34,31 +34,36 @@
           </p>
           <p class="text-gray-400 text-xs mt-4">📅 {{ testimonial.date }}</p>
         </swiper-slide>
+        <swiper-slide v-for="(image, index) in images" :key="index" class="relative">
+        <img :src="image.image" :alt="image.title" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white text-center p-6">
+          <h1 class="text-4xl md:text-5xl font-bold">{{ image.title }}</h1>
+          <p class="mt-2 text-lg md:text-xl">{{ image.subtitle }}</p>
+          <a :href="image.link" class="mt-4 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white">
+            Lihat Selengkapnya
+          </a>
+        </div>
+        </swiper-slide>
       </swiper>
     </div>
   </div>
 </template>
-
-<script>
+<script setup>
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-export default {
-  components: {
-    Swiper,
-    SwiperSlide
-  },
-  props: {
-    testimonials: {
-      type: Array,
-      required: true
-    }
-  },
-  setup() {
-    return { Navigation, Pagination, Autoplay };
+// Props
+defineProps({
+  testimonials: {
+    type: Array,
+    required: true
   }
-};
+});
+
+// Modules
+const modules = [Navigation, Pagination, Autoplay];
 </script>
+

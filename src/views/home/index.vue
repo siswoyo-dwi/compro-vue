@@ -1,15 +1,41 @@
 <template>
   <div class="w-full min-h-screen bg-white">
-
+		<!-- Swiper Slider Container -->
 		<div class="bg-gradient-to-r from-gray-300 to-blue-50 dark:from-slate-900 dark:to-blue-800 flex justify-center items-center min-h-screen">
-			<div class="text-center max-w-3xl px-4">
+			<SwiperHero  :images="images"/>
+			<!-- <div class="text-center max-w-3xl px-4">
 				<h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mt-4">
 					Pre-built AI Agents you can deploy <br> and use in minutes
 				</h1>
 
 				<p class="text-gray-600 dark:text-gray-200 text-lg mt-2">AI Agents that are ready to add to your project</p>
+			</div> -->
+		</div>
+		<div class="text-center py-16 bg-gray-300 dark:bg-gray-900">
+			<h2 class="text-xl font-bold ">Hiring Partner</h2>
+			<p class="max-w-xl mx-auto mt-2">
+			Hiring partner merupakan bagian yang sangat penting untuk memajukan ekosistem IT di Indonesia. Berikut beberapa hiring partner yang telah bekerja sama dengan kami:
+			</p>
+
+			<!-- Grid Logo Partner -->
+			<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8 px-4 md:px-20 place-items-center">
+			<img 
+				v-for="(partner, index) in partners" 
+				:key="index" 
+				:src="partner.logo" 
+				:alt="partner.name" 
+				class="h-24 max-w-[300px] object-contain"/>
+			</div>
+
+			<!-- Tombol CTA -->
+			<div class="mt-8">
+			<Button>
+				Gabung Menjadi Partner Kami
+			</Button>
 			</div>
 		</div>
+
+
 		<div class="flex items-center justify-center min-h-screen bg-gradient-to-r from-gray-200 to-gray-300">
 
 			<div class="relative max-w-4xl p-4 rounded-3xl bg-white shadow-2xl border border-gray-300">
@@ -196,7 +222,7 @@
 				<h2 class="text-3xl font-semibold text-gray-800 mb-6">Wall of Love</h2>
 
 				<!-- Swiper Slider Container -->
-				<Swiper  :testimonials="testimonials"/>
+				<SwiperTestimoni  :testimonials="testimonials"/>
 			</div>
 		</div>
 		<div class="bg-gradient-to-b from-black to-gray-900 text-white text-center py-20 rounded-lg shadow-lg mt-16 mx-4">
@@ -210,7 +236,11 @@
 
 <script setup>
 import { ref } from "vue";
-
+	const images = ref([
+  { image: 'https://media.istockphoto.com/id/1296867709/id/foto/profesional-insinyur-asia-laki-laki-berdiskusi-berdiri-di-dekat-mesin-di-pabrik-dua-rekan.jpg?s=1024x1024&w=is&k=20&c=x2_FjB9EQGNZCh2CTKa0QARjnDvtAGHSSzTU2DidiC0=', title: 'Selamat Datang di Fosan', subtitle: 'Coding Bootcamp terbaik di Semarang', link: '#promo' },
+  { image: 'https://t3.ftcdn.net/jpg/02/14/87/96/360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg', title: 'Belajar Full Stack Development', subtitle: 'Dari Nol Hingga Mahir dalam 16 Minggu', link: '#paket-web' },
+  { image: 'https://www.simplilearn.com/ice9/free_resources_article_thumb/web_developerskills.jpg', title: 'Gabung & Mulai Karirmu', subtitle: 'Jadilah Developer Profesional', link: '#order' }
+])
  const testimonials = ref([
       {
         name: "Jane Doe",
@@ -265,6 +295,18 @@ import { ref } from "vue";
         date: "Feb 15, 2027"
       }
     ]);
+
+const partners = ref([
+  { name: "GMEDIA", logo: "https://fosan.id/images/logo_gmedia.png" },
+  { name: "VANTURA", logo: "https://fosan.id/foto/1598452897234-logo.png" },
+  { name: "Rapier", logo: "https://fosan.id/images/template/Rapier.jpeg" },
+  { name: "Points", logo: "https://fosan.id/foto/1588677719797-Logo%20poiNTS%20fix%20vertikal.png" },
+  { name: "Finix 76", logo: "https://fosan.id/images/finix76.jpeg" },
+  { name: "Azura Labs", logo: "https://fosan.id/foto/1597229192001-Logo%20(1).png" },
+  { name: "Company X", logo: "https://fosan.id/foto/1596498047671-Group%201.png" }, 
+
+			
+]);
 </script>
 
 <style scoped>
