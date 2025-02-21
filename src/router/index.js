@@ -40,6 +40,13 @@ const routes = [
 		meta: {
 		},
 	},	{
+		path: "/index",
+		name: "Home2",
+		exact: true,
+		component: () => import("../views/home/index2.vue"),
+		meta: {
+		},
+	},	{
 		path: "/about_us",
 		name: "about_us",
 		exact: true,

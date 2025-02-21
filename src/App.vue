@@ -1,6 +1,8 @@
 <template>
-  <div class="w-full min-h-screen bg-white">
+  <div class="w-full min-h-screen from-gray-100 to-yellow-500">
 	<Navbar/>
+	<!-- <navbar2/> -->
+
 		<router-view></router-view>
 		<Footer/>
 	</div>

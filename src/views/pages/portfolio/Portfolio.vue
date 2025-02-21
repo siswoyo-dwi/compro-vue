@@ -1,5 +1,5 @@
 <template>
-		<div class="bg-gradient-to-r from-gray-300 to-blue-50 dark:from-slate-900 dark:to-blue-800 flex justify-center items-center min-h-screen">
+		<div class="bg-gradient-to-r from-gray-300 to-yellow-500 dark:from-slate-900 dark:to-blue-800 flex justify-center items-center min-h-screen">
       <div class="flex flex-wrap justify-center">
         <div v-for="item in categories" :key="item.id" class="w-full sm:w-1/3 p-4">
           <RouterLink :to="`/portfolio/kategori/${item.id}`" class="block bg-white shadow-lg rounded-lg p-6 text-center transform transition-transform hover:scale-105">

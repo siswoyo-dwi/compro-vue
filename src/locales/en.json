@@ -3,14 +3,14 @@
       "home": "Home",
       "services": "Services",
       "contact": "Contact Us",
-      "graduate": "Graduate",
+      "teknologi": "teknologi",
       "about": "About Us",
       "portfolio": "Portfolio"
     },
     "welcome": "Welcome to our website!",
     "kategori":{
-      "hospitality":"Hospitality",
-      "education":"Education",
+      "hospitality":"Healthcare",
+      "education":"Learning",
       "WMS":"Warehouse Management System",
       "HR":"Human Resources"
     }

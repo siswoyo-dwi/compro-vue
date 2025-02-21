@@ -78,11 +78,11 @@ const isMenuOpen = ref(false);
 
 const menuItems = computed(() => [
   { name: t('navbar.home'), link: '/' },
-  { name: t('navbar.services'), link: '/services' },
-  { name: t('navbar.contact'), link: 'https://api.whatsapp.com/send/?phone=6282227470745' },
-  { name: t('navbar.portfolio'), link: '/portfolio' },
   { name: t('navbar.about'), link: '/about_us' },
-  { name: t('navbar.graduate'), link: '/alumni' }
+  { name: t('navbar.services'), link: '/services' },
+  { name: t('navbar.teknologi'), link: '/services' },
+  { name: t('navbar.portfolio'), link: '/portfolio' },
+  { name: t('navbar.contact'), link: 'https://api.whatsapp.com/send/?phone=6282227470745' },
 ]);
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
