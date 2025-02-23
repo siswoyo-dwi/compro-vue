@@ -54,6 +54,13 @@ const routes = [
 		meta: {
 		},
 	},	{
+		path: "/teknologi",
+		name: "teknologi",
+		exact: true,
+		component: () => import("../views/pages/teknologi/Teknologi.vue"),
+		meta: {
+		},
+	},	{
 		path: "/portfolio",
 		name: "portfolio",
 		exact: true,

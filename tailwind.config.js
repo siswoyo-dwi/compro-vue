@@ -4,6 +4,13 @@ export default {
 	content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}", "./node_modules/flowbite/**/*.js"],
 	theme: {
 		extend: {
+			clipPath: {
+				'wave': 'polygon(0% 25%, 100% 0%, 100% 100%, 0% 100%)',
+			  },
+			fontFamily: {
+				montserrat: ['Montserrat', 'sans-serif'],
+				inter: ['Inter', 'sans-serif'],
+			  },
 			animation: {
 				sideways: "sideways 0.5s linear infinite",
 			},

@@ -1,10 +1,10 @@
 <template>
-    <footer class="mt-16 px-6 py-10 bg-white shadow-lg rounded-t-lg text-center">
+    <footer class="px-6 py-10 bg-white shadow-lg rounded-t-lg text-center ">
       <div class="flex flex-col items-center space-y-6">
         <!-- Logo -->
         <div class="flex items-center space-x-2">
           <img src="https://fosan.id/images/fosanlogo.png" alt="Logo" class="w-8 h-8">
-          <p class="text-gray-500">© agentscode.dev - All rights reserved.</p>
+          <p class="text-gray-500">© fosan.id - All rights reserved.</p>
         </div>
   
         <!-- Footer Links -->

@@ -1,24 +1,22 @@
 
 
 <template>
-  <header class="fixed top-2 z-30 w-full md:top-6">
-    <div class="mx-auto max-w-6xl px-4 sm:px-6">
-
-      <nav class="shadow-lg rounded-2xl p-3 mx-4 mt-4 flex  bg-gray-100 dark:bg-gray-900 items-center justify-between">
-      <!-- <nav :class="['shadow-lg rounded-2xl p-3 mx-4 mt-4 flex items-center justify-between', theme.isDark ? 'bg-gray-900 text-white' : 'bg-white text-gray-900']"> -->
-        <!-- Logo -->
-        <div class="flex items-center">
-          <img src="https://fosan.id/images/fosanlogo.png" alt="Logo" class="h-8 w-8" />
-        </div>
+  <header class="fixed top-2 z-30 w-full md:top-6 flex items-center">
+    <!-- Logo di luar navbar -->
+    <div class="ml-6 w-24 h-24 md:w-32 md:h-32 flex-shrink-0">
+      <img src="https://fosan.id/images/fosanlogo.png" alt="FOSAN Logo" class="w-full h-full object-contain" />
+    </div>
+    
+    <!-- Navbar -->
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 flex-grow">
+      <nav class="shadow-lg rounded-full py-2 px-6 bg-gray-100 dark:bg-gray-900 flex items-center justify-between">
+        <!-- Nama FOSAN -->
+        <div class="text-xl font-bold ">FOSAN</div>
 
         <!-- Menu Items -->
         <div class="hidden md:flex space-x-6">
           <template v-for="item in menuItems" :key="item.link">
-            <RouterLink
-              v-if="!item.link.startsWith('http')"
-              :to="item.link"
-              class="hover:underline"
-            >
+            <RouterLink v-if="!item.link.startsWith('http')" :to="item.link" class="hover:underline">
               {{ item.name }}
             </RouterLink>
             <a v-else :href="item.link" target="_blank" rel="noopener noreferrer" class="hover:underline">
@@ -80,7 +78,7 @@ const menuItems = computed(() => [
   { name: t('navbar.home'), link: '/' },
   { name: t('navbar.about'), link: '/about_us' },
   { name: t('navbar.services'), link: '/services' },
-  { name: t('navbar.teknologi'), link: '/services' },
+  { name: t('navbar.technology'), link: '/teknologi' },
   { name: t('navbar.portfolio'), link: '/portfolio' },
   { name: t('navbar.contact'), link: 'https://api.whatsapp.com/send/?phone=6282227470745' },
 ]);
