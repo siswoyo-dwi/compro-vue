@@ -1,7 +1,7 @@
 <template>
 		<div class="bg-gradient-to-r from-gray-300 to-yellow-500 dark:from-slate-900 dark:to-blue-800 flex justify-center items-center min-h-screen">
       <div class="flex flex-wrap justify-center mt-12">
-        <div v-for="item in categories" :key="item.id" class="w-full sm:w-1/2 p-4 mt-24">
+        <!-- <div v-for="item in categories" :key="item.id" class="w-full sm:w-1/2 p-4 mt-24">
          <div class="block bg-white shadow-lg rounded-lg p-6 text-center ">
             <div class="flex justify-center">
               <img :src="item.foto" :alt="item.kategori" class="w-full h-52 object-cover transition-transform duration-300 hover:scale-110">
@@ -17,7 +17,8 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
+        <CardKategori :categories="categories"/>
       </div>
     </div>
   </template>

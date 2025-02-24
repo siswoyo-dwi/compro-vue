@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full min-h-screen from-gray-100 to-yellow-500  dark:from-slate-900 dark:to-blue-800 ">
+  <div class="w-full min-h-screen  ">
 	<Navbar/>
 	<!-- <navbar2/> -->
 

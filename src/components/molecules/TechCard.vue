@@ -3,7 +3,7 @@
       <!-- Card Teknologi -->
       <div class="bg-white p-4 rounded-lg shadow-md w-24 h-24 flex flex-col items-center justify-center hover:shadow-xl transition duration-300 cursor-pointer relative group">
         <img :src="img" class="h-10 object-contain" />
-        <p class="text-xs text-center mt-2 font-semibold">{{ name }}</p>
+        <p class="text-xs text-black text-center mt-2 font-semibold">{{ name }}</p>
   
         <!-- Detail Box muncul di bawah & mentok kiri saat hover -->
         <div 

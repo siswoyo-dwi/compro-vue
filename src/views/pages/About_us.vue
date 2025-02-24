@@ -1,47 +1,36 @@
-<template>
-        <div class="container mx-auto px-4 py-10 ">
-        <!-- Title -->
-        <h1 class="text-2xl font-bold text-red-500 mb-6">About US</h1>
+<template >
+    
+    <div class="container mx-auto mt-40  px-6 py-12">
+        <!-- Judul -->
+        <h2 class="text-center text-3xl md:text-4xl font-semibold text-blue-900 mb-12">
+            Fosan in Numbers
+        </h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Left Section (Text) -->
-            <div class="space-y-4  items-center">
-                <h2 class="text-xl font-bold text-red-500">Fosan</h2>
-                <p class="text-gray-600">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem voluptas expedita excepturi porro obcaecati libero, reiciendis commodi enim quibusdam vitae fugiat necessitatibus perspiciatis. Corporis, repellat blanditiis delectus incidunt dolorem at.                </p>
-
-                <h3 class="text-lg font-bold text-black">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe autem amet ratione nisi quod quaerat cupiditate, placeat ullam, pariatur recusandae quisquam accusantium? Necessitatibus exercitationem repellat et, nostrum porro enim pariatur! Digital Marketing Plan & Consultation
-                </h3>
-                <p class="text-gray-600">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, accusantium animi. Tempore vero, nesciunt amet temporibus hic, tempora ullam blanditiis et veniam eligendi nulla magni, suscipit vel officia facilis nobis?                </p>
-                <!-- Contact Form -->
-                <form class="space-y-4">
-                    <div>
-                        <label class="block text-gray-700">Your Name*</label>
-                        <input type="text" class="w-full border border-gray-300 p-2 rounded-md" placeholder="Enter your name">
-                    </div>
-                    <div>
-                        <label class="block text-gray-700">Your Email*</label>
-                        <input type="email" class="w-full border border-gray-300 p-2 rounded-md" placeholder="Enter your email">
-                    </div>
-                    <div>
-                        <label class="block text-gray-700">Company*</label>
-                        <input type="text" class="w-full border border-gray-300 p-2 rounded-md" placeholder="Your company name">
-                    </div>
-                    <div>
-                        <label class="block text-gray-700">Your Message</label>
-                        <textarea class="w-full border border-gray-300 p-2 rounded-md" rows="4" placeholder="Enter your message"></textarea>
-                    </div>
-                    <button class="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800">Send Message</button>
-                </form>
+        <!-- Kontainer utama -->
+        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 relative">
+            <!-- Bagian Gambar -->
+            <div class="w-full md:w-1/2 relative">
+                <img src="https://www.scnsoft.com/slider-presentation/boris-and-nick.jpg" alt="Office Image" class="w-full rounded-lg shadow-lg">
+                <!-- Kotak Tahun (Pojok kanan atas gambar, sebagian keluar) -->
+                <div class="absolute -top-6 right-0 transform translate-x-1/4 bg-blue-600 text-white text-4xl md:text-5xl font-bold px-6 py-4 md:px-8 md:py-6 rounded-lg shadow-lg">
+                    35
+                </div>
             </div>
 
-            <!-- Right Section -->
-
-            <div class="flex flex-col items-center">
-                <img src="https://difitech.id/wp-content/uploads/2020/04/womanhi-1024x857.png" alt="Illustration" class="w-full md:w-[400px] lg:w-[450px]">
+            <!-- Bagian Teks -->
+            <div class="w-full md:w-1/2 flex flex-col justify-center">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-900">
+                    years in IT
+                </h3>
+                <p class="mt-4 text-gray-700 leading-relaxed">
+                    We have seen the technology landscape change time and again 
+                    over the three decades of our operation. We have learned 
+                    to be flexible and to expand our expertise to meet the demands of tomorrow.
+                </p>
+                <button class="mt-6 border-2 border-blue-700 text-blue-700 font-semibold px-6 py-2 rounded-lg hover:bg-blue-700 hover:text-white transition">
+                    Fosan's highlights
+                </button>
             </div>
         </div>
     </div>
-</template>
+</template> 

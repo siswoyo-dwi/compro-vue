@@ -1,7 +1,7 @@
 <template>
   <div class="w-full min-h-screen bg-white">
 		<!-- Swiper Slider Container -->
-		<div class="bg-gradient-to-r from-gray-300 to-blue-50 dark:from-slate-900 dark:to-blue-800 flex justify-center items-center min-h-screen">
+		<div class="bg-gradient-to-r  from-gray-300 to-yellow-500 dark:from-slate-900 dark:to-blue-800  flex justify-center items-center min-h-screen">
 			<SwiperHero  :images="images"/>
 			<!-- <div class="text-center max-w-3xl px-4">
 				<h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mt-4">
@@ -11,6 +11,8 @@
 				<p class="text-gray-600 dark:text-gray-200 text-lg mt-2">AI Agents that are ready to add to your project</p>
 			</div> -->
 		</div>
+		<SwiperPartner  :partners="partners" />
+
 		<div class="text-center py-16 bg-gray-300 dark:bg-gray-900">
 			<h2 class="text-xl font-bold ">Hiring Partner</h2>
 			<p class="max-w-xl mx-auto mt-2">
@@ -25,8 +27,7 @@
 				:src="partner.logo" 
 				:alt="partner.name" 
 				class="h-24 max-w-[300px] object-contain"/>
-			</div>
-
+			</div> 
 			<!-- Tombol CTA -->
 			<div class="mt-8">
 			<Button>
@@ -265,13 +266,13 @@ import { ref } from "vue";
     ]);
 
 const partners = ref([
-  { name: "GMEDIA", logo: "https://fosan.id/images/logo_gmedia.png" },
-  { name: "VANTURA", logo: "https://fosan.id/foto/1598452897234-logo.png" },
-  { name: "Rapier", logo: "https://fosan.id/images/template/Rapier.jpeg" },
-  { name: "Points", logo: "https://fosan.id/foto/1588677719797-Logo%20poiNTS%20fix%20vertikal.png" },
-  { name: "Finix 76", logo: "https://fosan.id/images/finix76.jpeg" },
-  { name: "Azura Labs", logo: "https://fosan.id/foto/1597229192001-Logo%20(1).png" },
-  { name: "Company X", logo: "https://fosan.id/foto/1596498047671-Group%201.png" }, 
+  { name: "GMEDIA", logo: "https://fosan.id/images/logo_gmedia.png" , desc:'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nam facere nobis illum quidem iusto architecto animi, sunt temporibus ipsa accusantium quo voluptatem alias ex excepturi aliquid illo, corrupti commodi!' },
+  { name: "VANTURA", logo: "https://fosan.id/foto/1598452897234-logo.png" , desc:`Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate nihil non praesentium obcaecati? Eveniet accusamus quas consequuntur aperiam porro consectetur optio. Non commodi earum sed minima? Cupiditate ratione nesciunt voluptate!`},
+  { name: "Rapier", logo: "https://fosan.id/images/template/Rapier.jpeg"  , desc:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat qui quo, corrupti esse itaque in eos aspernatur nobis odit libero aliquid neque dolore voluptates illum a, inventore doloremque, dolorum totam.`},
+  { name: "Points", logo: "https://fosan.id/foto/1588677719797-Logo%20poiNTS%20fix%20vertikal.png"  , desc:`Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda hic minus veritatis adipisci tempora ducimus rem enim, dolorem aspernatur vero? Itaque neque eos nulla nemo saepe harum sequi rem ab!`},
+  { name: "Finix 76", logo: "https://fosan.id/images/finix76.jpeg"  , desc:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum provident itaque, ducimus ipsam soluta praesentium dolore dolorum molestiae omnis aut voluptates sit autem eveniet minima nihil quia consequuntur non voluptatibus.`},
+  { name: "Azura Labs", logo: "https://fosan.id/foto/1597229192001-Logo%20(1).png"  , desc:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatum in labore ratione earum neque fugit? Ad excepturi ex nam laudantium quas iste? Suscipit qui laborum reiciendis vel quaerat sunt.`},
+  { name: "Company X", logo: "https://fosan.id/foto/1596498047671-Group%201.png"  , desc:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nobis molestiae tempore ratione inventore vitae voluptatum magni in odio perspiciatis a minima harum itaque veritatis quo quos nesciunt! Odit, magnam.`}, 
 
 			
 ]);
