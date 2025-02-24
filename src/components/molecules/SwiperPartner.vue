@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto px-6 py-10">
-    <h2 class="text-2xl font-semibold text-center text-blue-800 mb-6">Recognitions and Partnerships</h2>
+    <h2 class="text-2xl font-semibold text-center  mb-6">Recognitions and Partnerships</h2>
     
     <Swiper
       :modules="[Autoplay]"

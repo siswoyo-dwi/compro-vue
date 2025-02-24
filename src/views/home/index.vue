@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full min-h-screen bg-white">
+  <div class="w-full min-h-screen ">
 		<!-- Swiper Slider Container -->
 		<div class="bg-gradient-to-r  from-gray-300 to-yellow-500 dark:from-slate-900 dark:to-blue-800  flex justify-center items-center min-h-screen">
 			<SwiperHero  :images="images"/>
@@ -12,194 +12,70 @@
 			</div> -->
 		</div>
 		<SwiperPartner  :partners="partners" />
+		<div class="container mt-32 mx-auto px-6 py-12">
+           <!-- Judul -->
+           <h2 class="text-center text-3xl  md:text-4xl font-semibold mb-12">
+                    About Company
+        </h2>
+        <!-- Kontainer utama -->
+        <div class="flex flex-col  md:flex-row  gap-12">
+            <!-- Bagian Teks -->
+            <div class="w-full md:w-1/2  mt-[-20px]">
+                <h2 class="text-3xl md:text-4xl font-bold  mb-4">
+                    About Fosan
+                </h2>
+                <p class=" leading-relaxed mb-6">
+                    Fosan merupakan perusahaan konsultasi IT dan pengembang perangkat lunak yang berawal dari Bootcamp Coding Full Stack Developer. Fokus kami yang berfokus pada perkembangan industri saat ini, menunjukkan bahwa kami dapat bersikap fleksibel dan siap meningkatkan keahlian untuk memenuhi tuntutan project di masa depan. Transparansi kerja, pengendalian timeline, dan kualitas layanan yang tinggi secara konsisten merupakan wujud professional kami dalam memberikan solusi dan membantu klien mencapai tujuan bisnis mereka.
+                </p>
+                <router-link :to="'/about_us'" class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition">
+                    Learn More
+                </router-link >
+            </div>
 
-		<div class="text-center py-16 bg-gray-300 dark:bg-gray-900">
-			<h2 class="text-xl font-bold ">Hiring Partner</h2>
-			<p class="max-w-xl mx-auto mt-2">
-			Hiring partner merupakan bagian yang sangat penting untuk memajukan ekosistem IT di Indonesia. Berikut beberapa hiring partner yang telah bekerja sama dengan kami:
-			</p>
+            <!-- Bagian Gambar -->
+            <div class="w-full md:w-1/2">
+                <img src="https://www.scnsoft.com/slider-presentation/boris-and-nick.jpg" alt="About Fosan" class="w-full rounded-lg shadow-lg">
+            </div>
+        </div>
+     </div>
+  <div class="container mx-auto mt-32 px-6 py-12">
+    <!-- Judul -->
+    <h2 class="text-center text-3xl md:text-4xl font-semibold mb-12">
+      Our Location
+    </h2>
 
-			<!-- Grid Logo Partner -->
-			<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8 px-4 md:px-20 place-items-center">
-			<img 
-				v-for="(partner, index) in partners" 
-				:key="index" 
-				:src="partner.logo" 
-				:alt="partner.name" 
-				class="h-24 max-w-[300px] object-contain"/>
-			</div> 
-			<!-- Tombol CTA -->
-			<div class="mt-8">
-			<Button>
-				Gabung Menjadi Partner Kami
-			</Button>
-			</div>
-		</div>
+    <!-- Kontainer Utama -->
+    <div class="flex flex-col md:flex-row items-start gap-8 md:gap-12">
+      <!-- Bagian Teks -->
+      <div class="w-full md:w-1/2">
+        <h3 class="text-2xl md:text-3xl font-bold">
+          Visit Our Office
+        </h3>
+        <p class="mt-4 leading-relaxed">
+          Kunjungi Kami
+        </p>
+        <div class="mt-6">
+          <p class="font-semibold text-lg">Alamat:</p>
+          <p>Jl. Grafika Raya No. 9, Semarang, Indonesia</p>
+        </div>
+        <div class="mt-4">
+ 
+        </div>
+      </div>
 
+      <!-- Bagian Google Maps -->
+      <div class="w-full md:w-1/2">
+        <iframe
+          class="w-full h-64 md:h-80 rounded-lg shadow-lg"
+		  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.9935891989823!2d110.419229!3d-7.0778347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708935edc32b7f%3A0x964b8d21d9444107!2sJl.%20Grafika%20Raya%20No.9%2C%20Gedawang%2C%20Kec.%20Banyumanik%2C%20Kota%20Semarang%2C%20Jawa%20Tengah%2050264!5e0!3m2!1sen!2sid!4v1708754827319!5m2!1sen!2sid" 
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </div>
 
-		<!-- <div class="flex items-center justify-center min-h-screen bg-gradient-to-r from-gray-200 to-gray-300">
-
-			<div class="relative max-w-4xl p-4 rounded-3xl bg-white shadow-2xl border border-gray-300">
-				<div class="relative aspect-video overflow-hidden rounded-2xl shadow-lg">
-					<div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
-
-					<img src="https://mmc.tirto.id/image/otf/970x0/2021/05/25/pelanggaran-tata-ruang-di-perkotaan-antarafoto_ratio-16x9.jpg" 
-						alt="Demo Image" 
-						class="relative z-10 object-cover w-full h-full rounded-2xl">
-				</div>
-			</div>
-
-		</div> -->
-		<!-- <div class="flex flex-col items-center justify-center min-h-screen bg-gray-300 p-6">
-			<h2 class="text-lg font-semibold text-gray-700 mb-4">
-				How do you want to use AI Agents?
-			</h2>
-
-			<div id="filterBar" class="flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-md border border-gray-200">
-			
-				<Button class="filter-btn px-4 py-1.5 text-sm font-medium rounded-full shadow bg-gray-900 text-white">
-					All
-				</Button>
-				<Button class="filter-btn px-3 py-1.5 text-sm text-gray-600 hover:text-gray-900 transition">
-					TypeScript
-				</Button>
-				<Button class="filter-btn px-3 py-1.5 text-sm text-gray-600 hover:text-gray-900 transition">
-					Netlify
-				</Button>
-				<Button class="filter-btn px-3 py-1.5 text-sm text-gray-600 hover:text-gray-900 transition">
-					Vercel
-				</Button>
-				<Button class="filter-btn px-3 py-1.5 text-sm text-gray-600 hover:text-gray-900 transition">
-					AWS
-				</Button>
-				<Button class="filter-btn px-3 py-1.5 text-sm text-gray-600 hover:text-gray-900 transition">
-					Cloudflare
-				</Button>
-				<Button class="filter-btn px-3 py-1.5 text-sm text-gray-600 hover:text-gray-900 transition">
-					n8n
-				</Button>
-			</div>
-
-		</div> -->
-		<!-- <div class="flex items-center justify-center min-h-screen bg-gradient-to-r from-gray-200 to-gray-300">
-
-			<div class="relative max-w-4xl p-4 rounded-3xl bg-white shadow-2xl border border-gray-300">
-				<div class="relative aspect-video overflow-hidden rounded-2xl shadow-lg">
-					<div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
-					<img src="https://mmc.tirto.id/image/otf/970x0/2021/05/25/pelanggaran-tata-ruang-di-perkotaan-antarafoto_ratio-16x9.jpg" 
-						alt="Demo Image" 
-						class="relative z-10 object-cover w-full h-full rounded-2xl">
-				</div>
-			</div>
-
-		</div> -->
-		<!-- <div class="bg-gray-300 flex items-center justify-center min-h-screen p-6">
-			<div class="bg-white rounded-4xl shadow-xl overflow-hidden max-w-4xl w-full">
-				<div class="relative">
-					<img src="https://mmc.tirto.id/image/otf/970x0/2021/05/25/pelanggaran-tata-ruang-di-perkotaan-antarafoto_ratio-16x9.jpg" alt="Product Image" class="w-full object-cover">
-				</div>
-				<div class="p-6">
-					<h3 class="text-xl font-semibold text-gray-800">Contract Form Agent</h3>
-					<p class="text-sm text-gray-600 mt-2">Collect emails and message with a contact form agent</p>
-
-					<div class="flex items-center space-x-4 mt-4 text-gray-500">
-						<span>🔗</span>
-						<span>💬</span>
-						<span>⚡</span>
-					</div>
-					<div class="flex items-center justify-between mt-6">
-						<span class="text-xl font-semibold">$19</span>
-						<Button class="bg-gray-900 text-white px-5 py-2 text-sm rounded-md shadow">Buy Now</Button>
-					</div>
-				</div>
-				<div class="border-t px-6 py-4 text-center">
-					<p class="text-sm text-gray-600 font-medium">
-						Not sure which one to buy? Get them all for $45.
-					</p>
-					<Button class="mt-3 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 text-sm rounded-md shadow">
-						Get Unlimited Access
-					</Button>
-				</div>
-			</div>
-
-		</div> -->
-		<!-- <div class="bg-[#0D1B2A] text-white flex items-center justify-center min-h-screen p-6">
-
-			<div class="max-w-5xl w-full text-center">
-				<h2 class="text-3xl font-semibold">
-					Effortlessly Enhance Your Projects with Our AI <br> <span class="text-blue-400">Agents</span>
-				</h2>
-
-				<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 border-t border-gray-600 pt-8">
-					<div class="border border-gray-700 p-6 rounded-lg bg-[#132238]">
-						<h3 class="flex items-center space-x-2 text-lg font-semibold">
-							<span>📥</span> <span>Quick Integration</span>
-						</h3>
-						<p class="text-gray-400 mt-2 text-sm">
-							Seamlessly integrate our AI agents into your workflows with minimal effort and maximum efficiency.
-						</p>
-					</div>
-
-					<div class="border border-gray-700 p-6 rounded-lg bg-[#132238]">
-						<h3 class="flex items-center space-x-2 text-lg font-semibold">
-							<span>🔄</span> <span>Version Control</span>
-						</h3>
-						<p class="text-gray-400 mt-2 text-sm">
-							Keep track of changes with built-in version control, complete with bug and feature tracking.
-						</p>
-					</div>
-
-					<div class="border border-gray-700 p-6 rounded-lg bg-[#132238]">
-						<h3 class="flex items-center space-x-2 text-lg font-semibold">
-							<span>📊</span> <span>Analytics Ready</span>
-						</h3>
-						<p class="text-gray-400 mt-2 text-sm">
-							Easily integrate analytics to monitor performance and gain insights with our AI agents.
-						</p>
-					</div>
-
-					<div class="border border-gray-700 p-6 rounded-lg bg-[#132238]">
-						<h3 class="flex items-center space-x-2 text-lg font-semibold">
-							<span>🛠</span> <span>Comprehensive Testing</span>
-						</h3>
-						<p class="text-gray-400 mt-2 text-sm">
-							Ensure reliability with built-in testing, making deployment smooth and error-free.
-						</p>
-					</div>
-
-					<div class="border border-gray-700 p-6 rounded-lg bg-[#132238]">
-						<h3 class="flex items-center space-x-2 text-lg font-semibold">
-							<span>🔗</span> <span>Webhooks & API Endpoints</span>
-						</h3>
-						<p class="text-gray-400 mt-2 text-sm">
-							Leverage webhooks and API endpoints for seamless integration and automation.
-						</p>
-					</div>
-
-					<div class="border border-gray-700 p-6 rounded-lg bg-[#132238]">
-						<h3 class="flex items-center space-x-2 text-lg font-semibold">
-							<span>⚙️</span> <span>Full Customization</span>
-						</h3>
-						<p class="text-gray-400 mt-2 text-sm">
-							Enjoy complete control with fully customizable code to suit your unique requirements.
-						</p>
-					</div>
-				</div>
-			</div>
-
-		</div> -->
-		<!-- <div class="bg-gradient-to-r from-gray-300 to-gray-50 flex items-center justify-center min-h-screen p-6">
-			<div class="max-w-4xl w-full text-center">
-				<h2 class="text-3xl font-semibold text-gray-800 mb-6">Wall of Love</h2>
-				<SwiperTestimoni  :testimonials="testimonials"/>
-			</div>
-		</div> -->
-		<!-- <div class="bg-gradient-to-b from-black to-gray-900 text-white text-center py-20 rounded-lg shadow-lg mt-16 mx-4">
-			<h1 class="text-4xl font-bold">Add AI to your project in minutes</h1>
-			<Button class="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-lg">
-				Get Instant Access →
-			</Button>
-		</div> -->
 	</div>
 </template>
 
