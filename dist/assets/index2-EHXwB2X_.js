@@ -1,1 +1,0 @@
-import{_ as e,o,c}from"./index-CK_9spMF.js";const r={},t={class:"w-full min-h-screen bg-gradient-to-r from-gray-100 to-yellow-500"};function n(s,a){return o(),c("div",t)}const l=e(r,[["render",n]]);export{l as default};
