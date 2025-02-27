@@ -16,8 +16,8 @@
   </template>
   
   <script setup>
-  import { ref, computed } from "vue";
-  import { useRoute } from "vue-router";
+import { ref, computed } from "vue";
+import { useRoute } from "vue-router";
   
   const route = useRoute(); // Akses route params
   
