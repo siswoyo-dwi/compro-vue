@@ -26,17 +26,21 @@
   <script setup>
   import { ref, watch } from "vue";
   import { useI18n } from 'vue-i18n';
-  
-  const { t, locale } = useI18n();
+  import Healthcare from '../../../components/images/Healthcare.jpg';
+  import Human_Resource from '../../../components/images/Human Resource.jpg';
+  import Learning_Management_System from '../../../components/images/Learning Management System.jpg';
+  import Warehouse_Management_System from '../../../components/images/Warehouse Management System.jpg';
+
+   const { t, locale } = useI18n();
   
   const categories = ref([]);
   
   const updateCategories = () => {
     categories.value = [
-      { id: 1, kategori: t('kategori.hospitality'), foto: 'https://fosan.id/images/fosanlogo.png' },
-      { id: 2, kategori: t('kategori.education'), foto: 'https://fosan.id/images/fosanlogo.png' },
-      { id: 3, kategori: t('kategori.WMS'), foto: 'https://fosan.id/images/fosanlogo.png' },
-      { id: 4, kategori: t('kategori.HR'), foto: 'https://fosan.id/images/fosanlogo.png' }
+      { id: 1, kategori: t('kategori.hospitality'), foto: Healthcare },
+      { id: 2, kategori: t('kategori.education'), foto: Learning_Management_System },
+      { id: 3, kategori: t('kategori.WMS'), foto: Warehouse_Management_System },
+      { id: 4, kategori: t('kategori.HR'), foto:Human_Resource }
     ];
   };
   

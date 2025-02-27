@@ -37,17 +37,7 @@
                 <h2 class="text-3xl md:text-4xl font-bold  mb-4">
                     Noor Bhagaskoro Liestantyo, S.Kom., M.Kom (CEO)
                 </h2>
-                <ul>
-                    <li class="strong">Our Team</li>
-                     <li>Project Management Office</li>
-                     <li>Bussiness Analysis Team</li>
-                     <li>Design Team</li>
-                     <li>Web Development Team</li>
-                     <li>Mobile Development Team</li>
-                     <li>Testing and QA Team</li>
-                     <li>Security Team</li>
-                     <li>Helpdesk Team</li>
-                </ul>
+
                 <p class=" leading-relaxed mb-6">
                 </p>
                 <router-link :to="'#'" class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition">

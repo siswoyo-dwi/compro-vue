@@ -35,7 +35,8 @@
 ]);
 const backend =ref([
   {name:"Node js",img:"https://www.scnsoft.com/technologies-logos/back-end/node-js-logo-small.svg",desc:"",experience:"",workforce:""},
-  {name:"JavaScript",img:"	https://www.scnsoft.com/technologies-logos/front-end/javascript-logo.svg",desc:"",experience:"",workforce:""}
+  {name:"JavaScript",img:"	https://www.scnsoft.com/technologies-logos/front-end/javascript-logo.svg",desc:"",experience:"",workforce:""},
+  {name:"AI",img:"	https://www.scnsoft.com/blue-outline-icons/ai.svg",desc:"",experience:"",workforce:""}
 
 ])
   </script>
