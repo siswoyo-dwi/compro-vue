@@ -89,6 +89,13 @@ const routes = [
 		meta: {
 		},
 	},	{
+		path: "/services/kategori/:id",
+		name: "services_kategori",
+		exact: true,
+		component: () => import("../views/pages/services/Kategori.vue"),
+		meta: {
+		},
+	},	{
 		path: "/alumni",
 		name: "alumni",
 		exact: true,
