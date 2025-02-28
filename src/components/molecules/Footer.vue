@@ -11,28 +11,26 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
           <div>
             <h3 class="font-semibold text-gray-800">Product</h3>
-            <ul class="text-gray-500 text-sm space-y-1 mt-2">
-              <li><a href="#" class="hover:text-black">Features</a></li>
-              <li><a href="#" class="hover:text-black">Integrations</a></li>
-              <li><a href="#" class="hover:text-black">Pricing</a></li>
-              <li><a href="#" class="hover:text-black">Changelog</a></li>
-              <li><a href="#" class="hover:text-black">Our method</a></li>
+            <ul class="text-gray-500 text-sm space-y-1 mt-2"   v-for="(item, index) in categories" :key="index" >
+              <li><router-link :to="`/portfolio/kategori/${item.id}`"  class="hover:text-black">{{ item.kategori }}</router-link></li>
             </ul>
           </div>
           <div>
             <h3 class="font-semibold text-gray-800">Company</h3>
             <ul class="text-gray-500 text-sm space-y-1 mt-2">
-              <li><a href="#" class="hover:text-black">About us</a></li>
-              <li><a href="#" class="hover:text-black">Blog</a></li>
+              <li><router-link :to="'/about_us'" class="hover:text-black">About us</router-link></li>
+              <li><router-link :to="'/services'" class="hover:text-black">Service</router-link></li>
             </ul>
           </div>
           <div>
-            <h3 class="font-semibold text-gray-800">Resources</h3>
+            <h3 class="font-semibold text-gray-800">Technology</h3>
             <ul class="text-gray-500 text-sm space-y-1 mt-2">
-              <li><a href="#" class="hover:text-black">Request an agent!</a></li>
-              <li><a href="#" class="hover:text-black">Community</a></li>
-              <li><a href="#" class="hover:text-black">Terms of service</a></li>
-              <li><a href="#" class="hover:text-black">Report an issue</a></li>
+              <li><router-link :to="'#'" class="hover:text-black">Node js</router-link></li>
+              <li><router-link :to="'#'" class="hover:text-black">JavaScript</router-link></li>
+              <li><router-link :to="'#'" class="hover:text-black">AI</router-link></li>
+              <li><router-link :to="'#'" class="hover:text-black">HTML5</router-link></li>
+              <li><router-link :to="'#'" class="hover:text-black">CSS</router-link></li>
+              <li><router-link :to="'#'" class="hover:text-black">Vue.js</router-link></li>
             </ul>
           </div>
           <div>
@@ -59,7 +57,31 @@
       </div>
     </footer>
   </template>
-  
   <script setup>
+  import { ref, watch } from "vue";
+  import { useI18n } from 'vue-i18n';
+  import Healthcare from '../../components/images/Healthcare.jpg';
+  import Human_Resource from '../../components/images/Human Resource.jpg';
+  import Learning_Management_System from '../../components/images/Learning Management System.jpg';
+  import Warehouse_Management_System from '../../components/images/Warehouse Management System.jpg';
+
+   const { t, locale } = useI18n();
+  
+  const categories = ref([]);
+  
+  const updateCategories = () => {
+    categories.value = [
+      { id: 1, kategori: t('kategori.hospitality'), foto: Healthcare },
+      { id: 2, kategori: t('kategori.education'), foto: Learning_Management_System },
+      { id: 3, kategori: t('kategori.WMS'), foto: Warehouse_Management_System },
+      { id: 4, kategori: t('kategori.HR'), foto:Human_Resource }
+    ];
+  };
+  
+  // Panggil updateCategories saat pertama kali di-load
+  updateCategories();
+  
+  // Perbarui data setiap kali bahasa berubah
+  watch(locale, updateCategories);
   </script>
   

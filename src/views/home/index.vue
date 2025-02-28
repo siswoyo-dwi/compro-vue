@@ -83,8 +83,8 @@
 import { ref } from "vue";
 	const images = ref([
   { image: 'https://media.istockphoto.com/id/1296867709/id/foto/profesional-insinyur-asia-laki-laki-berdiskusi-berdiri-di-dekat-mesin-di-pabrik-dua-rekan.jpg?s=1024x1024&w=is&k=20&c=x2_FjB9EQGNZCh2CTKa0QARjnDvtAGHSSzTU2DidiC0=', title: 'Selamat Datang di Fosan', subtitle: 'Coding Bootcamp terbaik di Semarang', link: '#promo' },
-  { image: 'https://t3.ftcdn.net/jpg/02/14/87/96/360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg', title: 'Belajar Full Stack Development', subtitle: 'Dari Nol Hingga Mahir dalam 16 Minggu', link: '#paket-web' },
-  { image: 'https://www.simplilearn.com/ice9/free_resources_article_thumb/web_developerskills.jpg', title: 'Gabung & Mulai Karirmu', subtitle: 'Jadilah Developer Profesional', link: '#order' }
+  { image: 'https://t3.ftcdn.net/jpg/02/14/87/96/360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg', title: 'Selamat Datang di Fosan', subtitle: 'Dari Nol Hingga Mahir dalam 16 Minggu', link: '#paket-web' },
+  { image: 'https://www.simplilearn.com/ice9/free_resources_article_thumb/web_developerskills.jpg', title: 'Selamat Datang di Fosan', subtitle: 'Jadilah Developer Profesional', link: '#order' }
 ])
  const testimonials = ref([
       {
