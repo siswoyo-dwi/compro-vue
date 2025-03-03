@@ -5,9 +5,9 @@
         <div class="text-center max-w-3xl p-6">
           <h1 class="text-4xl md:text-5xl font-bold mb-4">{{ hero }}</h1>
           <p class="text-lg text-gray-500">{{ deskripsi_hero }}</p>
-          <router-link :to="'#layanan'" class="mt-6 inline-block px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg text-lg font-semibold transition">
+          <a href="#layanan" class="mt-6 inline-block px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg text-lg font-semibold transition">
             {{ button_hero }}
-          </router-link>
+          </a>
         </div>
       </section>
   
