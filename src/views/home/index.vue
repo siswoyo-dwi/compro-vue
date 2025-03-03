@@ -14,19 +14,13 @@
 		<SwiperPartner  :partners="partners" />
 		<div class="container mt-32 mx-auto px-6 py-12">
            <!-- Judul -->
-           <h2 class="text-center text-3xl  md:text-4xl font-semibold mb-12">
-                    About Company
-        </h2>
+           <h2 class="text-center text-3xl  md:text-4xl font-semibold mb-12">{{ tentang[0].tentang }}</h2>
         <!-- Kontainer utama -->
         <div class="flex flex-col  md:flex-row  gap-12">
             <!-- Bagian Teks -->
             <div class="w-full md:w-1/2  mt-[-20px]">
-                <h2 class="text-3xl md:text-4xl font-bold  mb-4">
-                    About Fosan
-                </h2>
-                <p class=" leading-relaxed mb-6">
-                    Fosan merupakan perusahaan konsultasi IT dan pengembang perangkat lunak yang berawal dari Bootcamp Coding Full Stack Developer. Fokus kami yang berfokus pada perkembangan industri saat ini, menunjukkan bahwa kami dapat bersikap fleksibel dan siap meningkatkan keahlian untuk memenuhi tuntutan project di masa depan. Transparansi kerja, pengendalian timeline, dan kualitas layanan yang tinggi secara konsisten merupakan wujud professional kami dalam memberikan solusi dan membantu klien mencapai tujuan bisnis mereka.
-                </p>
+                <h2 class="text-3xl md:text-4xl font-bold  mb-4">{{ tentang[0].company }}</h2>
+                <p class=" leading-relaxed mb-6">{{ tentang[0].deskripsi }}</p>
                 <router-link :to="'/about_us'" class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition">
                     Learn More
                 </router-link >
@@ -40,22 +34,19 @@
      </div>
   <div class="container mx-auto mt-32 px-6 py-12">
     <!-- Judul -->
-    <h2 class="text-center text-3xl md:text-4xl font-semibold mb-12">
-      Our Location
-    </h2>
+    <h2 class="text-center text-3xl md:text-4xl font-semibold mb-12">{{ lokasi[0].lokasi }}</h2>
 
     <!-- Kontainer Utama -->
     <div class="flex flex-col md:flex-row items-start gap-8 md:gap-12">
       <!-- Bagian Teks -->
       <div class="w-full md:w-1/2">
         <h3 class="text-2xl md:text-3xl font-bold">
-          Visit Our Office
+          {{ lokasi[0].visit }}
         </h3>
         <p class="mt-4 leading-relaxed">
-          Kunjungi Kami
         </p>
         <div class="mt-6">
-          <p class="font-semibold text-lg">Alamat:</p>
+          <p class="font-semibold text-lg">{{ lokasi[0].alamat }}:</p>
           <p>Jl. Grafika Raya No. 9, Semarang, Indonesia</p>
         </div>
         <div class="mt-4">
@@ -80,67 +71,68 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-	const images = ref([
-  { image: 'https://media.istockphoto.com/id/1296867709/id/foto/profesional-insinyur-asia-laki-laki-berdiskusi-berdiri-di-dekat-mesin-di-pabrik-dua-rekan.jpg?s=1024x1024&w=is&k=20&c=x2_FjB9EQGNZCh2CTKa0QARjnDvtAGHSSzTU2DidiC0=', title: 'Selamat Datang di Fosan', subtitle: 'Coding Bootcamp terbaik di Semarang', link: '#promo' },
-  { image: 'https://t3.ftcdn.net/jpg/02/14/87/96/360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg', title: 'Selamat Datang di Fosan', subtitle: 'Dari Nol Hingga Mahir dalam 16 Minggu', link: '#paket-web' },
-  { image: 'https://www.simplilearn.com/ice9/free_resources_article_thumb/web_developerskills.jpg', title: 'Selamat Datang di Fosan', subtitle: 'Jadilah Developer Profesional', link: '#order' }
+import { ref,computed  } from "vue";
+import { useI18n } from 'vue-i18n';
+const { t, locale } = useI18n();
+	const images = computed(()=>[
+  { image: 'https://media.istockphoto.com/id/1296867709/id/foto/profesional-insinyur-asia-laki-laki-berdiskusi-berdiri-di-dekat-mesin-di-pabrik-dua-rekan.jpg?s=1024x1024&w=is&k=20&c=x2_FjB9EQGNZCh2CTKa0QARjnDvtAGHSSzTU2DidiC0=', title: t('running_text'), subtitle: 'Coding Bootcamp terbaik di Semarang', link: '#promo' },
+  { image: 'https://t3.ftcdn.net/jpg/02/14/87/96/360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg', title: t('running_text'), subtitle: 'Dari Nol Hingga Mahir dalam 16 Minggu', link: '#paket-web' },
+  { image: 'https://www.simplilearn.com/ice9/free_resources_article_thumb/web_developerskills.jpg', title: t('running_text'), subtitle: 'Jadilah Developer Profesional', link: '#order' }
 ])
- const testimonials = ref([
-      {
-        name: "Jane Doe",
-        username: "@janedoe",
-        image: "https://randomuser.me/api/portraits/women/45.jpg",
-        feedback: "Aplikasi ini sangat membantu saya dalam bekerja, sangat mudah digunakan!",
-        date: "Feb 10, 2027"
-      },
-      {
-        name: "John Smith",
-        username: "@johnsmith",
-        feedback: "Website ini sangat profesional dan memudahkan bisnis saya berkembang.",
-        date: "Feb 15, 2027"
-      },
-	  {
-        name: "Jane Doe",
-        username: "@janedoe",
-        image: "https://randomuser.me/api/portraits/women/45.jpg",
-        feedback: "Aplikasi ini sangat membantu saya dalam bekerja, sangat mudah digunakan!",
-        date: "Feb 10, 2027"
-      },
-      {
-        name: "John Smith",
-        username: "@johnsmith",
-        feedback: "Website ini sangat profesional dan memudahkan bisnis saya berkembang.",
-        date: "Feb 15, 2027"
-      },
-	  {
-        name: "Jane Doe",
-        username: "@janedoe",
-        image: "https://randomuser.me/api/portraits/women/45.jpg",
-        feedback: "Aplikasi ini sangat membantu saya dalam bekerja, sangat mudah digunakan!",
-        date: "Feb 10, 2027"
-      },
-      {
-        name: "John Smith",
-        username: "@johnsmith",
-        feedback: "Website ini sangat profesional dan memudahkan bisnis saya berkembang.",
-        date: "Feb 15, 2027"
-      },
-	  {
-        name: "Jane Doe",
-        username: "@janedoe",
-        image: "https://randomuser.me/api/portraits/women/45.jpg",
-        feedback: "Aplikasi ini sangat membantu saya dalam bekerja, sangat mudah digunakan!",
-        date: "Feb 10, 2027"
-      },
-      {
-        name: "John Smith",
-        username: "@johnsmith",
-        feedback: "Website ini sangat profesional dan memudahkan bisnis saya berkembang.",
-        date: "Feb 15, 2027"
-      }
-    ]);
-
+//  const testimonials = ref([
+//       {
+//         name: "Jane Doe",
+//         username: "@janedoe",
+//         image: "https://randomuser.me/api/portraits/women/45.jpg",
+//         feedback: "Aplikasi ini sangat membantu saya dalam bekerja, sangat mudah digunakan!",
+//         date: "Feb 10, 2027"
+//       },
+//       {
+//         name: "John Smith",
+//         username: "@johnsmith",
+//         feedback: "Website ini sangat profesional dan memudahkan bisnis saya berkembang.",
+//         date: "Feb 15, 2027"
+//       },
+// 	  {
+//         name: "Jane Doe",
+//         username: "@janedoe",
+//         image: "https://randomuser.me/api/portraits/women/45.jpg",
+//         feedback: "Aplikasi ini sangat membantu saya dalam bekerja, sangat mudah digunakan!",
+//         date: "Feb 10, 2027"
+//       },
+//       {
+//         name: "John Smith",
+//         username: "@johnsmith",
+//         feedback: "Website ini sangat profesional dan memudahkan bisnis saya berkembang.",
+//         date: "Feb 15, 2027"
+//       },
+// 	  {
+//         name: "Jane Doe",
+//         username: "@janedoe",
+//         image: "https://randomuser.me/api/portraits/women/45.jpg",
+//         feedback: "Aplikasi ini sangat membantu saya dalam bekerja, sangat mudah digunakan!",
+//         date: "Feb 10, 2027"
+//       },
+//       {
+//         name: "John Smith",
+//         username: "@johnsmith",
+//         feedback: "Website ini sangat profesional dan memudahkan bisnis saya berkembang.",
+//         date: "Feb 15, 2027"
+//       },
+// 	  {
+//         name: "Jane Doe",
+//         username: "@janedoe",
+//         image: "https://randomuser.me/api/portraits/women/45.jpg",
+//         feedback: "Aplikasi ini sangat membantu saya dalam bekerja, sangat mudah digunakan!",
+//         date: "Feb 10, 2027"
+//       },
+//       {
+//         name: "John Smith",
+//         username: "@johnsmith",
+//         feedback: "Website ini sangat profesional dan memudahkan bisnis saya berkembang.",
+//         date: "Feb 15, 2027"
+//       }
+//     ]);
 const partners = ref([
   { name: "GMEDIA", logo: "https://fosan.id/images/logo_gmedia.png" , desc:'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nam facere nobis illum quidem iusto architecto animi, sunt temporibus ipsa accusantium quo voluptatem alias ex excepturi aliquid illo, corrupti commodi!' },
   { name: "VANTURA", logo: "https://fosan.id/foto/1598452897234-logo.png" , desc:`Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate nihil non praesentium obcaecati? Eveniet accusamus quas consequuntur aperiam porro consectetur optio. Non commodi earum sed minima? Cupiditate ratione nesciunt voluptate!`},
@@ -149,9 +141,10 @@ const partners = ref([
   { name: "Finix 76", logo: "https://fosan.id/images/finix76.jpeg"  , desc:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum provident itaque, ducimus ipsam soluta praesentium dolore dolorum molestiae omnis aut voluptates sit autem eveniet minima nihil quia consequuntur non voluptatibus.`},
   { name: "Azura Labs", logo: "https://fosan.id/foto/1597229192001-Logo%20(1).png"  , desc:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatum in labore ratione earum neque fugit? Ad excepturi ex nam laudantium quas iste? Suscipit qui laborum reiciendis vel quaerat sunt.`},
   { name: "Company X", logo: "https://fosan.id/foto/1596498047671-Group%201.png"  , desc:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nobis molestiae tempore ratione inventore vitae voluptatum magni in odio perspiciatis a minima harum itaque veritatis quo quos nesciunt! Odit, magnam.`}, 
-
-			
 ]);
+const tentang = computed(()=> [{tentang:t('company.tentang'),company:t('company.company'),deskripsi:t('company.deskripsi')}])
+const lokasi =  computed(()=> [{lokasi:t('lokasi.lokasi'),visit:t('lokasi.visit'),alamat:t('lokasi.alamat')}])
+
 </script>
 
 <style scoped>

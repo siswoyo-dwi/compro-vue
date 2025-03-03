@@ -5,14 +5,115 @@
       "contact": "Contact Us",
       "technology": "Technology",
       "about": "About Us",
-      "portfolio": "Portfolio"
-    },
+      "portfolio": "Portfolio"},
+    "partner":"Recognitions and Partnerships",
+    "running_text":"Welcome to Fosan",
+    "jelajah":"Explore Now",
     "welcome": "Welcome to our website!",
+    "kembali":"Back",
     "kategori":{
       "hospitality":"Healthcare",
       "education":"Learning System",
       "WMS":"Logistics",
-      "HR":"Professional Services Companies"
+      "HR":"Professional Services Companies"},
+    "company":{
+      "tentang":"About Company",
+      "company":"About Fosan",
+      "deskripsi":"Fosan is an IT consulting and software development company that started from a Full Stack Developer Coding Bootcamp. Our focus on current industry developments shows that we can call flexibly and are ready to improve our skills to meet future project needs. Work transparency, timeline control, and consistently high service quality are our professionalism in providing solutions and helping clients achieve their business goals."
+},
+    "lokasi":{
+      "lokasi":"Our Location",
+      "visit":"Visit Our Office",
+      "alamat":"Address"},
+    "pemimpin":"Leadership Team",
+    "layanan":{
+      "hero":"IT Consulting and Software Development Services",
+      "deskripsi_hero":"We help your business grow with modern, fast and responsive software.",
+      "button_hero":"Our Services",
+      "layanan":"Our Services",
+      "layanan1":"Web Development",
+      "layanan2":"IT Consulting",
+      "alasan":"Why Choose Us?",
+      "alasan1":{"title":"Modern Design","deskripsi":"Using the latest technology for elegant design."},
+      "alasan2":{"title":"Security Guaranteed","deskripsi":"Customer data security is our top priority."},
+      "alasan3":{"title":"Support 24/7","deskripsi":"Our team is ready to help anytime if there are any problems."},
+      "desk_job":[
+        {"title": "Software consulting","text": "We combine deep multi-domain expertise, client-centric thinking, and an innovative approach to design and plan reliable solutions that perfectly match the needs and behaviors of their users."},
+        {"title": "Custom software development","text": "We develop software with long-term business value - uniquely tailored to your business processes and tailored to future needs."},
+          {
+              "title": "Enterprise software development",
+              "text": "We build multi-faceted enterprise solutions that can easily withstand the highest loads, scale with your business growth, and flexibly accommodate functional expansions."
+          },
+          {
+              "title": "Software product development",
+              "text": "We create robust SaaS, mobile, and desktop software products with great UX that drive fast-paced development."
+          },
+          {
+              "title": "Cloud development",
+              "text": "We design and deliver scalable, portable, and secure cloud applications while helping migrate applications of any complexity from on-premises infrastructure to the cloud."
+          },
+          {
+              "title": "Support and maintenance",
+              "text": "We ensure the smooth operation and relevance of your software through continuous performance monitoring, proactive optimization, rapid issue resolution, and the delivery of new features and integrations."
+          },
+          {
+              "title": "Legacy software modernization",
+              "text": "We redesign and upgrade existing software to help you achieve modern solutions with optimal costs and minimal disruption to business workflows."
+          },
+          {
+              "title": "Web Portals",
+              "text": "The web portals we create automatically collect data from enterprise systems and serve as an up-to-date information source and assistance platform for users."
+          },
+          {
+              "title": "Websites",
+              "text": "We ensure our websites have an easy-to-use page editor for managing dynamic content."
+          },
+          {
+              "title": "Web Apps",
+              "text": "We enhance business efficiency using scalable microservices architecture, enabling high automation in all business processes."
+          },
+          {
+              "title": "E-commerce",
+              "text": "We implement intelligent automation to streamline workflows and integrate enterprise applications for seamless operations."
+          },
+          {
+              "title": "Digital Transformation",
+              "text": {
+                  "a": "a. Digital transformation consulting",
+                  "b": "b. Software modernization",
+                  "c": "c. Software consulting",
+                  "d": "d. Custom software",
+                  "e": "e. Cloud enablement"
+              }
+          },
+          {
+              "title": "IT and Software Support",
+              "text": {
+                  "a": "a. Application maintenance and support",
+                  "b": "b. IT infrastructure support",
+                  "c": "c. Managed IT services",
+                  "d": "d. Helpdesk"
+              }
+          },
+          {
+              "title": "IT Service Management",
+              "text": {
+                  "a": "a. ITSM consulting",
+                  "b": "b. Software QA consulting",
+                  "c": "c. DevOps consulting"
+              }
+          },
+          {
+              "title": "Cybersecurity",
+              "text": {
+                  "a": "a. Cybersecurity consulting",
+                  "b": "b. Security testing",
+                  "c": "c. Managed security services",
+                  "d": "d. Compliance assessment & consulting"
+              }
+          }
+      ]
+      
     }
   }
   

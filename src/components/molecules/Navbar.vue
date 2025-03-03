@@ -29,8 +29,8 @@
         <div class="flex items-center space-x-4">
           <!-- Language Dropdown -->
           <select v-model="locale" class="border p-1 rounded bg-transparent cursor-pointer">
-            <option value="en">🇬🇧 English</option>
-            <option value="id">🇮🇩 Bahasa Indonesia</option>
+            <option value="en" class="text-black">🇬🇧 English</option>
+            <option value="id" class="text-black">🇮🇩 Bahasa Indonesia</option>
           </select>
 
           <!-- Dark/Light Mode Toggle -->

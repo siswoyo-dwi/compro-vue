@@ -1,5 +1,5 @@
 <template>
-		<div :class="arrayClass+' bg-gradient-to-r from-gray-300 to-blue-50 dark:from-slate-900 dark:to-blue-800 flex justify-center items-center min-h-screen'">
+		<div :class="arrayClass+'  flex justify-center items-center min-h-screen'">
       <div class="flex  justify-center">
         <!-- <div v-for="item in categories" :key="item.id"  class="mx-4">
             <RouterLink v-if="item.kategori_id == route.params.id" :to="`/portfolio/detail/${item.id}`" class="block bg-white shadow-lg rounded-lg p-6 text-center transform transition-transform hover:scale-105">

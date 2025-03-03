@@ -7,12 +7,56 @@
       "technology": "Teknologi",
       "portfolio": "Portofolio"
     },
+    "partner":"Pengakuan dan Kemitraan",
+    "running_text":"Selamat Datang di Fosan",
+    "jelajah":"Jelajah",
     "welcome": "Selamat datang di website kami!",
     "kategori":{
       "hospitality":"Kesehatan",
       "education":"Pendidikan",
       "WMS":"Pengelola operasional gudang",
       "HR":"Sumber Daya Manusia"
+    },
+    "company":{
+      "tentang":"Tentang Company",
+      "company":"Tentang Fosan",
+      "deskripsi":"Fosan merupakan perusahaan konsultasi IT dan pengembang perangkat lunak yang berawal dari Bootcamp Coding Full Stack Developer. Fokus kami yang berfokus pada perkembangan industri saat ini, menunjukkan bahwa kami dapat bersikap fleksibel dan siap meningkatkan keahlian untuk memenuhi tuntutan project di masa depan. Transparansi kerja, pengendalian timeline, dan kualitas layanan yang tinggi secara konsisten merupakan wujud professional kami dalam memberikan solusi dan membantu klien mencapai tujuan bisnis mereka."
+    },
+    "lokasi":{
+      "lokasi":"Lokasi kami",
+      "visit":"Kunjungi Kami",
+      "alamat":"Alamat"
+    },
+    "kembali":"Kembali",
+    "pemimpin":"Kepemimpinan Tim",
+    "layanan":{
+      "hero":"Jasa Konsultasi IT dan Pengembangan Software",
+      "deskripsi_hero":"Kami membantu bisnis Anda berkembang dengan software modern, cepat, dan responsif",
+      "button_hero":"Lihat Layanan Kami",
+      "layanan":"Layanan Kami",
+      "layanan1":"Pengembangan Web",
+      "layanan2":"Konsultasi",
+      "alasan":"Mengapa Memilih Kami?",
+      "alasan1":{"title":"Desain Modern","deskripsi":"Menggunakan teknologi terbaru untuk desain yang elegan."},
+      "alasan2":{"title":"Keamanan Terjamin","deskripsi":"Keamanan data pelanggan adalah prioritas utama kami."},
+      "alasan3":{"title":"Support 24/7","deskripsi":"Tim kami siap membantu kapan saja jika ada kendala."},
+      "desk_job":[
+        {"title": "Konsultasi perangkat lunak","text": "Kami menggabungkan keahlian multi-domain yang mendalam, pemikiran yang berpusat pada klien, dan pendekatan inovatif untuk merancang dan merencanakan solusi andal yang sangat sesuai dengan kebutuhan dan perilaku penggunanya."},
+        {"title": "Pengembangan perangkat lunak khusus","text": "Kami mengembangkan perangkat lunak dengan nilai bisnis jangka panjang – disesuaikan secara unik dengan proses bisnis anda dan disesuaikan dengan kebutuhan masa depan."},
+        {"title": "Pengembangan perangkat lunak perusahaan","text": "Kami membangun solusi perusahaan multi-segi yang dapat dengan mudah menahan beban tertinggi, ditingkatkan seiring pertumbuhan bisnis anda, dan secara fleksibel mengakomodasi perluasan fungsional."},
+        {"title": "Pengembangan produk perangkat lunak","text": "Kami menciptakan produk perangkat lunak SaaS, seluler, dan desktop yang tangguh dengan UX yang hebat dan mendorong pengembangan yang bergerak cepat."},
+        {"title": "Pengembangan Cloud","text": "Kami merancang dan menghadirkan aplikasi cloud yang skalabel, portabel, dan aman serta membantu memigrasikan aplikasi dengan kompleksitas apa pun dari infrastruktur lokal ke cloud."},
+        {"title": "Dukungan dan pemeliharaan","text": "Kami memastikan kelancaran fungsi dan relevansi perangkat lunak anda melalui pemantauan kinerja berkelanjutan, pengoptimalan proaktif, penyelesaian masalah dengan cepat, pengiriman fitur dan integrasi baru."},
+        {"title": "Modernisasi perangkat lunak lama","text": "Kami mendesain ulang dan meningkatkan perangkat lunak yang ada untuk membantu anda mendapatkan solusi modern dengan biaya optimal dan gangguan minimal terhadap alur kerja bisnis."},
+        {"title": "Portal Web","text": "Portal web yang kami buat secara otomatis mengumpulkan data dari sistem perusahaan dan menjadi sumber informasi terkini dan bantuan bagi pengguna."},
+        {"title": "Situs web","text": "Kami memastikan situs web kami memiliki editor halaman yang mudah digunakan untuk pengelolaan konten dinamis."},
+        {"title": "Aplikasi Web","text": "Kami meningkatkan efisiensi bisnis dengan menggunakan arsitektur layanan mikro yang dapat diskalakan dan memungkinkan otomatisasi tinggi pada semua proses bisnis."},
+        {"title": "Perdagangan elektronik","text": "Kami menerapkan otomatisasi cerdas untuk menyederhanakan alur kerja dan mengintegrasikan aplikasi perusahaan untuk pengoperasian yang koheren."},
+        {"title": "Transformasi Digital","text":{"a":"a. Digital transformation consulting","b":"b.Software modernization","c":"c.Software consulting","d":"d. Custom software","e":"e. Cloud enablement"}},
+        {"title": "Dukungan TI dan Perangkat Lunak","text": {"a":"a. Application maintenance and support","b":"b.IT infrastructure support","c":"c.Managed IT services","d":"d. Helpdesk"}},
+        {"title": "Manajemen Layanan TI","text": {"a":"a. ITSM consulting","b":"b. Softwre QA consulting","c":"c. DevOps consulting"}},
+        {"title": "Keamanan siber","text": {"a":"a.Cybersecurity consulting","b":"b.Security testing","c":"c.Managed security services","d":"d.Compliance assessment & consulting"}}
+      ]
     }
   }
   

@@ -1,22 +1,16 @@
 <template >
      <div class="container mt-32 mx-auto px-6 py-12">
            <!-- Judul -->
-           <h2 class="text-center text-3xl  md:text-4xl font-semibold mb-12">
-                    About Company
-        </h2>
+           <h2 class="text-center text-3xl  md:text-4xl font-semibold mb-12">{{ tentang[0].tentang }}</h2>
         <!-- Kontainer utama -->
         <div class="flex flex-col  md:flex-row  gap-12">
             <!-- Bagian Teks -->
             <div class="w-full md:w-1/2  mt-[-20px]">
-                <h2 class="text-3xl md:text-4xl font-bold  mb-4">
-                    About Fosan
-                </h2>
-                <p class=" leading-relaxed mb-6">
-                    Fosan merupakan perusahaan konsultasi IT dan pengembang perangkat lunak yang berawal dari Bootcamp Coding Full Stack Developer. Fokus kami yang berfokus pada perkembangan industri saat ini, menunjukkan bahwa kami dapat bersikap fleksibel dan siap meningkatkan keahlian untuk memenuhi tuntutan project di masa depan. Transparansi kerja, pengendalian timeline, dan kualitas layanan yang tinggi secara konsisten merupakan wujud professional kami dalam memberikan solusi dan membantu klien mencapai tujuan bisnis mereka.
-                </p>
-                <a href="#" class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition">
+                <h2 class="text-3xl md:text-4xl font-bold  mb-4">{{ tentang[0].company }}</h2>
+                <p class=" leading-relaxed mb-6">{{ tentang[0].deskripsi }}</p>
+                <!-- <a href="#" class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition">
                     Learn More
-                </a>
+                </a> -->
             </div>
 
             <!-- Bagian Gambar -->
@@ -28,7 +22,7 @@
      <div class="container mt-32 mx-auto px-6 py-12">
            <!-- Judul -->
            <h2 class="text-center text-3xl  md:text-4xl font-semibold mb-12">
-            Leadership Team
+            {{ pemimpin }}
         </h2>
         <!-- Kontainer utama -->
         <div class="flex flex-col  md:flex-row  gap-12">
@@ -40,9 +34,9 @@
 
                 <p class=" leading-relaxed mb-6">
                 </p>
-                <router-link :to="'#'" class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition">
+                <!-- <router-link :to="'#'" class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition">
                     Learn More
-                </router-link>
+                </router-link> -->
             </div>
 
             <!-- Bagian Gambar -->
@@ -98,3 +92,11 @@
         </div>
     </div>
 </template> 
+<script setup>
+import { ref,computed  } from "vue";
+import { useI18n } from 'vue-i18n';
+const { t, locale } = useI18n();
+const tentang = computed(()=> [{tentang:t('company.tentang'),company:t('company.company'),deskripsi:t('company.deskripsi')}])
+const pemimpin = computed(()=>t('pemimpin'))
+
+</script>

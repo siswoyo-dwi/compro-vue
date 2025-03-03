@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto px-6 py-10">
-    <h2 class="text-2xl font-semibold text-center  mb-6">Recognitions and Partnerships</h2>
+    <h2 class="text-2xl font-semibold text-center  mb-6">{{ partner }}</h2>
     
     <Swiper
       :modules="[Autoplay]"
@@ -29,11 +29,12 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref ,computed} from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-
+import { useI18n } from 'vue-i18n';
+const { t, locale } = useI18n();
 // Props
 defineProps({
   partners: {
@@ -44,6 +45,7 @@ defineProps({
 
 // Modules
 const modules = [Navigation, Pagination, Autoplay];
+const partner = computed(()=>t('partner'))
 
 </script>
 

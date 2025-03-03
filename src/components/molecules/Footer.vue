@@ -18,8 +18,8 @@
           <div>
             <h3 class="font-semibold text-gray-800">Company</h3>
             <ul class="text-gray-500 text-sm space-y-1 mt-2">
-              <li><router-link :to="'/about_us'" class="hover:text-black">About us</router-link></li>
-              <li><router-link :to="'/services'" class="hover:text-black">Service</router-link></li>
+              <li><router-link :to="'/about_us'" class="hover:text-black">{{ menuItems[1].name }}</router-link></li>
+              <li><router-link :to="'/services'" class="hover:text-black">{{ menuItems[2].name }}</router-link></li>
             </ul>
           </div>
           <div>
@@ -58,30 +58,28 @@
     </footer>
   </template>
   <script setup>
-  import { ref, watch } from "vue";
+  import { ref, watch ,computed} from "vue";
   import { useI18n } from 'vue-i18n';
   import Healthcare from '../../components/images/Healthcare.jpg';
   import Human_Resource from '../../components/images/Human Resource.jpg';
   import Learning_Management_System from '../../components/images/Learning Management System.jpg';
   import Warehouse_Management_System from '../../components/images/Warehouse Management System.jpg';
 
-   const { t, locale } = useI18n();
+  const { t, locale } = useI18n();
   
-  const categories = ref([]);
-  
-  const updateCategories = () => {
-    categories.value = [
+  const categories =computed(()=> [
       { id: 1, kategori: t('kategori.hospitality'), foto: Healthcare },
       { id: 2, kategori: t('kategori.education'), foto: Learning_Management_System },
       { id: 3, kategori: t('kategori.WMS'), foto: Warehouse_Management_System },
       { id: 4, kategori: t('kategori.HR'), foto:Human_Resource }
-    ];
-  };
-  
-  // Panggil updateCategories saat pertama kali di-load
-  updateCategories();
-  
-  // Perbarui data setiap kali bahasa berubah
-  watch(locale, updateCategories);
+    ])
+    const menuItems = computed(() => [
+  { name: t('navbar.home'), link: '/' },
+  { name: t('navbar.about'), link: '/about_us' },
+  { name: t('navbar.services'), link: '/services' },
+  { name: t('navbar.technology'), link: '/teknologi' },
+  { name: t('navbar.portfolio'), link: '/portfolio' },
+  { name: t('navbar.contact'), link: 'https://api.whatsapp.com/send/?phone=6282227470745' },
+]);
   </script>
   

@@ -15,7 +15,7 @@
         <div class="overlay">
           <div class="text-box">
             <h1 class="animated-text">{{ currentText }}</h1>
-            <Button class="cta-B">Explore Now</Button>
+            <Button class="cta-B">{{ jelajah[0].text }}</Button>
           </div>
         </div>
       </div>
@@ -24,13 +24,14 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted ,computed} from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
-
+import { useI18n } from 'vue-i18n';
+const { t, locale } = useI18n();
 // Define props
 const props = defineProps({
   images: {
@@ -42,6 +43,7 @@ const props = defineProps({
 // State
 const currentText = ref("");
 const currentIndex = ref(0); // Menyimpan index aktif
+const jelajah = computed(() => [{text:t('jelajah')}])
 
 // Function untuk efek ketik
 const typeEffect = async (text) => {
