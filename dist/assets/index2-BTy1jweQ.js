@@ -1,1 +1,0 @@
-import{_ as e,o,a as r}from"./index-UIjvRKoQ.js";const t={},c={class:"w-full min-h-screen bg-gradient-to-r from-gray-100 to-yellow-500"};function n(s,a){return o(),r("div",c)}const l=e(t,[["render",n]]);export{l as default};

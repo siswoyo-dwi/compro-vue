@@ -64,7 +64,7 @@ const descriptions = computed(()=>[
         {    id:11,
             kategori:2,
             title: t("layanan.desk_job[10].title"),
-            text: [t("layanan.desk_job[10].text.a"),t("layanan.desk_job[10].text.b"),t("layanan.desk_job[10].text.c"),t("layanan.desk_job[10].text.d"),t("layanan.desk_job[10].text.e"),]},
+            text: t("layanan.desk_job[10].text")},
         {    id:12,
             kategori:3,
             title: t("layanan.desk_job[11].title"),
