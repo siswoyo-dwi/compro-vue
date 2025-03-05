@@ -15,7 +15,7 @@
 
             <!-- Bagian Gambar -->
             <div class="w-full md:w-1/2">
-                <img src="https://www.scnsoft.com/slider-presentation/boris-and-nick.jpg" alt="About Fosan" class="w-full rounded-lg shadow-lg">
+                <img :src="fosan" alt="About Fosan" class="w-full rounded-lg shadow-lg">
             </div>
         </div>
      </div>
@@ -95,6 +95,8 @@
 <script setup>
 import { ref,computed  } from "vue";
 import { useI18n } from 'vue-i18n';
+import fosan from '../../components/images/fosan.jpg';
+
 const { t, locale } = useI18n();
 const tentang = computed(()=> [{tentang:t('company.tentang'),company:t('company.company'),deskripsi:t('company.deskripsi')}])
 const pemimpin = computed(()=>t('pemimpin'))
