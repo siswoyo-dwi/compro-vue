@@ -10,6 +10,9 @@ export default {
 			fontFamily: {
 				montserrat: ['Montserrat', 'sans-serif'],
 				inter: ['Inter', 'sans-serif'],
+				sans: ['Arial', 'sans-serif'], 
+				serif: ['Merriweather', 'Georgia', 'serif'],  
+				mono: ['Courier New', 'Courier', 'monospace'], 
 			  },
 			animation: {
 				sideways: "sideways 0.5s linear infinite",
