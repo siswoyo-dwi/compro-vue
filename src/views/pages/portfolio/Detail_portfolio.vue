@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center items-start min-h-screen pt-20 px-4 ">
-    <div v-if="project" class="w-full sm:w-3/5 lg:w-2/5 mx-auto bg-white shadow-lg rounded-lg p-6 mt-20">
+    <div v-if="project" class="w-full sm:w-4/5 lg:w-5/5 mx-auto bg-white shadow-lg rounded-lg p-6 mt-20">
       <!-- Gambar Proyek -->
       <img :src="project.foto" alt="Project Image" class="w-full h-48 object-cover rounded-md mb-6">
 
@@ -25,15 +25,24 @@
       <a href='https://api.whatsapp.com/send/?phone=6282227470745' class="px-4 py-2 mt-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm transition">
             Hubungi Kami
           </a>
-          <p class="text-sm text-gray-700 mb-6 leading-relaxed font-sans mt-4">{{ project.modul.text }}</p>
+          <p class="text-xl text-gray-700 mb-6 leading-relaxed font-sans mt-4">{{ project.modul.text }}</p>
 
       <div v-for="(idx, index) in project.modul.list" :key="idx" class="mb-4">
         <p class="text-black font-sans">{{ index + 1 }}. {{ idx.name }}</p>
+        <p class="text-black font-sans">{{ idx.description }}</p>
         <div v-for="list in idx.subModules" :key="list" class="ml-6 text-gray-700">
           <p class="font-sans" >- {{ list.name }}</p>
         </div>
       </div>
+      <p class="text-xl text-gray-700 mb-6 leading-relaxed font-sans mt-4">{{ project.kelebihan.text }}</p>
 
+      <div v-for="(idx, index) in project.kelebihan.list" :key="idx" class="mb-4">
+        <p class="text-black font-sans">{{ index + 1 }}. {{ idx.name }}</p>
+        <p class="text-black font-sans">{{ idx.description }}</p>
+        <div v-for="list in idx.subModules" :key="list" class="ml-6 text-gray-700">
+          <p class="font-sans" >- {{ list.name }}</p>
+        </div>
+      </div>
       <!-- Teknologi yang Digunakan -->
       <div>
         <h3 class="text-md font-semibold mb-4 text-black">Teknologi yang Digunakan:</h3>
@@ -58,7 +67,14 @@ import { ref, computed } from 'vue';
 import { useRoute } from 'vue-router';
 import osbond from '../../../components/images/Osbond Gym.jpg';
 import simpus from '../../../components/images/SIMPUS.jpg';
-import simrs from '../../../components/images/SIMRS1.jpg';
+import simrs from '../../../components/images/simrs.jpg';
+import livejapan from '../../../components/images/livejapan.jpg';
+import simadu from '../../../components/images/simadu.jpg';
+import stara from '../../../components/images/stara.jpg';
+import wmsbaj from '../../../components/images/wmsbaj.jpg';
+import mdclinic from '../../../components/images/mdclinic.jpg';
+
+
 import { useI18n } from 'vue-i18n';
 const { t, locale } = useI18n();
 // Data Proyek Dummy
@@ -184,17 +200,138 @@ const projects = ref([
     description: "Modul ini memungkinkan arus pertukaran data secara real-time, meliputi data rekam medis pasien, dan informasi pasien antar SIM-RS dan SATU SEHAT Platform."
   }
 ]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
-    { id: 3, kategori_id: 2, portfolio: "BPSDM", foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
-    { id: 4, kategori_id: 2, portfolio: "Poltekkes KEMENKES Semarang", foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
+    { id: 3, kategori_id: 2, portfolio: "BPSDM", foto: mdclinic , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
+    { id: 4, kategori_id: 2, portfolio: "Poltekkes Simadu V2", foto: simadu , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'Merupakan platform sistem informasi akademik mahasiswa Poltekkes Kemenkes Semarang yang dapat mengelola kegiatan-kegiatan yang berhubungan dengan perkuliahan.',modul:{text:'Fitur yang ditawarkan:',list:[ {
+      name: `Content Management`,
+      description:`Fitur yang membuat user memiliki batasan akses dalam menggunakan sistem. User dapat ditentukan oleh pihak kampus, sehingga pengguna yang mengakses mendapatkan manfaat yang berbeda-beda sesuai dengan fungsinya.`
+    },{
+      name: `Kalender Akademik`,
+      description:`Fitur ini memungkinkan admin dapat mengelola kalender akademik dan periode perkuliahan yang sesuai dengan semester saat ini. Selain itu, mahasiswa dapat secara langsung melihat kalender akademik dan periode perkuliahan yang telah di-update oleh admin.`
+    },{
+      name: `Her-Registrasi`,
+      description:`Fitur yang memudahkan pengguna untuk mengelola data registrasi, registrasi cuti, data mahasiswa yang belum melakukan registrasi, data pengajuan cuti, status aktif perkuliahan, dan status pembayaran dari mahasiswa.`
+    },{
+      name: `Kegiatan Perkuliahan`,
+      description:`fitur yang memudahkan pengguna mengelola dan menampilkan data mata kuliah, substansi kuliah, kurikulum, mata kuliah kurikulum, kelas kuliah, jadwal perkuliahan, jadwal UAT, jadwal UAS, dan paket KRS. `
+    },{
+      name: `Manajemen Nilai`,
+      description:`Fitur yang memudahkan pengguna dalam melakukan setting manajemen nilai sesuai dengan mata kuliah yang diampu oleh dosen dan pengelolaan skala nilai masing-masing prodi yang ada di kampus.`
+    },{
+      name: `Nilai Mahasiswa`,
+      description:`Fitur ini memudahkan pengajar dalam menyusun dan mendapatkan laporan perkembangan mahasiswa. Fitur ini akan memberikan laporan monitoring seperti tingkat kehadiran, seberapa sering mahasiswa mengakses materi pembelajaran, hingga rekap hasil penilaian mata kuliah, UTS, dan UAS yang telah dilakukan oleh mahasiswa. Selain pengajar, mahasiswa juga dapat melihat perkembangan kemampuannya dalam fitur tersebut.`
+    },{
+      name: `Manajemen Tugas Akhir`,
+      description:`Fitur ini memudahkan pengguna dalam memonitori perkembangan tugas akhir yang sedang berlangsung. Manajemen tugas akhir yang meliputi pengajuan judul dan pengajuan ujian/ seminar hasil.`
+    },{
+      name: `Wisuda`,
+      description:`Fitur yang memudahkan pengguna dalam memantau kegiatan wisuda yang meliputi daftar periode wisuda dan peserta wisuda yang tersedia.`
+    },{
+      name: `Penjaminan Mutu`,
+      description:`Fitur penjaminan mutu, memudahkan pengguna dalam mendapatkan informasi terkait profil perguruan tinggi dan akreditasi setiap prodi yang yang dimiliki oleh kampus.`
+    },{
+      name: `Management Ruangan`,
+      description:`Fitur ini memudahkan pengguna dalam memonitori ruangan/ kelas yang digunakan untuk perkuliahan dan melakukan booking ruangan untuk kegiatan perkuliahan berikutnya.`
+    }
+  ]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'Kelebihan:',list:[
+    {
+      name: `Tampilan mudah digunakan`,
+      description:``
+    },{
+      name: `Efisiensi Sistem`,
+      description:``
+    },{
+      name: `Memudahkan Evaluasi`,
+      description:``
+    }]},},
+    { id: 14, kategori_id: 2, portfolio: "Live English Japan", foto: livejapan , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:`Merupakan platform yang dikembangkan untuk pembelajaran/ kursus digital yang membuat proses pembelajaran bahasa inggris, manajemen materi, evaluasi perkembangan siswa dan pembayaran kelas menjadi lebih mudah. Sehingga kegiatan kursus online menjadi lebih fleksibel, interaktif, dan efisien.`,modul:{text:'Fitur yang kami tawarkan:',list:[ 
+    {
+      name: `Content Management`,
+      description:`Fitur yang membuat pengajar dan siswa memiliki batasan akses dalam menggunakan sistem. Pengajar dapat mengelola materi ajar berupa teks, video, maupun audio. Sedangkan siswa dapat menggunakan akunnya untuk mendapatkan kelas dan materi yang ada di sistem.`
+    },
+    {
+      name: `Pendaftaran Online`,
+      description:`Fitur ini memungkinkan siswa dapat melakukan pendaftaran secara online dengan mudah dan cepat. Selain itu, siswa dapat melakukan booking kelas kursus sesuai dengan jadwal dan guru yang ada pada sistem.`
+    },
+    {
+      name: `Kelas Online`,
+      description:`Fitur ini digunakan untuk melakukan pembelajaran online. Siswa dapat belajar melalui materi dalam bentuk teks, video, maupun audio yang telah disiapkan oleh pengajar.`
+    },
+    {
+      name: `Forum Diskusi`,
+      description:`Fitur ini memungkinkan siswa dan pengajar dapat berdiskusi membahas materi yang diberikan melalui forum. Fitur ini dapat dibuat dalam bentuk privat maupun publik (kelas besar).`
+    },
+    {
+      name: `Video Conference`,
+      description:`Fitur ini membuat pengajar dan siswa dapat berinteraksi secara langsung melalui panggilan video tanpa harus bertatap muka.`
+    },
+    {
+      name: `Evaluations`,
+      description:`Fitur evaluations berisi kuis dan ujian online. Kuis dan ujian online dalam sistem memudahkan siswa dalam melakukan kuis atau ujian online yang telah disiapkan oleh pengajar sebagai bagian dari evaluasi kegiatan kursus.`
+    },
+    {
+      name: `Lesson Hystory`,
+      description:`Fitur ini memudahkan pengajar dalam menyusun dan mendapatkan laporan perkembangan siswa. Fitur ini akan memberikan laporan monitoring seperti tingkat kehadiran siswa, seberapa sering siswa mengakses materi pembelajaran, hingga rekap hasil kuis dan ujian siswa. Selain pengajar, siswa juga dapat melihat perkembangan kemampuannya dalam fitur tersebut.`
+    },
+    {
+      name: `Order and Payment System`,
+      description:`Fitur ini memudahkan siswa dalam melihat kelas dan jadwal yang tersedia, melakukan booking kelas, serta pembayaran kelas yang dapat dilakukan dengan beberapa jenis pembayaran digital. Sehingga dari awal pendaftaran, pembayaran, dan kegiatan pembelajaran dapat dilakukan dalam satu sistem ini.`
+    },
+    
+  ]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'Kelebihan:',list:[{
+      name: `Tampilan mudah digunakan`,
+    },
+    {
+      name: `Meningkatkan efektivitas pembelajaran`,
+    },
+    {
+      name: `Memudahkan Evaluasi`,
+    },
+   ]},},
     { id: 5, kategori_id: 3, portfolio: "Manfaat [Penjualan Tepung]", foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
-    { id: 6, kategori_id: 3, portfolio: "Warehouse Management System Bahtera Adi Jaya", foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
-    { id: 7, kategori_id: 4, portfolio: "ERP Solutions", foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
-    { id: 8, kategori_id: 4, portfolio: "CRM Solutions", foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
-    { id: 9, kategori_id: 4, portfolio: "Corporate Finance Solutions", foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
-    { id: 10, kategori_id: 4, portfolio: "HR Management Solutions", foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
-    { id: 11, kategori_id: 4, portfolio: "Project Management Solutions", foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
-    { id: 12, kategori_id: 4, portfolio: "Document Management Solutions", foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
-]);
+    { id: 6, kategori_id: 3, portfolio: "Warehouse Management System Bahtera Adi Jaya", foto: wmsbaj , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
+    // { id: 7, kategori_id: 4, portfolio: "ERP Solutions", foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
+    // { id: 8, kategori_id: 4, portfolio: "CRM Solutions", foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
+    // { id: 9, kategori_id: 4, portfolio: "Corporate Finance Solutions", foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
+    // { id: 10, kategori_id: 4, portfolio: "HR Management Solutions", foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
+    // { id: 11, kategori_id: 4, portfolio: "Project Management Solutions", foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
+    // { id: 12, kategori_id: 4, portfolio: "Document Management Solutions", foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
+    { id: 15, kategori_id: 4, portfolio: "STARA", foto: stara , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'Merupakan platform Human Reosurces Information System yang dapat mengelola dan mengotomatisasi berbagai aspek sumber daya manusia dalam perusahaan, mulai dari manajemen data karyawan, rekrutmen, manajemen kinerja, manajemen gaji, pelaporan, dan lainnya. Sistem ini bukan sekedar alat teknologi, tetapi menjadi strategi yang memberikan banyak manfaat terhadap perusahaan.',modul:{text:'Fitur yang kami tawarkan:',list:[
+    {
+      name: `Content Management`,
+      description:`Fitur yang membuat pengguna memiliki batasan akses dalam menggunakan sistem berdasarkan rolenya di perusahaan.`
+    },{
+      name: `Management Karyawan`,
+      description:`Fitur ini memudahkan pengguna dalam mengelola data karyawan secara keseluruhan seperti  identitas lengkap karyawan, perjanjian kerja, perintah kerja, dan data mutasi.`
+    },{
+      name: `Lowongan Pekerjaan`,
+      description:`Fitur ini memudahkan pengguna dalam mengelola daftar lowongan pekerjaan akan dilakukan oleh perusahaan. Fitur ini juga memungkinkan pengguna dapat memonitori dan mengevaluasi kegiatan perekrutan dari penyebaran lowongan pekerjaan sampai dengan hasil tahap seleksi pelamar.`
+    },{
+
+      name: `Laporan Kecelakaan Kerja`,
+      description:`Fitur ini memudahkan pengguna dalam mengelola data kecelakaan kerja yang terjadi pada karyawan selama melakukan pekerjaan.`
+    },{
+      name: `Laporan Karyawan`,
+      description:`Fitur ini memungkinkan pengguna dapat mengelola laporan terkait karyawan yang meliputi proyeksi gaji, rekap gaji, potongan gaji, THR, dan akumulasi lembur.`
+    },{
+      name: `Penilaian Karyawan`,
+      description:`Fitur ini memudahkan pengguna dalam melakukan evaluasi kinerja masing-masing karyawan. Sehingga data tersebut dapat digunakan untuk peningkatan kualitas sumber daya manusia di perusahaan.`
+    },
+
+    ]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'Kelebihan:',list:[{
+      name: `Efisiensi Administrasi`,
+      description:`Sistem ini dapat mengotomatisasi tugas-tugas administrasi seperti pemrosesan gaji, manajemen cuti, dan pelaporan karyawan. Selain itu STARA mengurangi risiko kesalahan manusiawi seperti penghitungan gaji yang salah dan pelacakan cuti yang tidak akurat. Sehingga menciptakan lingkungan yang lebih efisien, produktif, dan terorganisir dalam manajemen sumber daya manusia.`
+    },{
+      name: `Akurasi Data`,
+      description:`Platform ini  merupakan teknologi yang dapat menyimpan data karyawan yang lebih terstruktur dan akurat. Sehingga informasi tentang riwayat pekerjaan, dan evaluasi kinerja dapat diakses dengan mudah dan terkini.  `
+    },{
+      name: `Peningkatan Kepuasan Karyawan`,
+      description:`STARA memungkinkan perusahaan dapat merencanakan, melacak, dan mengukur peningkatan kualitas karyawan dengan lebih baik. Sehingga karyawan merasa lebih diberdayakan dan memberikan dampak yang signifikan terhadap kinerja yang dihasilkan untuk meningkatkan produktivitas perusahaan.`
+    },{
+      name: `Kepatuhan Hukum `,
+      description:`STARA membantu perusahaan untuk mematuhi peraturan dan undang-undang ketenagakerjaan dengan mengotomatisasi proses administrasi yang mengikuti standar hukum.`
+   
+    }]},},
+  ]);
 
 // Data Kategori Dummy
 const categories = computed(()=>[

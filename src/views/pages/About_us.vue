@@ -47,29 +47,22 @@
      </div>
     <div class="container mx-auto mt-32 px-6 py-12">
         <!-- Judul -->
-        <h2 class="text-center text-3xl md:text-4xl font-semibold mb-24">
+        <!-- <h2 class="text-center text-3xl md:text-4xl font-semibold mb-24">
             About Company
-        </h2>
+        </h2> -->
 
         <!-- Kontainer utama -->
-        <div class="flex flex-col md:flex-row items-start gap-8 md:gap-12 relative">
-            
-            <!-- Bagian Gambar (Hanya Tampil di Desktop) -->
+        <!-- <div class="flex flex-col md:flex-row items-start gap-8 md:gap-12 relative">
             <div class="w-full md:w-1/2 relative hidden md:block">
                 <img src="https://www.scnsoft.com/slider-presentation/boris-and-nick.jpg" 
                      alt="Office Image" 
                      class="w-full rounded-lg shadow-lg"> 
-
-                <!-- Kotak Tahun (Desktop: Pojok kanan atas gambar) -->
                 <div class="absolute -top-12 right-0 transform translate-x-1/3 bg-blue-600  
                             text-4xl md:text-5xl font-bold px-6 py-4 md:px-8 md:py-6 rounded-lg shadow-lg text-white">
                     35
                 </div>
             </div>
-
-            <!-- Bagian Teks -->
             <div class="w-full md:w-1/2 flex flex-col justify-start relative">
-                <!-- Kotak Tahun (Mobile: Ditampilkan di atas teks) -->
                 <div class="bg-blue-600 text-white text-4xl font-bold px-6 py-4 rounded-lg shadow-lg 
                             text-center mx-auto mb-4 md:hidden">
                     35
@@ -89,7 +82,7 @@
                 </button>
             </div>
 
-        </div>
+        </div> -->
     </div>
 </template> 
 <script setup>

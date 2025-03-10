@@ -6,7 +6,7 @@
         <p class="text-xs text-black text-center mt-2 font-semibold">{{ name }}</p>
   
         <!-- Detail Box muncul di bawah & mentok kiri saat hover -->
-        <div 
+        <!-- <div 
           class="absolute left-0 top-full mt-2 w-80 bg-white p-4 rounded-lg shadow-xl opacity-0 transition duration-300 z-50 pointer-events-none group-hover:pointer-events-auto group-hover:opacity-100"
         >
           <p class="text-lg font-semibold text-gray-900">{{ name }}</p>
@@ -26,7 +26,7 @@
           <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">
             Find out more →
           </button>
-        </div>
+        </div> -->
       </div>
     </div>
   </template>

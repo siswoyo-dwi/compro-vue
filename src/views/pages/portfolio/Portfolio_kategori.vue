@@ -20,8 +20,12 @@ import { ref, computed } from "vue";
 import { useRoute } from "vue-router";
 import osbond from '../../../components/images/Osbond Gym.jpg';
 import simpus from '../../../components/images/SIMPUS.jpg';
-import simrs from '../../../components/images/SIMRS1.jpg';
-
+import simrs from '../../../components/images/simrs.jpg';
+import livejapan from '../../../components/images/livejapan.jpg';
+import simadu from '../../../components/images/simadu.jpg';
+import stara from '../../../components/images/stara.jpg';
+import wmsbaj from '../../../components/images/wmsbaj.jpg';
+import mdclinic from '../../../components/images/mdclinic.jpg';
   const route = useRoute(); // Akses route params
   
   const categories = ref([
@@ -32,19 +36,21 @@ import simrs from '../../../components/images/SIMRS1.jpg';
     // { id: 5, kategori_id: 2, portfolio: "Poltekkes KEMENKES Semarang", foto: "https://fosan.id/images/fosanlogo.png" },
     // { id: 6, kategori_id: 3, portfolio: "MD CLINIC", foto: "https://fosan.id/images/fosanlogo.png" },
     // { id: 7, kategori_id: 3, portfolio: "BAJ", foto: "https://fosan.id/images/fosanlogo.png" },
-    { id: 13, kategori_id: 1, portfolio: "OSBOND GYM", foto:osbond},
     { id: 1, kategori_id: 1, portfolio: "Sistem Informasi Manajemen Puskesmas (SIMPUS)", foto: simpus },
     { id: 2, kategori_id: 1, portfolio: "Sistem Informasi Rumah Sakit (SIMRS)", foto: simrs },
-    { id: 3, kategori_id: 2, portfolio: "BPSDM", foto: "https://fosan.id/images/fosanlogo.png" },
-    { id: 4, kategori_id: 2, portfolio: "Poltekkes KEMENKES Semarang", foto: "https://fosan.id/images/fosanlogo.png" },
+    { id: 3, kategori_id: 2, portfolio: "BPSDM", foto: mdclinic },
+    { id: 4, kategori_id: 2, portfolio: "Poltekkes KEMENKES Semarang", foto: simadu},
     { id: 5, kategori_id: 3, portfolio: "Manfaat [Penjualan Tepung]", foto: "https://fosan.id/images/fosanlogo.png" },
-    { id: 6, kategori_id: 3, portfolio: "Warehouse Management System Bahtera Adi Jaya", foto: "https://fosan.id/images/fosanlogo.png" },
-    { id: 7, kategori_id: 4, portfolio: "ERP Solutions", foto: "https://fosan.id/images/fosanlogo.png" },
-    { id: 8, kategori_id: 4, portfolio: "CRM Solutions", foto: "https://fosan.id/images/fosanlogo.png" },
-    { id: 9, kategori_id: 4, portfolio: "Corporate Finance Solutions", foto: "https://fosan.id/images/fosanlogo.png" },
-    { id: 10, kategori_id: 4, portfolio: "HR Management Solutions", foto: "https://fosan.id/images/fosanlogo.png" },
-    { id: 11, kategori_id: 4, portfolio: "Project Management Solutions", foto: "https://fosan.id/images/fosanlogo.png" },
-    { id: 12, kategori_id: 4, portfolio: "Document Management Solutions", foto: "https://fosan.id/images/fosanlogo.png" },
+    { id: 6, kategori_id: 3, portfolio: "Warehouse Management System Bahtera Adi Jaya", foto: wmsbaj },
+    // { id: 7, kategori_id: 4, portfolio: "ERP Solutions", foto: "https://fosan.id/images/fosanlogo.png" },
+    // { id: 8, kategori_id: 4, portfolio: "CRM Solutions", foto: "https://fosan.id/images/fosanlogo.png" },
+    // { id: 9, kategori_id: 4, portfolio: "Corporate Finance Solutions", foto: "https://fosan.id/images/fosanlogo.png" },
+    // { id: 10, kategori_id: 4, portfolio: "HR Management Solutions", foto: "https://fosan.id/images/fosanlogo.png" },
+    // { id: 11, kategori_id: 4, portfolio: "Project Management Solutions", foto: "https://fosan.id/images/fosanlogo.png" },
+    // { id: 12, kategori_id: 4, portfolio: "Document Management Solutions", foto: "https://fosan.id/images/fosanlogo.png" },
+    { id: 13, kategori_id: 1, portfolio: "OSBOND GYM", foto:osbond},
+    { id: 14, kategori_id: 2, portfolio: "Live English Japan", foto: livejapan  },
+    { id: 15, kategori_id: 4, portfolio: "STARA", foto: stara  },
 
   ]);
     const item = computed(() => {
