@@ -37,7 +37,7 @@
       <p class="text-xl text-gray-700 mb-6 leading-relaxed font-sans mt-4">{{ project.kelebihan.text }}</p>
 
       <div v-for="(idx, index) in project.kelebihan.list" :key="idx" class="mb-4">
-        <p class="text-black font-sans">{{ index + 1 }}. {{ idx.name }}</p>
+        <p class="text-black font-sans">{{ index + 1 }}. {{ idx }}</p>
         <p class="text-black font-sans">{{ idx.description }}</p>
         <div v-for="list in idx.subModules" :key="list" class="ml-6 text-gray-700">
           <p class="font-sans" >- {{ list.name }}</p>
@@ -77,113 +77,130 @@ import mdclinic from '../../../components/images/mdclinic.jpg';
 
 import { useI18n } from 'vue-i18n';
 const { t, locale } = useI18n();
-// Data Proyek Dummy
-const projects = ref([
-{ id: 13, kategori_id: 1, portfolio: "OSBOND GYM", foto:osbond, technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
-    { id: 1, kategori_id: 1, portfolio: "Sistem Informasi Manajemen Puskesmas (SIMPUS)", foto: simpus , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'Merupakan SIMPUS yang dikembangkan oleh tim FOSAN dengan menggunakan teknologi terbaru yang bertujuan untuk meningkatkan efektivitas dan efisiensi pengelolaan data dan informasi di puskesmas.',modul:{text:'SIMPUS yang dikembangkan oleh FOSAN mengakomodasi Modul:',list:[{
-    name:`EMR (Electronic Medical Record) Modul yang berisi seluruh data rekam medis pasien dan pelayanan yang telah diberikan selama di puskesmas.`},{
-    name:`Pendaftaran (Manual/ APM)`},{
-    name:`Layanan Instalasi Rawat Jalan`},{
-    name:`Layanan Instalasi Rawat Inap`},{
-    name:`Layanan Instalasi UGD`},{
-    name:`Manajemen Bed`},{
-    name:`Manajemen Obat`},{
-    name:`Manajemen Pasien`},{
-    name:`Manajemen Laboratorium`},{
-    name:`Manajemen Gudang Obat`},{
-    name:`Manajemen Keuangan`},{
-    name:`Laporan Harian`},{
-    name:`Laporan Bulanan`},{
-    name:`Grafik Kesehatan`},{
-    name:`Sistem Backdate`},{
-    name:`Dashboard Puskesmas`},{
-    name:`Control Manajemen Akses`},]},integrasi:{text:'FOSAN mengembangkan SIMPUS yang terintegrasi dengan:',list:[`1.PCare BPJS`,`2.ICare BPJS`,`3.Mobile JKN`,`4.SATU SEHAT Kemenkes`]},fitur:{text:'New Features:',list:[`1.Skrining Kesehatan - Integrasi Layanan Primer (ILP) Sesuai dengan Kepmenkes No.01.07/MENKES/2025/2023 Tentang Juknis Integrasi Pelayanan Kesehatan Primer.`,`2.Dashboard Integrasi Layanan Primer (ILP)`,`3.Verifikasi Profil  KYC (Know Your Customer) SATU SEHAT Mobile`,]},kelebihan:{text:'Kelebihan SIMPUS - FOSAN',list:[`1.Informasi Real -Time Data pasien secara real-time dapat diperbaharui dan dilihat secara langsung oleh dokter dan atau tenaga medis lain, sehingga keputusan perawatan lebih tepat waktu.`,`2.Dapat Dikirim Secara Periodik (Mengurangi Beban Network) Kunjungan khususnya homecare yang dilakukan oleh petugas kesehatan dapat dikirimkan datanya secara periodik dan kolektif sesuai format yang tersedia. Sehingga meningkatkan efisiensi pengiriman data ke server.`]},},
-    { id: 2, kategori_id: 1, portfolio: "Sistem Informasi Rumah Sakit (SIMRS)", foto: simrs , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'Merupakan SIMRS yang dikembangkan oleh tim FOSAN dengan menggunakan teknologi terbaru berbasis Enterprise Resources Planning (ERP) yang bertujuan untuk mengelola aktivitas dalam rumah sakit secara mudah, efektif, akurat, dan efisien.',modul:{text:'SIMRS yang dikembangkan oleh FOSAN mengakomodasi Modul:',list:[
+const projects =computed(()=> [
+{ id: 13, kategori_id: 1, portfolio: t('OSBOND.portfolio'), foto:osbond, technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:t('OSBOND.description'),modul:{text:t('OSBOND.modul.text'),list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:t('OSBOND.kelebihan.text'),list:[]},},
+    { id: 1, kategori_id: 1, portfolio: t('simpus.portfolio'), foto: simpus , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:t('simpus.description'),modul:{text:t('simpus.modul.text'),list:[{
+      name:t('simpus.modul.list[0].name')},{
+      name:t('simpus.modul.list[1].name')},{
+      name:t('simpus.modul.list[2].name')},{
+      name:t('simpus.modul.list[3].name')},{
+      name:t('simpus.modul.list[4].name')},{
+      name:t('simpus.modul.list[5].name')},{
+      name:t('simpus.modul.list[6].name')},{
+      name:t('simpus.modul.list[7].name')},{
+      name:t('simpus.modul.list[8].name')},{
+      name:t('simpus.modul.list[9].name')},{
+      name:t('simpus.modul.list[10].name')},{
+      name:t('simpus.modul.list[11].name')},{
+      name:t('simpus.modul.list[12].name')},{
+      name:t('simpus.modul.list[13].name')},{
+      name:t('simpus.modul.list[14].name')},{
+      name:t('simpus.modul.list[15].name')},{
+      name:t('simpus.modul.list[16].name')},
+      ]},integrasi:{text:t('simpus.integrasi.text'),
+      list:[
+        t('simpus.integrasi.list[0]'),
+        t('simpus.integrasi.list[1]'),
+        t('simpus.integrasi.list[2]'),
+        t('simpus.integrasi.list[3]')
+      ]},fitur:{
+        text:t('simpus.fitur.text'),
+        list:[
+        t('simpus.fitur.list[0].name'),
+        t('simpus.fitur.list[1].name'),
+        t('simpus.fitur.list[2].name'),
+        ]},kelebihan:{
+        text:t('simpus.kelebihan.text'),
+        list:[
+        t('simpus.kelebihan.list[0].name'),
+        t('simpus.kelebihan.list[1].name')]},},
+    { id: 2, kategori_id: 1, portfolio:  t('simrs.portfolio'), foto: simrs , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:t('simrs.description'),
+    modul:{text:t('simrs.modul.text'),list:[
   {
-    name: "EMR (Electronic Medical Record)",
-    description: "Modul yang berisi seluruh data rekam medis pasien dan pelayanan yang telah diberikan selama di rumah sakit."
+    name:  t('simrs.modul.list[0].name'),
+    description:  t('simrs.modul.list[0].description')
   },
   {
-    name: "Modul Front Office",
-    description: "Modul dalam SIMRS yang mengakomodasi aktivitas manajemen operasional rumah sakit termasuk pengelolaan dan pelayanan pasien, penjadwalan poli dan dokter, serta administrasi keuangan.",
-    subModules: [
+    name:  t('simrs.modul.list[1].name'),
+    description:  t('simrs.modul.list[1].description'),
+     subModules: [
       {
-        name: "Pendaftaran pasien rawat jalan maupun rawat inap"
+        name: t('simrs.modul.list[1].subModules[0].name')
       },
       {
-        name: "Manajemen dan monitoring bed"
+        name: t('simrs.modul.list[1].subModules[1].name')
       },
       {
-        name: "Pengelolaan jadwal dokter"
+        name: t('simrs.modul.list[1].subModules[2].name')
       },
       {
-        name: "Booking kunjungan"
+        name: t('simrs.modul.list[1].subModules[3].name')
       },
       {
-        name: "Layanan Instalasi Rawat Jalan",
-        description: "Memproses pendaftaran pasien rawat jalan, pelayanan IGD, pengaturan dokter jaga sampai pembuatan resep dan registrasi ke layanan instalasi lain seperti laboratorium dan radiologi."
+        name: t('simrs.modul.list[1].subModules[4].name'),
+        description: t('simrs.modul.list[1].subModules[4].description')
       },
       {
-        name: "Layanan Instalasi Gawat Darurat",
-        description: "Memproses pendaftaran pasien gawat darurat, manajemen bed, dan layanan penunjang lainnya."
+        name: t('simrs.modul.list[1].subModules[5].name'),
+        description: t('simrs.modul.list[1].subModules[5].description')
       },
       {
-        name: "Layanan Instalasi Rawat Inap",
-        description: "Memproses pelayanan instalasi rawat inap yang meliputi penginputan SOAP dan mempermudah manajemen bed secara real time hingga otomatisasi rekapitulasi biaya perawatan."
+        name: t('simrs.modul.list[1].subModules[6].name'),
+        description: t('simrs.modul.list[1].subModules[6].description')
       },
       {
-        name: "Layanan Instalasi Laboratorium",
-        description: "Memproses pendaftaran dan memproses pelayanan pemeriksaan penunjang laboratorium sampai dengan cetak hasil."
+        name: t('simrs.modul.list[1].subModules[7].name'),
+        description: t('simrs.modul.list[1].subModules[7].description')
       },
       {
-        name: "Layanan Instalasi Radiologi",
-        description: "Memproses pendaftaran dan memproses pelayanan pemeriksaan penunjang radiologi sampai dengan cetak hasil."
+        name: t('simrs.modul.list[1].subModules[8].name'),
+        description: t('simrs.modul.list[1].subModules[8].description')
       },
       {
-        name: "Layanan Instalasi Bedah Sentral",
-        description: "Memproses pendaftaran dan memproses kamar operasi serta jadwalnya, hingga manajemen operasi."
+        name: t('simrs.modul.list[1].subModules[9].name'),
+        description: t('simrs.modul.list[1].subModules[9].description')
       },
       {
-        name: "Manajemen Farmasi",
-        description: "Inventarisasi farmasi yang terdiri dari master farmasi, pengelolaan transaksi pengeluaran resep, inventory control, dan pelaporan penggunaan stock dalam farmasi."
+        name: t('simrs.modul.list[1].subModules[10].name'),
+        description: t('simrs.modul.list[1].subModules[10].description')
       },
       {
-        name: "Manajemen Rujukan"
+        name: t('simrs.modul.list[1].subModules[11].name'),
       }
     ]
   },
   {
-    name: "Modul Back Office",
+    name:  t('simrs.modul.list[2].name'),
     subModules: [
       {
-        name: "Manajemen Kepegawaian",
-        description: "Modul yang dikembangkan untuk mengelola manajemen data karyawan/ pegawai yang ada di rumah sakit (tenaga medis dan bukan tenaga medis) secara efisien."
+        name:  t('simrs.modul.list[2].subModules[0].name'),
+        description:  t('simrs.modul.list[2].subModules[0].description'),
       },
       {
-        name: "Modul Warehouse",
-        description: "Modul yang dikembangkan untuk mengelola stock obat dan peralatan medis, mengelola pengadaan barang, memonitor penggunaan stock, mengevaluasi proses pembayaran pada supplier, dan secara otomatis memberikan laporan ketersediaan stock secara real time."
+        name:  t('simrs.modul.list[2].subModules[1].name'),
+        description:  t('simrs.modul.list[2].subModules[1].description'),
+     },
+      {
+        name:  t('simrs.modul.list[2].subModules[2].name'),
+        description:  t('simrs.modul.list[2].subModules[2].description'),
       },
       {
-        name: "Modul Penjualan",
-        description: "Modul yang dikembangkan untuk mengelola transaksi pasien, memberikan informasi tagihan, memproses pembayaran, dan menghasilkan laporan keuangan dalam periode tertentu."
+        name:  t('simrs.modul.list[2].subModules[3].name'),
+        description:  t('simrs.modul.list[2].subModules[3].description'),
       },
       {
-        name: "Modul Tagihan",
-        description: "Modul yang berisi informasi tagihan dan status pembayaran dari pelayanan pasien."
-      },
+        name:  t('simrs.modul.list[2].subModules[4].name'),
+        description:  t('simrs.modul.list[2].subModules[4].description'),
+     },
       {
-        name: "Modul Akuntansi",
-        description: "Modul yang dikembangkan untuk mengelola laporan keuangan rumah sakit dan mengawasi arus kas secara efektif."
-      },
-      {
-        name: "Manajemen Asset",
-        description: "Modul yang dikembangkan untuk mengelola aset rumah sakit, meliputi inventaris aset, memonitor perawatan/pemeliharaan, dan mengoptimalkan penggunaan sarana dan prasarana."
-      }
+        name:  t('simrs.modul.list[2].subModules[5].name'),
+        description:  t('simrs.modul.list[2].subModules[5].description'),
+     }
     ]
   },
   {
-    name: "Integrasi BPJS Kesehatan",
-    description: "Modul yang dikembangkan ini berfungsi untuk mendukung pengelolaan rujukan pasien BPJS untuk mempermudah arus layanan kesehatan.",
+    name:  t('simrs.modul.list[3].name'),
+    description:  t('simrs.modul.list[3].description'),
     subModules: [
       { name: "V-Claim" },
       { name: "Aplicare" },
@@ -192,145 +209,115 @@ const projects = ref([
     ]
   },
   {
-    name: "Integrasi INACBG’s",
-    description: "Modul ini digunakan untuk mempermudah rumah sakit dalam menyusun laporan klaim dan grup biaya secara cepat dan akurat."
+    name:  t('simrs.modul.list[4].name'),
+    description:  t('simrs.modul.list[4].description'),
   },
   {
-    name: "Integrasi SATU SEHAT Kemenkes",
-    description: "Modul ini memungkinkan arus pertukaran data secara real-time, meliputi data rekam medis pasien, dan informasi pasien antar SIM-RS dan SATU SEHAT Platform."
-  }
-]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
-    { id: 3, kategori_id: 2, portfolio: "BPSDM", foto: mdclinic , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
-    { id: 4, kategori_id: 2, portfolio: "Poltekkes Simadu V2", foto: simadu , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'Merupakan platform sistem informasi akademik mahasiswa Poltekkes Kemenkes Semarang yang dapat mengelola kegiatan-kegiatan yang berhubungan dengan perkuliahan.',modul:{text:'Fitur yang ditawarkan:',list:[ {
-      name: `Content Management`,
-      description:`Fitur yang membuat user memiliki batasan akses dalam menggunakan sistem. User dapat ditentukan oleh pihak kampus, sehingga pengguna yang mengakses mendapatkan manfaat yang berbeda-beda sesuai dengan fungsinya.`
-    },{
-      name: `Kalender Akademik`,
-      description:`Fitur ini memungkinkan admin dapat mengelola kalender akademik dan periode perkuliahan yang sesuai dengan semester saat ini. Selain itu, mahasiswa dapat secara langsung melihat kalender akademik dan periode perkuliahan yang telah di-update oleh admin.`
-    },{
-      name: `Her-Registrasi`,
-      description:`Fitur yang memudahkan pengguna untuk mengelola data registrasi, registrasi cuti, data mahasiswa yang belum melakukan registrasi, data pengajuan cuti, status aktif perkuliahan, dan status pembayaran dari mahasiswa.`
-    },{
-      name: `Kegiatan Perkuliahan`,
+    name:  t('simrs.modul.list[5].name'),
+    description:  t('simrs.modul.list[5].description'),
+  },
+]}
+,integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
+    { id: 3, kategori_id: 2, portfolio:  t('BPSDM.portfolio'), foto: mdclinic , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
+    { id: 4, kategori_id: 2, portfolio: t('Simadu.portfolio'), foto: simadu , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:t('Simadu.description'),modul:{text:t('Simadu.modul.text'),list:[ {
+      name: t('Simadu.modul.list[0].name'),
+      description:t('Simadu.modul.list[0].description') },{
+      name:  t('Simadu.modul.list[1].name'),
+      description:t('Simadu.modul.list[1].description')  },{
+      name:  t('Simadu.modul.list[2].name'),
+      description:t('Simadu.modul.list[2].description') },{
+      name:  t('Simadu.modul.list[3].name'),
       description:`fitur yang memudahkan pengguna mengelola dan menampilkan data mata kuliah, substansi kuliah, kurikulum, mata kuliah kurikulum, kelas kuliah, jadwal perkuliahan, jadwal UAT, jadwal UAS, dan paket KRS. `
     },{
-      name: `Manajemen Nilai`,
-      description:`Fitur yang memudahkan pengguna dalam melakukan setting manajemen nilai sesuai dengan mata kuliah yang diampu oleh dosen dan pengelolaan skala nilai masing-masing prodi yang ada di kampus.`
-    },{
-      name: `Nilai Mahasiswa`,
-      description:`Fitur ini memudahkan pengajar dalam menyusun dan mendapatkan laporan perkembangan mahasiswa. Fitur ini akan memberikan laporan monitoring seperti tingkat kehadiran, seberapa sering mahasiswa mengakses materi pembelajaran, hingga rekap hasil penilaian mata kuliah, UTS, dan UAS yang telah dilakukan oleh mahasiswa. Selain pengajar, mahasiswa juga dapat melihat perkembangan kemampuannya dalam fitur tersebut.`
-    },{
-      name: `Manajemen Tugas Akhir`,
-      description:`Fitur ini memudahkan pengguna dalam memonitori perkembangan tugas akhir yang sedang berlangsung. Manajemen tugas akhir yang meliputi pengajuan judul dan pengajuan ujian/ seminar hasil.`
-    },{
-      name: `Wisuda`,
-      description:`Fitur yang memudahkan pengguna dalam memantau kegiatan wisuda yang meliputi daftar periode wisuda dan peserta wisuda yang tersedia.`
-    },{
-      name: `Penjaminan Mutu`,
-      description:`Fitur penjaminan mutu, memudahkan pengguna dalam mendapatkan informasi terkait profil perguruan tinggi dan akreditasi setiap prodi yang yang dimiliki oleh kampus.`
-    },{
-      name: `Management Ruangan`,
-      description:`Fitur ini memudahkan pengguna dalam memonitori ruangan/ kelas yang digunakan untuk perkuliahan dan melakukan booking ruangan untuk kegiatan perkuliahan berikutnya.`
-    }
-  ]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'Kelebihan:',list:[
+      name:  t('Simadu.modul.list[4].name'),
+      description:t('Simadu.modul.list[4].description') },{
+      name:  t('Simadu.modul.list[5].name'),
+      description:t('Simadu.modul.list[5].description') },{
+      name: t('Simadu.modul.list[6].name'),
+      description:t('Simadu.modul.list[6].description')  },{
+      name:  t('Simadu.modul.list[7].name'),
+      description:t('Simadu.modul.list[7].description') },{
+      name:  t('Simadu.modul.list[8].name'),
+      description:t('Simadu.modul.list[8].description')  },{
+      name:  t('Simadu.modul.list[9].name'),
+      description:t('Simadu.modul.list[9].description') }
+  ]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:t('Simadu.kelebihan.text') ,list:[
     {
-      name: `Tampilan mudah digunakan`,
-      description:``
+      name: t('Simadu.kelebihan.list[0].name'),
+      description:t('Simadu.kelebihan.list[0].description')
     },{
-      name: `Efisiensi Sistem`,
-      description:``
+      name: t('Simadu.kelebihan.list[1].name'),
+      description:t('Simadu.kelebihan.list[1].description')
     },{
-      name: `Memudahkan Evaluasi`,
-      description:``
+      name: t('Simadu.kelebihan.list[2].name'),
+      description:t('Simadu.kelebihan.list[2].description')
     }]},},
-    { id: 14, kategori_id: 2, portfolio: "Live English Japan", foto: livejapan , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:`Merupakan platform yang dikembangkan untuk pembelajaran/ kursus digital yang membuat proses pembelajaran bahasa inggris, manajemen materi, evaluasi perkembangan siswa dan pembayaran kelas menjadi lebih mudah. Sehingga kegiatan kursus online menjadi lebih fleksibel, interaktif, dan efisien.`,modul:{text:'Fitur yang kami tawarkan:',list:[ 
+    { id: 14, kategori_id: 2, portfolio: t('live_japan.portfolio'), foto: livejapan , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:t('live_japan.description'),modul:{text:t('live_japan.modul.text'),list:[ 
     {
-      name: `Content Management`,
-      description:`Fitur yang membuat pengajar dan siswa memiliki batasan akses dalam menggunakan sistem. Pengajar dapat mengelola materi ajar berupa teks, video, maupun audio. Sedangkan siswa dapat menggunakan akunnya untuk mendapatkan kelas dan materi yang ada di sistem.`
+      name: t('live_japan.modul.list[0].name'),
+      description:t('live_japan.modul.list[0].description')
     },
     {
-      name: `Pendaftaran Online`,
-      description:`Fitur ini memungkinkan siswa dapat melakukan pendaftaran secara online dengan mudah dan cepat. Selain itu, siswa dapat melakukan booking kelas kursus sesuai dengan jadwal dan guru yang ada pada sistem.`
-    },
+      name:t('live_japan.modul.list[1].name'),
+      description:t('live_japan.modul.list[1].description')},
     {
-      name: `Kelas Online`,
-      description:`Fitur ini digunakan untuk melakukan pembelajaran online. Siswa dapat belajar melalui materi dalam bentuk teks, video, maupun audio yang telah disiapkan oleh pengajar.`
-    },
+      name: t('live_japan.modul.list[2].name'),
+      description:t('live_japan.modul.list[2].description')},
     {
-      name: `Forum Diskusi`,
-      description:`Fitur ini memungkinkan siswa dan pengajar dapat berdiskusi membahas materi yang diberikan melalui forum. Fitur ini dapat dibuat dalam bentuk privat maupun publik (kelas besar).`
-    },
+      name:t('live_japan.modul.list[3].name'),
+      description:t('live_japan.modul.list[3].description')},
     {
-      name: `Video Conference`,
-      description:`Fitur ini membuat pengajar dan siswa dapat berinteraksi secara langsung melalui panggilan video tanpa harus bertatap muka.`
-    },
+      name: t('live_japan.modul.list[4].name'),
+      description:t('live_japan.modul.list[4].description')},
     {
-      name: `Evaluations`,
-      description:`Fitur evaluations berisi kuis dan ujian online. Kuis dan ujian online dalam sistem memudahkan siswa dalam melakukan kuis atau ujian online yang telah disiapkan oleh pengajar sebagai bagian dari evaluasi kegiatan kursus.`
-    },
+      name:t('live_japan.modul.list[5].name'),
+      description:t('live_japan.modul.list[5].description')},
     {
-      name: `Lesson Hystory`,
-      description:`Fitur ini memudahkan pengajar dalam menyusun dan mendapatkan laporan perkembangan siswa. Fitur ini akan memberikan laporan monitoring seperti tingkat kehadiran siswa, seberapa sering siswa mengakses materi pembelajaran, hingga rekap hasil kuis dan ujian siswa. Selain pengajar, siswa juga dapat melihat perkembangan kemampuannya dalam fitur tersebut.`
-    },
+      name: t('live_japan.modul.list[6].name'),
+      description:t('live_japan.modul.list[6].description')},
     {
-      name: `Order and Payment System`,
-      description:`Fitur ini memudahkan siswa dalam melihat kelas dan jadwal yang tersedia, melakukan booking kelas, serta pembayaran kelas yang dapat dilakukan dengan beberapa jenis pembayaran digital. Sehingga dari awal pendaftaran, pembayaran, dan kegiatan pembelajaran dapat dilakukan dalam satu sistem ini.`
-    },
+      name: t('live_japan.modul.list[7].name'),
+      description:t('live_japan.modul.list[7].description')},
     
-  ]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'Kelebihan:',list:[{
-      name: `Tampilan mudah digunakan`,
-    },
-    {
-      name: `Meningkatkan efektivitas pembelajaran`,
-    },
-    {
-      name: `Memudahkan Evaluasi`,
-    },
+  ]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text: t('live_japan.kelebihan.text'),list:[
+     t('live_japan.kelebihan.list[0].name'),
+
+     t('live_japan.kelebihan.list[1].name'),
+
+     t('live_japan.kelebihan.list[2].name'),
    ]},},
-    { id: 5, kategori_id: 3, portfolio: "Manfaat [Penjualan Tepung]", foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
-    { id: 6, kategori_id: 3, portfolio: "Warehouse Management System Bahtera Adi Jaya", foto: wmsbaj , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
-    // { id: 7, kategori_id: 4, portfolio: "ERP Solutions", foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
-    // { id: 8, kategori_id: 4, portfolio: "CRM Solutions", foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
-    // { id: 9, kategori_id: 4, portfolio: "Corporate Finance Solutions", foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
-    // { id: 10, kategori_id: 4, portfolio: "HR Management Solutions", foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
-    // { id: 11, kategori_id: 4, portfolio: "Project Management Solutions", foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
-    // { id: 12, kategori_id: 4, portfolio: "Document Management Solutions", foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
-    { id: 15, kategori_id: 4, portfolio: "STARA", foto: stara , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'Merupakan platform Human Reosurces Information System yang dapat mengelola dan mengotomatisasi berbagai aspek sumber daya manusia dalam perusahaan, mulai dari manajemen data karyawan, rekrutmen, manajemen kinerja, manajemen gaji, pelaporan, dan lainnya. Sistem ini bukan sekedar alat teknologi, tetapi menjadi strategi yang memberikan banyak manfaat terhadap perusahaan.',modul:{text:'Fitur yang kami tawarkan:',list:[
+    { id: 5, kategori_id: 3, portfolio:  t('Manfaat.portfolio'), foto: "https://fosan.id/images/fosanlogo.png" , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
+    { id: 6, kategori_id: 3, portfolio:  t('wms.portfolio') ,foto: wmsbaj , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'',list:[]},},
+    { id: 15, kategori_id: 4, portfolio: t('STARA.portfolio'), foto: stara , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:t('STARA.description'),modul:{text:t('STARA.modul.text'),list:[
     {
-      name: `Content Management`,
-      description:`Fitur yang membuat pengguna memiliki batasan akses dalam menggunakan sistem berdasarkan rolenya di perusahaan.`
-    },{
-      name: `Management Karyawan`,
-      description:`Fitur ini memudahkan pengguna dalam mengelola data karyawan secara keseluruhan seperti  identitas lengkap karyawan, perjanjian kerja, perintah kerja, dan data mutasi.`
-    },{
-      name: `Lowongan Pekerjaan`,
-      description:`Fitur ini memudahkan pengguna dalam mengelola daftar lowongan pekerjaan akan dilakukan oleh perusahaan. Fitur ini juga memungkinkan pengguna dapat memonitori dan mengevaluasi kegiatan perekrutan dari penyebaran lowongan pekerjaan sampai dengan hasil tahap seleksi pelamar.`
-    },{
+      name: t('STARA.modul.list[0].name'),
+      description:t('STARA.modul.list[0].description') },{
+      name: t('STARA.modul.list[1].name'),
+      description:t('STARA.modul.list[1].description') },{
+      },{
+      name:t('STARA.modul.list[2].name'),
+      description:t('STARA.modul.list[2].description') },{
+      },{
+      name: t('STARA.modul.list[3].name'),
+      description:t('STARA.modul.list[3].description') },{
+      },{
+      name: t('STARA.modul.list[4].name'),
+      description:t('STARA.modul.list[4].description') },{
+      },{
+      name: t('STARA.modul.list[5].name'),
+      description:t('STARA.modul.list[5].description') },{
+       },
 
-      name: `Laporan Kecelakaan Kerja`,
-      description:`Fitur ini memudahkan pengguna dalam mengelola data kecelakaan kerja yang terjadi pada karyawan selama melakukan pekerjaan.`
+    ]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text: t('STARA.kelebihan.text'),list:[{
+      name:  t('STARA.kelebihan.list[0].name'),
+      description: t('STARA.kelebihan.list[0].description')
     },{
-      name: `Laporan Karyawan`,
-      description:`Fitur ini memungkinkan pengguna dapat mengelola laporan terkait karyawan yang meliputi proyeksi gaji, rekap gaji, potongan gaji, THR, dan akumulasi lembur.`
-    },{
-      name: `Penilaian Karyawan`,
-      description:`Fitur ini memudahkan pengguna dalam melakukan evaluasi kinerja masing-masing karyawan. Sehingga data tersebut dapat digunakan untuk peningkatan kualitas sumber daya manusia di perusahaan.`
-    },
-
-    ]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:'Kelebihan:',list:[{
-      name: `Efisiensi Administrasi`,
-      description:`Sistem ini dapat mengotomatisasi tugas-tugas administrasi seperti pemrosesan gaji, manajemen cuti, dan pelaporan karyawan. Selain itu STARA mengurangi risiko kesalahan manusiawi seperti penghitungan gaji yang salah dan pelacakan cuti yang tidak akurat. Sehingga menciptakan lingkungan yang lebih efisien, produktif, dan terorganisir dalam manajemen sumber daya manusia.`
-    },{
-      name: `Akurasi Data`,
-      description:`Platform ini  merupakan teknologi yang dapat menyimpan data karyawan yang lebih terstruktur dan akurat. Sehingga informasi tentang riwayat pekerjaan, dan evaluasi kinerja dapat diakses dengan mudah dan terkini.  `
-    },{
-      name: `Peningkatan Kepuasan Karyawan`,
-      description:`STARA memungkinkan perusahaan dapat merencanakan, melacak, dan mengukur peningkatan kualitas karyawan dengan lebih baik. Sehingga karyawan merasa lebih diberdayakan dan memberikan dampak yang signifikan terhadap kinerja yang dihasilkan untuk meningkatkan produktivitas perusahaan.`
-    },{
-      name: `Kepatuhan Hukum `,
-      description:`STARA membantu perusahaan untuk mematuhi peraturan dan undang-undang ketenagakerjaan dengan mengotomatisasi proses administrasi yang mengikuti standar hukum.`
-   
-    }]},},
+      name:t('STARA.kelebihan.list[1].name'),
+      description:t('STARA.kelebihan.list[1].description') },{
+      name:t('STARA.kelebihan.list[2].name'),
+      description:t('STARA.kelebihan.list[2].description') },{
+      name: t('STARA.kelebihan.list[3].name'),
+      description:t('STARA.kelebihan.list[3].description')}]},},
   ]);
 
 // Data Kategori Dummy
