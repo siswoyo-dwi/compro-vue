@@ -28,11 +28,11 @@
         <!-- Right Side (Language & Theme Toggle) -->
         <div class="flex items-center space-x-4">
           <!-- Language Dropdown -->
-          <select v-model="locale" class="border p-1 rounded bg-transparent cursor-pointer">
+          <!-- <select v-model="locale" class="border p-1 rounded bg-transparent cursor-pointer">
             <option value="en" class="text-black">🇬🇧 English</option>
             <option value="id" class="text-black">🇮🇩 Bahasa Indonesia</option>
-          </select>
-
+          </select> -->
+          <LanguageDropdown v-model="locale" />
           <!-- Dark/Light Mode Toggle -->
           <button @click="theme.toggleTheme" class="p-2 rounded-lg border">
             <span v-if="theme.isDark">☀️</span>
@@ -70,6 +70,8 @@
 import { ref, computed ,watch} from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useThemeStore } from '../../store/themeStore';
+import LanguageDropdown from '../molecules/LanguageDropdown.vue';
+
   let theme = useThemeStore()
 const { t, locale } = useI18n();
 const isMenuOpen = ref(false);

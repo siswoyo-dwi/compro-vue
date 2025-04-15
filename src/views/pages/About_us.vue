@@ -19,14 +19,11 @@
             </div>
         </div>
      </div>
-     <div class="container mt-32 mx-auto px-6 py-12">
-           <!-- Judul -->
-           <h2 class="text-center text-3xl  md:text-4xl font-semibold mb-12">
+     <!-- <div class="container mt-32 mx-auto px-6 py-12">
+        <h2 class="text-center text-3xl  md:text-4xl font-semibold mb-12">
             {{ pemimpin }}
         </h2>
-        <!-- Kontainer utama -->
         <div class="flex flex-col  md:flex-row  gap-12">
-            <!-- Bagian Teks -->
             <div class="w-full md:w-1/2  mt-[-20px]">
                 <h2 class="text-3xl md:text-4xl font-bold  mb-4">
                     Noor Bhagaskoro Liestantyo, S.Kom., M.Kom (CEO)
@@ -34,19 +31,13 @@
 
                 <p class=" leading-relaxed mb-6">
                 </p>
-                <!-- <router-link :to="'#'" class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition">
-                    Learn More
-                </router-link> -->
             </div>
-
-            <!-- Bagian Gambar -->
             <div class="w-full md:w-1/2">
                 <img src="https://www.scnsoft.com/slider-presentation/boris-and-nick.jpg" alt="About Fosan" class="w-full rounded-lg shadow-lg">
             </div>
         </div>
-     </div>
+     </div> -->
     <div class="container mx-auto mt-32 px-6 py-12">
-        <!-- Judul -->
         <!-- <h2 class="text-center text-3xl md:text-4xl font-semibold mb-24">
             About Company
         </h2> -->

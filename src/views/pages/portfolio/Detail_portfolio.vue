@@ -1,53 +1,67 @@
 <template>
-  <div class="flex justify-center items-start min-h-screen pt-20 px-4 ">
-    <div v-if="project" class="w-full sm:w-4/5 lg:w-5/5 mx-auto bg-white shadow-lg rounded-lg p-6 mt-20">
+  <div class="flex justify-center items-start min-h-screen pt-20 px-4">
+    <div v-if="project" class="w-full max-w-5xl bg-white shadow-lg rounded-lg p-6 mt-20">
       <!-- Gambar Proyek -->
-      <img :src="project.foto" alt="Project Image" class="w-full h-48 object-cover rounded-md mb-6">
+      <div
+        ref="scrollContainer"
+        class="h-[25vh] overflow-auto border rounded-xl cursor-grab active:cursor-grabbing"
+        @mousedown="startDrag"
+        @mousemove="onDrag"
+        @mouseup="stopDrag"
+        @mouseleave="stopDrag"
+        @touchstart="startDrag"
+        @touchmove="onDrag"
+        @touchend="stopDrag"
+      >
+        <div class="w-[2000px] h-[1500px] flex items-center justify-center relative">
+          <img :src="project.foto" ref="imageRef" alt="Project Image" class="pointer-events-none object-contain" />
+        </div>
+      </div>
 
       <!-- Judul dan Kategori -->
-      <div class="flex items-center justify-between mb-6">
+      <div class="flex items-center justify-between mt-6 mb-4">
         <div>
-          <h1 class="text-2xl font-bold mb-2 text-black font-sans">{{ project.portfolio }}</h1>
+          <h1 class="text-2xl font-bold text-black font-sans">{{ project.portfolio }}</h1>
           <p class="text-sm text-gray-600 font-sans">Kategori: {{ categoryName }}</p>
         </div>
-        <!-- Tombol Kembali -->
         <router-link :to="`/portfolio/kategori/${project.kategori_id}`" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm transition">
           {{ back }}
         </router-link>
       </div>
 
       <!-- Deskripsi Proyek -->
- 
       <p class="text-sm text-gray-700 mb-6 leading-relaxed font-sans">{{ project.description }}</p>
 
- 
-      <!-- Modul dan Submodul -->
-      <a href='https://api.whatsapp.com/send/?phone=6282227470745' class="px-4 py-2 mt-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm transition">
-            Hubungi Kami
-          </a>
-          <p class="text-xl text-gray-700 mb-6 leading-relaxed font-sans mt-4">{{ project.modul.text }}</p>
+      <!-- Hubungi & Modul -->
+      <a href="https://api.whatsapp.com/send/?phone=6282227470745" class="inline-block px-4 py-2 mb-4 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm transition">
+        Hubungi Kami
+      </a>
+      <p class="text-xl text-gray-700 font-sans font-semibold mb-4">{{ project.modul.text }}</p>
 
-      <div v-for="(idx, index) in project.modul.list" :key="idx" class="mb-4">
-        <p class="text-black font-sans">{{ index + 1 }}. {{ idx.name }}</p>
+      <div v-for="(idx, index) in project.modul.list" :key="index" class="mb-4">
+        <p class="text-black font-sans font-medium">{{ index + 1 }}. {{ idx.name }}</p>
         <p class="text-black font-sans">{{ idx.description }}</p>
-        <div v-for="list in idx.subModules" :key="list" class="ml-6 text-gray-700">
-          <p class="font-sans" >- {{ list.name }}</p>
+        <div v-for="(sub, subIndex) in idx.subModules" :key="subIndex" class="ml-6 text-gray-700">
+          <p class="font-sans">- {{ sub.name }}</p>
         </div>
       </div>
-      <p class="text-xl text-gray-700 mb-6 leading-relaxed font-sans mt-4">{{ project.kelebihan.text }}</p>
 
-      <div v-for="(idx, index) in project.kelebihan.list" :key="idx" class="mb-4">
-        <p class="text-black font-sans">{{ index + 1 }}. {{ idx }}</p>
-        <p class="text-black font-sans">{{ idx.description }}</p>
-        <div v-for="list in idx.subModules" :key="list" class="ml-6 text-gray-700">
-          <p class="font-sans" >- {{ list.name }}</p>
+      <!-- Kelebihan -->
+      <p class="text-xl text-gray-700 font-sans font-semibold mb-4">{{ project.kelebihan.text }}</p>
+
+      <div v-for="(item, index) in project.kelebihan.list" :key="index" class="mb-4">
+        <p class="text-black font-sans font-medium">{{ index + 1 }}. {{ item.name || item }}</p>
+        <p v-if="item.description" class="text-black font-sans">{{ item.description }}</p>
+        <div v-if="item.subModules" v-for="(sub, subIndex) in item.subModules" :key="subIndex" class="ml-6 text-gray-700">
+          <p class="font-sans">- {{ sub.name }}</p>
         </div>
       </div>
+
       <!-- Teknologi yang Digunakan -->
       <div>
         <h3 class="text-md font-semibold mb-4 text-black">Teknologi yang Digunakan:</h3>
         <div class="grid grid-cols-2 gap-3">
-          <div v-for="tech in project.technologies" :key="tech" class="bg-gray-100 p-3 rounded-lg shadow-sm text-center text-black text-xs font-medium">
+          <div v-for="(tech, index) in project.technologies" :key="index" class="bg-gray-100 p-3 rounded-lg shadow-sm text-center text-black text-xs font-medium">
             {{ tech }}
           </div>
         </div>
@@ -63,7 +77,7 @@
 
 
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, computed , nextTick ,onMounted  } from 'vue';
 import { useRoute } from 'vue-router';
 import osbond from '../../../components/images/Osbond Gym.jpg';
 import simpus from '../../../components/images/SIMPUS.jpg';
@@ -75,6 +89,44 @@ import wmsbaj from '../../../components/images/wmsbaj.jpg';
 import mdclinic from '../../../components/images/mdclinic.jpg';
 
 
+const scrollContainer = ref(null)
+const imageRef = ref(null)
+
+let isDragging = false
+let startX, startY
+let scrollLeft, scrollTop
+
+const startDrag = (e) => {
+  isDragging = true
+  startX = e.pageX || e.touches[0].pageX
+  startY = e.pageY || e.touches[0].pageY
+  scrollLeft = scrollContainer.value.scrollLeft
+  scrollTop = scrollContainer.value.scrollTop
+}
+
+const onDrag = (e) => {
+  if (!isDragging) return
+  e.preventDefault()
+  const x = e.pageX || e.touches[0].pageX
+  const y = e.pageY || e.touches[0].pageY
+  const walkX = (x - startX)
+  const walkY = (y - startY)
+  scrollContainer.value.scrollLeft = scrollLeft - walkX
+  scrollContainer.value.scrollTop = scrollTop - walkY
+}
+
+const stopDrag = () => {
+  isDragging = false
+}
+
+// Scroll ke tengah saat pertama kali dimuat
+onMounted(() => {
+  nextTick(() => {
+    const container = scrollContainer.value
+    container.scrollLeft = (container.scrollWidth - container.clientWidth) / 2
+    container.scrollTop = (container.scrollHeight - container.clientHeight) / 2
+  })
+})
 import { useI18n } from 'vue-i18n';
 const { t, locale } = useI18n();
 const projects =computed(()=> [
