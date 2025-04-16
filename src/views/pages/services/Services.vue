@@ -12,16 +12,14 @@
       </section>
   
       <!-- Layanan Section -->
-      <section id="layanan" class="py-16 bg-gray-900">
+      <!-- <section id="layanan" class="py-16 bg-gray-900">
         <div class="container mx-auto px-6 text-center">
           <h2 class="text-3xl font-bold mb-10 text-white">{{ layanan }}</h2>
           <div class="grid md:grid-cols-2 gap-6">
             <div v-for="service in services" :key="service.id"
                class="relative w-full h-[400px] flex flex-col bg-yellow-50 border border-yellow-300 rounded-xl shadow-md overflow-hidden">
-                          <!-- Gambar -->
               <img :src="service.img" alt="Service Image" class="">
 
-              <!-- Text & Button di Kiri Atas -->
               <div class="absolute top-0 left-0 p-4 text-left">
                 <h2 class="text-3xl mb-4 font-semibold text-gray-800">{{ service.title }}</h2>
                 <RouterLink :to="'/services/kategori/'+service.id " class="mt-2 bg-yellow-500 text-white px-4 py-2 rounded-md font-semibold hover:bg-yellow-600 transition">
@@ -31,8 +29,20 @@
             </div>
           </div>
         </div>
+      </section> -->
+      <section class="py-16 " id="layanan">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-3xl font-bold mb-10">{{ layanan }}</h2>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div v-for="service in services" :key="service.id" class="p-6 bg-gray-100 rounded-lg shadow-lg">
+              <RouterLink :to="'/services/kategori/'+service.id "><h3 class="text-xl font-semibold text-black flex items-center gap-2">
+                <CircleEmote size="sm" />
+                <span>{{ service.title }}</span>
+              </h3></RouterLink>
+            </div>
+          </div>
+        </div>
       </section>
-      
       <!-- Keunggulan Section -->
       <section class="py-16 ">
         <div class="container mx-auto px-6 text-center">
@@ -43,18 +53,8 @@
               <p class="text-black mt-2">{{ advantage.description }}</p>
             </div>
           </div>
-          <!-- <div v-for="advantage in advantages" :key="advantage.id" class="card bg-white shadow-md rounded-lg overflow-hidden">
-            <div class="relative overflow-hidden">
-                <img :src="item.image" :alt="item.title" class="w-full h-52 object-cover">
-            </div>
-            <div class="p-4">
-                <h3 class="text-lg font-bold text-gray-800">{{ advantage.title }}</h3>
-                <p class="text-gray-600 text-sm mt-2">{{ advantage.description }}</p>
-            </div>
-          </div> -->
         </div>
       </section>
-  
     </div>
   </template>
   
@@ -64,6 +64,7 @@
   import software_development from '../../../components/images/software_development.png';
   import web_development from '../../../components/images/web_development.png';
   import it_consulting from '../../../components/images/it_consulting.png';
+
   import { useI18n } from 'vue-i18n';
   const { t, locale } = useI18n();
   const hero = computed(()=>t('layanan.hero'))

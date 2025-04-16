@@ -1,6 +1,6 @@
 <template>
     <section class="mt-36">
-        <KategoriService :descriptions="item"/>
+        <KategoriService :descriptions="descriptions" :services="services"/>
     </section>
 </template>
 
@@ -10,7 +10,12 @@ import { useRoute } from "vue-router";
 const route = useRoute(); // Akses route params
 import { useI18n } from 'vue-i18n';
 const { t, locale } = useI18n();
-
+  // Data layanan
+  const services = computed(()=>[
+    // { id: 1, title: "Software Development", description: "Website profesional untuk perusahaan dan UMKM.", img: software_development },
+    { id: 2, title: t('layanan.layanan1'), description: t('') },
+    { id: 3, title: t('layanan.layanan2'), description: t('') },
+  ]);
 const descriptions = computed(()=>[
         {   id:1,
             kategori:1,

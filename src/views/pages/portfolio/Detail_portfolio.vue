@@ -38,14 +38,36 @@
       </a>
       <p class="text-xl text-gray-700 font-sans font-semibold mb-4">{{ project.modul.text }}</p>
 
-      <div v-for="(idx, index) in project.modul.list" :key="index" class="mb-4">
+      <!-- <div v-for="(idx, index) in project.modul.list" :key="index" class="mb-4">
         <p class="text-black font-sans font-medium">{{ index + 1 }}. {{ idx.name }}</p>
         <p class="text-black font-sans">{{ idx.description }}</p>
         <div v-for="(sub, subIndex) in idx.subModules" :key="subIndex" class="ml-6 text-gray-700">
           <p class="font-sans">- {{ sub.name }}</p>
         </div>
-      </div>
+      </div> -->
+      <div class="bg-[#f7fbfc] py-12 px-4 md:px-16">
+        <div class="space-y-10">
+          <div v-for="(idx, index) in project.modul.list" :key="index"  class="space-y-2">
+            <h3 class="text-xl font-bold text-gray-900 flex items-center space-x-2">
+              <span class="text-orange-400 font-bold text-lg">
+                {{ (index + 1).toString().padStart(2, '0') }}
+              </span>
+              <span class="text-[#0f172a]">
+                 {{ idx.name }}
+              </span>
 
+            </h3>
+            <p class="text-black font-sans">{{ idx.description }}</p>
+
+            <div v-for="(sub, subIndex) in idx.subModules" :key="subIndex" class="ml-6 text-gray-700">
+              <p class="text-gray-600 max-w-xl leading-relaxed">
+                {{  sub.name }}
+              </p>
+            </div>
+          
+          </div>
+        </div>
+      </div>
       <!-- Kelebihan -->
       <p class="text-xl text-gray-700 font-sans font-semibold mb-4">{{ project.kelebihan.text }}</p>
 
