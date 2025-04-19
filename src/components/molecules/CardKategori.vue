@@ -1,34 +1,31 @@
 <template>
   <div class="container mx-auto px-6 py-10">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <!-- Flexbox untuk item agar semua tampil dalam satu baris -->
+    <div class="flex space-x-6 overflow-x-auto">
       <RouterLink 
         :to="`/portfolio/kategori/${item.id}`"  
         v-for="(item, index) in categories" 
         :key="index" 
-        class="group relative bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition"
-      >
-        <!-- Ikon -->
-        <div class="flex justify-center">
-          <img :src="item.foto" :alt="item.kategori" class="w-full h-52 object-cover transition-transform duration-300 hover:scale-110">
-        </div>
-        <!-- Judul (tombol di tengah) -->
-        <div class="flex justify-center mt-4">
-          <Button class="text-lg font-semibold text-gray-700">
-            {{ item.kategori }}
-          </Button>
-        </div>
-        <!-- Hover effect -->
-        <div class="absolute bottom-0 left-0 w-full h-1 bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+        class="relative w-80 h-48 p-5 border border-gray-300 rounded-lg shadow-lg bg-white">
+        
+        <!-- Title di pojok kiri atas -->
+        <h3 class="absolute top-2 left-2 text-lg font-bold"> {{ item.kategori }}</h3>
+        
+        <!-- Tombol check di pojok kanan bawah -->
+        <button class="absolute bottom-2 right-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+          ✔️ CHECK
+        </button>
+        
       </RouterLink>
     </div>
   </div>
 </template>
- <script setup>
-  // Props
+<script setup>
+// Props
 defineProps({
-    categories: {
-    type: Array,
-    required: true
-  }
+  categories: {
+  type: Array,
+  required: true
+}
 });
 </script>

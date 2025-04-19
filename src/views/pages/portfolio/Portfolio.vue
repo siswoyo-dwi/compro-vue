@@ -1,30 +1,33 @@
 <template>
-		<div class="bg-gradient-to-r from-gray-300 to-yellow-500 dark:from-slate-900 dark:to-blue-800 flex justify-center items-center min-h-screen">
-      <div class="flex flex-wrap justify-center mt-12">
-        <!-- <div v-for="item in categories" :key="item.id" class="w-full sm:w-1/2 p-4 mt-24">
-         <div class="block bg-white shadow-lg rounded-lg p-6 text-center ">
-            <div class="flex justify-center">
-              <img :src="item.foto" :alt="item.kategori" class="w-full h-52 object-cover transition-transform duration-300 hover:scale-110">
-            </div>
-            <div>
-              <div class="flex items-center justify-between mb-4">
-                <div>
-                  <h6 class="mt-4 text-gray-800 font-semibold">{{ item.kategori }}</h6>
-                </div>
-                <RouterLink :to="`/portfolio/kategori/${item.id}`"  class="inline-block mt-4 px-4 py-2 bg-blue-600 text-white text-sm font-semibold rounded hover:bg-blue-700 transition">
-                      See project details →
-                  </RouterLink>
-              </div>
+  <div class="bg-gradient-to-r from-gray-300 to-yellow-500 dark:from-slate-900 dark:to-blue-800 min-h-screen">
+    <!-- Wrapper untuk semua isi -->
+    <div class="flex flex-col items-center">
+
+      <!-- CardKategori di tengah, diberi margin atas agar tidak terlalu menempel atas -->
+      <div class="flex justify-center mt-48">
+        <CardKategori :categories="categories" />
+      </div>
+
+      <!-- Section berada di bawah, tidak ikut ke tengah -->
+      <section class="py-16 w-full">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-3xl font-bold mb-10 text-white">Mengapa Memilih Kami?</h2>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div v-for="advantage in advantages" :key="advantage.id" class="p-6 bg-gray-100 rounded-lg shadow-lg">
+              <h3 class="text-xl font-semibold text-black">{{ advantage.title }}</h3>
+              <p class="text-black mt-2">{{ advantage.description }}</p>
             </div>
           </div>
-        </div> -->
-        <CardKategori :categories="categories"/>
-      </div>
+        </div>
+      </section>
+      <CardContacUs class="mb-24"></CardContacUs>
     </div>
-  </template>
+  </div>
+</template>
+
   
   <script setup>
-  import { ref, watch } from "vue";
+  import { ref, watch ,computed} from "vue";
   import { useI18n } from 'vue-i18n';
   import Healthcare from '../../../components/images/Healthcare.jpg';
   import Human_Resource from '../../../components/images/Human Resource.jpg';
@@ -46,7 +49,11 @@
   
   // Panggil updateCategories saat pertama kali di-load
   updateCategories();
-  
+  const advantages = computed(()=>[
+    { id: 1, title: t('layanan.alasan1.title'), description: t('layanan.alasan1.deskripsi') },
+    { id: 2, title: t('layanan.alasan2.title'), description: t('layanan.alasan2.deskripsi') },
+    { id: 3, title: t('layanan.alasan3.title'), description: t('layanan.alasan3.deskripsi') },
+  ]);
   // Perbarui data setiap kali bahasa berubah
   watch(locale, updateCategories);
   </script>

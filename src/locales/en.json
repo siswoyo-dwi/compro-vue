@@ -1,426 +1,480 @@
 {
     "navbar": {
-      "home": "Home",
-      "services": "Services",
-      "contact": "Contact Us",
-      "technology": "Technology",
-      "about": "About Us",
-      "portfolio": "Portfolio"},
-      "penggunaan_teknologi":"Technologies and Platforms We Work With",
-    "partner":"Recognitions and Partnerships",
-    "running_text":"Welcome to Fosan",
-    "jelajah":"Explore Now",
+        "home": "Home",
+        "services": "Services",
+        "contact": "Contact Us",
+        "technology": "Technology",
+        "about": "About Us",
+        "portfolio": "Portfolio"
+    },
+    "penggunaan_teknologi": "Technologies and Platforms We Work With",
+    "partner": "Recognitions and Partnerships",
+    "running_text": "Welcome to Fosan",
+    "jelajah": "Explore Now",
     "welcome": "Welcome to our website!",
-    "kembali":"Back",
-    "kategori":{
-      "hospitality":"Healthcare",
-      "education":"Learning System",
-      "WMS":"Logistics",
-      "HR":"Professional Services Companies"},
-    "company":{
-      "tentang":"About Company",
-      "company":"About Fosan",
-      "deskripsi":"Fosan is an IT consulting and software development company that started from a Full Stack Developer Coding Bootcamp. Our focus on current industry developments shows that we can call flexibly and are ready to improve our skills to meet future project needs. Work transparency, timeline control, and consistently high service quality are our professionalism in providing solutions and helping clients achieve their business goals."
-},
-    "lokasi":{
-      "lokasi":"Our Location",
-      "visit":"Visit Our Office",
-      "alamat":"Address"},
-    "pemimpin":"Leadership Team",
-    "layanan":{
-      "hero":"IT Consulting and Software Development Services",
-      "deskripsi_hero":"We help your business grow with modern, fast and responsive software.",
-      "button_hero":"Our Services",
-      "layanan":"Our Services",
-      "layanan1":"Web Development",
-      "layanan2":"IT Consulting",
-      "alasan":"Why Choose Us?",
-      "alasan1":{"title":"Modern Design","deskripsi":"Using the latest technology for elegant design."},
-      "alasan2":{"title":"Security Guaranteed","deskripsi":"Customer data security is our top priority."},
-      "alasan3":{"title":"Support 24/7","deskripsi":"Our team is ready to help anytime if there are any problems."},
-      "desk_job":[
-        {"title": "Software consulting","text": "We combine deep multi-domain expertise, client-centric thinking, and an innovative approach to design and plan reliable solutions that perfectly match the needs and behaviors of their users."},
-        {"title": "Custom software development","text": "We develop software with long-term business value - uniquely tailored to your business processes and tailored to future needs."},
-          {
-              "title": "Enterprise software development",
-              "text": "We build multi-faceted enterprise solutions that can easily withstand the highest loads, scale with your business growth, and flexibly accommodate functional expansions."
-          },
-          {
-              "title": "Software product development",
-              "text": "We create robust SaaS, mobile, and desktop software products with great UX that drive fast-paced development."
-          },
-          {
-              "title": "Cloud development",
-              "text": "We design and deliver scalable, portable, and secure cloud applications while helping migrate applications of any complexity from on-premises infrastructure to the cloud."
-          },
-          {
-              "title": "Support and maintenance",
-              "text": "We ensure the smooth operation and relevance of your software through continuous performance monitoring, proactive optimization, rapid issue resolution, and the delivery of new features and integrations."
-          },
-          {
-              "title": "Legacy software modernization",
-              "text": "We redesign and upgrade existing software to help you achieve modern solutions with optimal costs and minimal disruption to business workflows."
-          },
-          {
-              "title": "Web Portals",
-              "text": "The web portals we create automatically collect data from enterprise systems and serve as an up-to-date information source and assistance platform for users."
-          },
-          {
-              "title": "Websites",
-              "text": "We ensure our websites have an easy-to-use page editor for managing dynamic content."
-          },
-          {
-              "title": "Web Apps",
-              "text": "We enhance business efficiency using scalable microservices architecture, enabling high automation in all business processes."
-          },
-          {
-              "title": "E-commerce",
-              "text": "We implement intelligent automation to streamline workflows and integrate enterprise applications for seamless operations."
-          },
-          {
-              "title": "Digital Transformation",
-              "text": {
-                  "a": "a. Digital transformation consulting",
-                  "b": "b. Software modernization",
-                  "c": "c. Software consulting",
-                  "d": "d. Custom software",
-                  "e": "e. Cloud enablement"
-              }
-          },
-          {
-              "title": "IT and Software Support",
-              "text": {
-                  "a": "a. Application maintenance and support",
-                  "b": "b. IT infrastructure support",
-                  "c": "c. Managed IT services",
-                  "d": "d. Helpdesk"
-              }
-          },
-          {
-              "title": "IT Service Management",
-              "text": {
-                  "a": "a. ITSM consulting",
-                  "b": "b. Software QA consulting",
-                  "c": "c. DevOps consulting"
-              }
-          },
-          {
-              "title": "Cybersecurity",
-              "text": {
-                  "a": "a. Cybersecurity consulting",
-                  "b": "b. Security testing",
-                  "c": "c. Managed security services",
-                  "d": "d. Compliance assessment & consulting"
-              }
-          }
-      ]
+    "kembali": "Back",
+    "kategori": {
+        "hospitality": "Healthcare",
+        "education": "Learning System",
+        "WMS": "Logistics",
+        "HR": "Professional Services Companies"
     },
-    "simpus":{
-    "portfolio": "Sistem Informasi Manajemen Puskesmas (SIMPUS)", 
-    "description":"It is a SIMPUS developed by the FOSAN team using the latest technology which aims to increase the effectiveness and efficiency of data and information management in health centers."
-    ,"modul":{"text":"SIMPUS developed by FOSAN accommodates the following Modules:","list":[{
-      "name":"EMR (Electronic Medical Record) A module containing all patient medical record data and services provided at the health center."},{
-      "name":"Registration (Manual/ APM)"},{
-      "name":"Outpatient Installation Services"},{
-      "name":"Inpatient Installation Services"},{
-      "name":"Emergency Room Installation Services"},{
-      "name":"Bed Management"},{
-      "name":"Medication Management"},{
-      "name":"Patient Management"},{
-      "name":"Laboratory Management"},{
-      "name":"Drug Warehouse Management"},{
-      "name":"Financial management"},{
-      "name":"Daily Report"},{
-      "name":"Monthly report"},{
-      "name":"Health Chart"},{
-      "name":"Backdate System"},{
-      "name":"Health Center Dashboard"},{
-      "name":"Access Management Control"}]},
-      "integrasi":{
-        "text":"FOSAN developed SIMPUS which is integrated with:",
-        "list":["1.PCare BPJS","2.ICare BPJS","3.Mobile JKN","4.SATU SEHAT Kemenkes"]},
-        "fitur":{
-        "text":"New Features:",
-        "list":[
-          {"name":"1.Health Screening - Integration of Primary Services (ILP) In accordance with Decree of the Minister of Health No. 01.07/MENKES/2025/2023 concerning Technical Guidelines for Integration of Primary Health Services."},
-          {"name":"2.Dashboard Integrasi Layanan Primer (ILP)"},
-          {"name":"3.KYC (Know Your Customer) Profile Verification SATU SEHAT Mobile"}
-          ]
+    "company": {
+        "tentang": "About Company",
+        "company": "About Fosan",
+        "deskripsi": "Fosan is an IT consulting and software development company that started from a Full Stack Developer Coding Bootcamp. Our focus on current industry developments shows that we can call flexibly and are ready to improve our skills to meet future project needs. Work transparency, timeline control, and consistently high service quality are our professionalism in providing solutions and helping clients achieve their business goals."
+    },
+    "lokasi": {
+        "lokasi": "Our Location",
+        "visit": "Visit Our Office",
+        "alamat": "Address"
+    },
+    "pemimpin": "Leadership Team",
+    "kelebihan":"Superiority",
+    "layanan": {
+        "hero": "IT Consulting and Software Development Services",
+        "deskripsi_hero": "We help your business grow with modern, fast and responsive software.",
+        "button_hero": "Our Services",
+        "layanan": "Our Services",
+        "layanan1": "Web Development",
+        "layanan2": "IT Consulting",
+        "alasan": "Why Choose Us?",
+        "alasan1": {
+            "title": "Modern Design",
+            "deskripsi": "Using the latest technology for elegant design."
         },
-          "kelebihan":{
-            "text":"Kelebihan SIMPUS - FOSAN",
-            "list":[
-              {"name":"Real-Time Information Real-time patient data can be updated and viewed directly by doctors and/or other medical personnel, so that treatment decisions are more timely."},
-              {"name":"Can Be Sent Periodically (Reducing Network Load) Visits, especially homecare conducted by health workers, can have their data sent periodically and collectively according to the available format. Thus increasing the efficiency of sending data to the server."            }
-            ]
-        }
-  },
-    "simrs":{ 
-        "portfolio": "Sistem Informasi Rumah Sakit (SIMRS)",
-        "description":"It is a SIMRS developed by the FOSAN team using the latest technology based on Enterprise Resources Planning (ERP) which aims to manage activities in the hospital easily, effectively, accurately and efficiently.",
-        "modul":{"text":"SIMRS developed by FOSAN accommodates the following Modules:","list":[
-          {
-            "name": "EMR (Electronic Medical Record)",
-            "description": "A module containing all patient medical record data and services provided while in hospital."
-          },
-          {
-            "name": "Modul Front Office",
-            "description": "Modules in SIMRS that accommodate hospital operational management activities including patient management and services, polyclinic and doctor scheduling, and financial administration.",
-            "subModules": [
-              {
-                "name": "Registration of outpatients and inpatients"
-              },
-              {
-                "name": "Bed management and monitoring"
-              },
-              {
-                "name": "Doctor's schedule management"
-              },
-              {
-                "name": "Booking a visit"
-              },
-              {
-                "name": "Outpatient Installation Services",
-                "description": "Processing outpatient registration, emergency room services, arranging on-call doctors to making prescriptions and registering with other installation services such as laboratory and radiology."
-              },
-              {
-                "name": "Emergency Installation Services",
-                "description": "Processing emergency patient registration, bed management, and other supporting services."
-              },
-              {
-                "name": "Inpatient Installation Services",
-                "description": "Processing inpatient installation services including SOAP input and facilitating real-time bed management to automating the recapitulation of treatment costs."
-              },
-              {
-                "name": "Laboratory Installation Services",
-                "description": "Processing registration and processing laboratory support examination services up to printing results."
-              },
-              {
-                "name": "Radiology Installation Services",
-                "description": "Processing registration and processing supporting radiology examination services until printing the results."
-              },
-              {
-                "name": "Central Surgical Installation Services",
-                "description": "Processing registration and processing operating rooms and their schedules, up to operations management."
-              },
-              {
-                "name": "Pharmacy Management",
-                "description": "Pharmacy inventory consisting of pharmacy master, prescription dispensing transaction management, inventory control, and reporting on stock usage in pharmacy."
-              },
-              {
-                "name": "Referral Management"
-              }
-            ]
-          },
-          {
-            "name": "Modul Back Office",
-            "subModules" :[
-              {
-                "name": "Personnel Management",
-                "description": "A module developed to manage employee data management in hospitals (medical and non-medical personnel) efficiently."
-              },
-              {
-                "name": "Warehouse Module",
-                "description": "The module is developed to manage stock of medicines and medical equipment, manage procurement of goods, monitor stock usage, evaluate the payment process to suppliers, and automatically provide stock availability reports in real time."
-              },
-              {
-                "name": "Sales Module",
-                "description": "A module developed to manage patient transactions, provide billing information, process payments, and generate financial reports within a certain period."
-              },
-              {
-                "name": "Billing Module",
-                "description": "A module containing billing information and payment status for patient services."
-              },
-              {
-                "name": "Accounting Module",
-                "description": "A module developed to manage hospital financial reports and monitor cash flow effectively."
-              },
-              {
-                "name": "Asset Management",
-                "description": "The module was developed to manage hospital assets, including asset inventory, monitoring maintenance, and optimizing the use of facilities and infrastructure."
-              }
-            ] 
-          },
-          {
-            "name": "BPJS Health Integration",
-            "description": "This developed module functions to support the management of BPJS patient referrals to facilitate the flow of health services.",
-            "subModules": [
-              { "name": "V-Claim" },
-              { "name": "Aplicare" },
-              { "name": "Mobile JKN" },
-              { "name": "I-Care" }
-            ]
-          },
-          {
-            "name": "Integrasi INACBG’s",
-            "description": "This module is used to make it easier for hospitals to prepare claims and cost group reports quickly and accurately."
-          },
-          {
-            "name": "Integrasi SATU SEHAT Kemenkes",
-            "description": "This module enables real-time data exchange, including patient medical record data and patient information between SIM-RS and the SATU SEHAT Platform."
-          }
+        "alasan2": {
+            "title": "Security Guaranteed",
+            "deskripsi": "Customer data security is our top priority."
+        },
+        "alasan3": {
+            "title": "Support 24/7",
+            "deskripsi": "Our team is ready to help anytime if there are any problems."
+        },
+        "desk_job": [
+            {
+                "title": "Software consulting",
+                "text": "We combine deep multi-domain expertise, client-centric thinking, and an innovative approach to design and plan reliable solutions that perfectly match the needs and behaviors of their users."
+            },
+            {
+                "title": "Custom software development",
+                "text": "We develop software with long-term business value - uniquely tailored to your business processes and tailored to future needs."
+            },
+            {
+                "title": "Enterprise software development",
+                "text": "We build multi-faceted enterprise solutions that can easily withstand the highest loads, scale with your business growth, and flexibly accommodate functional expansions."
+            },
+            {
+                "title": "Software product development",
+                "text": "We create robust SaaS, mobile, and desktop software products with great UX that drive fast-paced development."
+            },
+            {
+                "title": "Cloud development",
+                "text": "We design and deliver scalable, portable, and secure cloud applications while helping migrate applications of any complexity from on-premises infrastructure to the cloud."
+            },
+            {
+                "title": "Support and maintenance",
+                "text": "We ensure the smooth operation and relevance of your software through continuous performance monitoring, proactive optimization, rapid issue resolution, and the delivery of new features and integrations."
+            },
+            {
+                "title": "Legacy software modernization",
+                "text": "We redesign and upgrade existing software to help you achieve modern solutions with optimal costs and minimal disruption to business workflows."
+            },
+            {
+                "title": "Web Portals",
+                "text": "The web portals we create automatically collect data from enterprise systems and serve as an up-to-date information source and assistance platform for users."
+            },
+            {
+                "title": "Websites",
+                "text": "We ensure our websites have an easy-to-use page editor for managing dynamic content."
+            },
+            {
+                "title": "Web Apps",
+                "text": "We enhance business efficiency using scalable microservices architecture, enabling high automation in all business processes."
+            },
+            {
+                "title": "E-commerce",
+                "text": "We implement intelligent automation to streamline workflows and integrate enterprise applications for seamless operations."
+            },
+            {
+                "title": "Digital Transformation",
+                "text": {
+                    "a": "a. Digital transformation consulting",
+                    "b": "b. Software modernization",
+                    "c": "c. Software consulting",
+                    "d": "d. Custom software",
+                    "e": "e. Cloud enablement"
+                }
+            },
+            {
+                "title": "IT and Software Support",
+                "text": {
+                    "a": "a. Application maintenance and support",
+                    "b": "b. IT infrastructure support",
+                    "c": "c. Managed IT services",
+                    "d": "d. Helpdesk"
+                }
+            },
+            {
+                "title": "IT Service Management",
+                "text": {
+                    "a": "a. ITSM consulting",
+                    "b": "b. Software QA consulting",
+                    "c": "c. DevOps consulting"
+                }
+            },
+            {
+                "title": "Cybersecurity",
+                "text": {
+                    "a": "a. Cybersecurity consulting",
+                    "b": "b. Security testing",
+                    "c": "c. Managed security services",
+                    "d": "d. Compliance assessment & consulting"
+                }
+            }
         ]
-      }
-    },"BPSDM":{
-    "portfolio":"BPSDM",
-    "modul":{"text":"","list":[]},"integrasi":{"text":"","list":[]},"fitur":{"text":"","list":[]},"kelebihan":{"text":"","list":[]}
-
-    },"Simadu":{
-      "portfolio":"Simadu",
-      "description":"It is an academic information system platform for Poltekkes Kemenkes Semarang students that can manage activities related to lectures.",
-      "modul":{"text":"Features offered:","list":[
-        {
-          "name": "Content Management",
-          "description":"Features that allow users to have access limitations in using the system. Users can be determined by the campus, so that users who access get different benefits according to their functions."
-        },{
-          "name": "Academic Calendar",
-          "description":"This feature allows admins to manage academic calendars and lecture periods that are in accordance with the current semester. In addition, students can directly view the academic calendar and lecture periods that have been updated by the admin."
-        },{
-          "name": "Her-Registrasi",
-          "description":"A feature that makes it easier for users to manage registration data, leave registration, data on students who have not registered, leave application data, active lecture status, and payment status of students."
-        },{
-          "name": "Lecture Activities",
-          "description":"a feature that makes it easier for users to manage and display course data, course substance, curriculum, curriculum subjects, lecture classes, lecture schedules, UAT schedules, UAS schedules, and KRS packages. "
-        },{
-          "name": "Value Management",
-          "description":"A feature that makes it easier for users to set value management according to the courses taught by lecturers and the management of the value scale of each study program on campus."
-        },{
-          "name": "Student Values",
-          "description":"This feature makes it easier for teachers to compile and obtain student progress reports. This feature will provide monitoring reports such as attendance levels, how often students access learning materials, to a recap of course assessment results, mid-term exams, and final exams that have been carried out by students. In addition to teachers, students can also see the development of their abilities in this feature."
-        },{
-          "name": "Final Project Management",
-          "description":"This feature makes it easier for users to monitor the progress of the final project in progress. Final project management includes submitting titles and submitting exams/seminar results."
-        },{
-          "name": "Graduation",
-          "description":"A feature that makes it easier for users to monitor graduation activities, including a list of graduation periods and available graduation participants."
-        },{
-          "name": "Quality Assurance",
-          "description":"The quality assurance feature makes it easier for users to obtain information related to the university profile and accreditation of each study program owned by the campus."
-        },{
-          "name": "Room Management",
-          "description":"This feature makes it easier for users to monitor the rooms/classes used for lectures and to book rooms for the next lecture activity."
-        }
-      ]},
-      "kelebihan":{"text":"Excess","list":[
-      {
-        "name": "Easy to use display",
-        "description":""
-      },{
-        "name": "System Efficiency",
-        "description":""
-      },{
-        "name": "Facilitating Evaluation",
-        "description":""
-      }
-    ]}
     },
-    "live_japan":{
-      "portfolio":"Live English Japan",
-      "description":"It is a platform developed for digital learning/courses that makes the process of learning English, managing materials, evaluating student progress and paying for classes easier. So that online course activities become more flexible, interactive and efficient.",
-      "modul":{"text":"Features we offer:",
-      "list":[
-        {
-          "name": "Content Management",
-          "description":"A feature that allows teachers and students to have limited access to use the system. Teachers can manage teaching materials in the form of text, video, or audio. While students can use their accounts to get classes and materials in the system."
-        },
-        {
-          "name": "Online Registration",
-          "description":"This feature allows students to register online easily and quickly. In addition, students can book course classes according to the schedule and teachers available in the system."
-        },
-        {
-          "name": "Online Class",
-          "description":"This feature is used to conduct online learning. Students can learn through materials in the form of text, video, or audio that have been prepared by the teacher."
-        },
-        {
-          "name": "Discussion Forum",
-          "description":"This feature allows students and teachers to discuss the material given through the forum. This feature can be made in private or public (large class) form."
-        },
-        {
-          "name": "Video Conference",
-          "description":"This feature allows teachers and students to interact directly via video calls without having to meet face to face."
-        },
-        {
-          "name": "Evaluations",
-          "description":"The evaluations feature contains online quizzes and exams. Online quizzes and exams in the system make it easier for students to take online quizzes or exams that have been prepared by the teacher as part of the evaluation of course activities."
-        },
-        {
-          "name": "Lesson Hystory",
-          "description":"This feature makes it easier for teachers to compile and obtain student progress reports. This feature will provide monitoring reports such as student attendance levels, how often students access learning materials, to recaps of student quizzes and exams. In addition to teachers, students can also see the development of their abilities in this feature."
-        },
-        {
-          "name": "Order and Payment System",
-          "description":"This feature makes it easy for students to see available classes and schedules, make class bookings, and class payments that can be made with several types of digital payments. So that from the beginning of registration, payment, and learning activities can be done in this one system."
-        }
-      ]
+    "simpus": {
+        "portfolio": "SIMPUS (SISTEM INFORMASI MANAJEMEN PUSKESMAS)",
+        "description": "Health Center Management Information System developed by the Expert Team from FOSAN Using the latest technology to improve the effectiveness and efficiency of patient data management, drug stock, reports, and human resources (medical and non-medical personnel) in health centers. SIMPUS FOSAN has been integrated with other health platforms (PCare BPJS, ICare BPJS, Mobile JKN and SATU SEHAT Kemenkes) so that it facilitates data delivery and synchronization. This system has an attractive and easy-to-use appearance, so it can increase user comfort in applying SIMPUS FOSAN.",
+        "kelebihan": [
+            {
+                "text": "Real Time Information",
+                "list": [
+                    {
+                        "name": "Real-time patient data can be updated and viewed directly by doctors and/or other medical personnel, so that treatment decisions are more timely."
+                    }
+                ]
+            },
+            {
+                "text": "Dapat Dikirim Secara Periodik",
+                "list": [
+                    {
+                        "name": "Kunjungan khususnya homecare yang dilakukan oleh petugas kesehatan dapat dikirimkan datanya secara periodik dan kolektif sesuai format yang tersedia. Sehingga meningkatkan efisiensi pengiriman data ke server."
+                    }
+                ]
+            },
+            {
+                "text": "Efisiensi Operasional",
+                "list": [
+                    {
+                        "name": "SIMPUS FOSAN mampu menghubungkan antar departemen yang dapat meningkatkan kolaborasi dan mempercepat pengambilan keputusan."
+                    }
+                ]
+            },
+            {
+                "text": "Optimalisasi Produktivitas",
+                "list": [
+                    {
+                        "name": "Pemanfaatan otomatisasi dan electronic medical record dalam SIMPUS FOSAN mampu meningkatkan produktivitas kerja antar tim menjadi optimal."
+                    }
+                ]
+            }
+        ]
     },
-    "kelebihan":{
-      "text":"Excess",
-      "list":[
-        {
-          "name": "Easy to use display"
-        },
-        {
-          "name": "Improving learning effectiveness"
-        },
-        {
-          "name": "Facilitating Evaluation"
-        }
-      ]
+    "simrs": {
+        "portfolio": "SIMRS (SISTEM INFORMASI MANAJEMEN RUMAH SAKIT",
+        "description": "Hospital Management Information System (SIMRS) developed by the FOSAN team using the latest technology based on Enterprise Resources Planning (ERP) with the aim of managing activities in the hospital easily, effectively, accurately, and efficiently. FOSAN SIMRS has been integrated with BPJS Kesehatan (VClaim, Applicare, Mobile JKN, and ICare), INACBG's, and SATU SEHAT Kemenkes. So that it facilitates the management of BPJS patient referrals, facilitates the preparation of claim reports and cost groups quickly and accurately, and enables real-time data exchange, including patient medical record data, patient information between SIMRS and SATU SEHAT Platform.",
+        "kelebihan": [
+            {
+                "text": "Real Time Information",
+                "list": [
+                    {
+                        "name": "Real-time patient data can be updated and viewed directly by doctors and/or other medical personnel, so that treatment decisions are more timely."
+                    }
+                ]
+            },
+            {
+                "text": "Operational Efficiency",
+                "list": [
+                    {
+                        "name": "FOSAN SIMRS is able to connect between departments which can improve collaboration and speed up decision making."
+                    }
+                ]
+            },
+            {
+                "text": "Productivity Optimization",
+                "list": [
+                    {
+                        "name": "Utilization of automation and electronic medical records in FOSAN SIMRS can increase productivity between teams to be optimal."
+                    }
+                ]
+            },
+            {
+                "text": "Revenue Optimization",
+                "list": [
+                    {
+                        "name": "Utilizing back office features in SIMRS FOSAN efficiently will accelerate and produce optimal revenue reports."
+                    }
+                ]
+            }
+        ]
+    },
+    "BPSDM": {
+        "portfolio": "Sistem Pelatihan Online BPSDM",
+        "description": "It is a platform developed by the FOSAN Expert Team to facilitate online education and training organized by BPSDM. This system is developed with several superior features including monitoring dashboards, management of materials to be delivered, discussion forums, video conferences, management of questions and quizzes, management of training schedules, and monitoring of training participants. The clear and easy-to-use display allows the use of this online training system to be more flexible, interactive and efficient.",
+        "kelebihan": [
+            {
+                "text": "Easy to use interface",
+                "list": [
+                    {
+                        "name": "This training platform prioritizes user-friendliness. So that the interface used in this system can be used easily and comfortably by students and teachers."
+                    }
+                ]
+            },
+            {
+                "text": "Improving training effectiveness",
+                "list": [
+                    {
+                        "name": "This platform makes learning activities accessible anytime and anywhere. The delivery of materials is more innovative and varied, so that participants do not get bored and become more effective in terms of time and location."
+                    }
+                ]
+            },
+            {
+                "text": "Facilitating evaluation",
+                "list": [
+                    {
+                        "name": "This platform makes it easy for teachers to manage data and grades from every quiz and exam in the system."
+                    }
+                ]
+            },
+            {}
+        ]
+    },
+    "Simadu": {
+        "portfolio": "SIMADU V2",
+        "description": "It is an academic information system platform for students of the Ministry of Health Polytechnic of Semarang that can manage activities related to lectures. The main features developed on this platform are the academic calendar, registration, re-registration, lecture activities, grade management, student grades, final project management, graduation, quality assurance, and room management. The features in SIMADU make it easier for users to manage and supervise lecture activities on campus. So it is easier to analyze policies and quality assurance for each study program or department.",
+        "kelebihan": [
+            {
+                "text": "Easy to use interface",
+                "list": [
+                    {
+                        "name": "This system is the result of collaboration with the management team of the Semarang Ministry of Health Polytechnic, so that the SIMADU display has been adjusted to the needs and abilities of users (both managers and students)."
+                    }
+                ]
+            },
+            {
+                "text": "System Efficiency",
+                "list": [
+                    {
+                        "name": "This system facilitates all real-time lecture activities, so that the flow of data exchange from each user becomes faster and more efficient."
+                    }
+                ]
+            },
+            {
+                "text": "Facilitating Evaluation",
+                "list": [
+                    {
+                        "name": "This system is able to provide monitoring reports such as attendance levels, how often students access learning materials, to recaps of course assessment results, mid-term exams, final exams which can be used to evaluate the development of student abilities."
+                    }
+                ]
+            }
+        ]
+    },
+    "live_japan": {
+        "portfolio": "Live English Japan",
+        "description": "It is a platform developed by the FOSAN Expert Team for digital English learning/courses. This system is developed with several superior features including online registration, online classes, discussion forums, video conferences, evaluations, lesson history, and order and payment systems. Live English Japan enables the English learning process, material management, student development evaluation and class payments in courses to become easier. So that online course activities become more flexible, interactive and efficient. ",
+        "kelebihan": [
+            {
+                "text": "Easy to use interface",
+                "list": [
+                    {
+                        "name": "This learning platform prioritizes user-friendliness. So that the interface used in this system can be used easily and comfortably by students and teachers."
+                    }
+                ]
+            },
+            {
+                "text": "Improving learning effectiveness",
+                "list": [
+                    {
+                        "name": "This platform makes learning activities accessible anytime and anywhere. The delivery of learning materials is more innovative and varied, so that students do not get bored and become more effective in terms of time and location."
+                    }
+                ]
+            },
+            {
+                "text": "Facilitating evaluation",
+                "list": [
+                    {
+                        "name": "This platform makes it easier for teachers or instructors to manage data and grades from every quiz and exam in the system."
+                    }
+                ]
+            }
+        ]
+    },
+    "MD_Clinic": {
+        "portfolio": "WMS MD Aesthetic Clinic",
+        "description": "It is a Warehouse Management System (WMS) platform to support and optimize warehouse operations ranging from storage, picking goods, to inventory management in medical device and drug companies for beauty clinics (MD Aesthetic Clinic). This system helps in automating various warehouse operational points. As well as facilitating the arrangement of goods locations, stock management, to order processing.",
+        "kelebihan": [
+            {
+                "text": "Operational Efficiency",
+                "list": [
+                    {
+                        "name": "Reduce the time required to store and retrieve goods (medical devices and medicines for beauty clinics)."
+                    }
+                ]
+            },
+            {
+                "text": "Inventory Accuracy",
+                "list": [
+                    {
+                        "name": "Minimize errors in stock recording and provide real-time data on inventory quantities and locations."
+                    }
+                ]
+            },
+            {
+                "text": "Space Optimization",
+                "list": [
+                    {
+                        "name": "Improve warehouse space utilization by strategically arranging items based on frequency and usage patterns."
+                    }
+                ]
+            },
+            {
+                "text": "Increased Customer Satisfaction",
+                "list": [
+                    {
+                        "name": "Providing faster and more accurate services, so that it can speed up the delivery time of goods to customers."
+                    }
+                ]
+            }
+        ]
+    },
+    "wms": {
+        "portfolio": "WMS Bahtera Adi Jaya",
+        "description": "It is a Warehouse Management System (WMS) to support and optimize warehouse operations ranging from storage, retrieval of goods, to inventory management of goods (special chemicals) in the Bahtera Adi Jaya company. The development of this system collaborates RFID and WMS which makes it easier for users to check materials coming in and out of the warehouse. So that the flow of material exchange in the warehouse becomes more accurate and efficient.",
+        "kelebihan": [
+            {
+                "text": "Operational Efficiency",
+                "list": [
+                    {
+                        "name": "Reduces the time required to store and retrieve items."
+                    }
+                ]
+            },
+            {
+                "text": "Inventory Accuracy",
+                "list": [
+                    {
+                        "name": "Minimize errors in stock recording and provide real-time data on inventory quantities and locations."
+                    }
+                ]
+            },
+            {
+                "text": "Space Optimization",
+                "list": [
+                    {
+                        "name": "Improve warehouse space utilization by strategically arranging items based on frequency and usage patterns."
+                    }
+                ]
+            },
+            {
+                "text": "Increased Customer Satisfaction",
+                "list": [
+                    {
+                        "name": "Providing faster and more accurate services, so that it can speed up the delivery time of goods to customers."
+                    }
+                ]
+            }
+        ]
+    },
+    "STARA": {
+        "portfolio": "STARA",
+        "description": "It is a Human Resource Information System platform that can manage and automate various aspects of human data sources in a company, starting from employee data management, recruitment, performance management, salary management, reporting, and others. STARA consists of several superior features, including employee management, job vacancies, work accident reports, employee reports, and employee assessments. This system is not just a technological tool, but a strategy that provides many benefits to the company.",
+        "kelebihan": [
+            {
+                "text": "Administrative Efficiency",
+                "list": [
+                    {
+                        "name": "This system can automate administrative tasks such as payroll processing, leave management, and employee reporting. In addition, STARA reduces the risk of human errors such as incorrect payroll calculations and inaccurate leave tracking. Thus creating a more efficient, productive, and organized environment in human resource management."
+                    }
+                ]
+            },
+            {
+                "text": "Data Accuracy",
+                "list": [
+                    {
+                        "name": "This platform is a technology that can store more structured and accurate employee data. So that information about work history and performance evaluations can be accessed easily and up to date."
+                    }
+                ]
+            },
+            {
+                "text": "Improving Employee Satisfaction",
+                "list": [
+                    {
+                        "name": "STARA enables companies to better plan, track, and measure employee quality improvements. So that employees feel more empowered and have a significant impact on the performance produced to increase company productivity."
+                    }
+                ]
+            },
+            {
+                "text": "Legal Compliance",
+                "list": [
+                    {
+                        "name": "STARA helps companies comply with employment laws and regulations by automating administrative processes that follow legal standards."
+                    }
+                ]
+            }
+        ]
+    },
+    "OSBOND": {
+        "portfolio": "OSBOND GYM",
+        "description": "Osbond Gym is an application specifically designed for gym members, providing various features that make it easier to manage and utilize gym facilities.",
+        "kelebihan": [
+            {
+                "text": "Operational Efficiency",
+                "list": [
+                    {
+                        "name": "Automate various membership management tasks, saving time and money."
+                    }
+                ]
+            },
+            {
+                "text": "Member Loyalty",
+                "list": [
+                    {
+                        "name": "Providing a more personalized and memorable experience."
+                    }
+                ]
+            },
+            {
+                "text": "Income",
+                "list": [
+                    {
+                        "name": "Encourage members to use more services, such as classes and premium membership packages."
+                    }
+                ]
+            },
+            {
+                "text": "Payment Transaction",
+                "list": [
+                    {
+                        "name": "Members can make membership payment transactions directly via the application. "
+                    }
+                ]
+            },
+            {
+                "text": "Latest Information",
+                "list": [
+                    {
+                        "name": "Provides updates on promotions, special events, and the latest news."
+                    }
+                ]
+            },
+            {
+                "text": "Member Management",
+                "list": [
+                    {
+                        "name": "Monitor the activity of each member in the gym center."
+                    }
+                ]
+            },
+            {
+                "text": "Making Promotion Easier",
+                "list": [
+                    {
+                        "name": "Makes it easier to set up promotional schedules in each branch."
+                    }
+                ]
+            }
+        ]
     }
-    },
-    "Manfaat":{
-      "portfolio":"Manfaat [Penjualan Tepung]",
-      "description":"",
-      "modul":{"text":"","list":[]},"integrasi":{"text":"","list":[]},"fitur":{"text":"","list":[]},"kelebihan":{"text":"","list":[]}
-    },
-    "wms":{
-      "portfolio":"Warehouse Management System Bahtera Adi Jaya",
-      "description":"",
-      "modul":{"text":"","list":[]},"integrasi":{"text":"","list":[]},"fitur":{"text":"","list":[]},"kelebihan":{"text":"","list":[]}
-    },
-    "STARA":{
-      "portfolio":"STARA",
-      "description":"It is a Human Resources Information System platform that can manage and automate various aspects of human resources in a company, starting from employee data management, recruitment, performance management, salary management, reporting, and others. This system is not just a technological tool, but a strategy that provides many benefits to the company.",
-      "modul":{"text":"Features we offer:","list":[{
-        "name": "Content Management",
-        "description":"A feature that allows users to have limited access to use the system based on their role in the company."
-      },{
-        "name": "Management Karyawan",
-        "description":"This feature makes it easier for users to manage overall employee data such as complete employee identity, work agreements, work orders, and transfer data."
-      },{
-        "name": "Job vacancy",
-        "description":"This feature makes it easy for users to manage the list of job vacancies to be done by the company. This feature also allows users to monitor and evaluate recruitment activities from the distribution of job vacancies to the results of the applicant selection stage."
-      },{
-  
-        "name": "Work Accident Report",
-        "description":"This feature makes it easier for users to manage work accident data that occurs to employees while carrying out their work."
-      },{
-        "name": "Employee Report",
-        "description":"This feature allows users to manage employee-related reports including salary projections, salary recaps, salary deductions, THR, and overtime accumulation."
-      },{
-        "name": "Employee Assessment",
-        "description":"This feature makes it easier for users to evaluate the performance of each employee. So that the data can be used to improve the quality of human resources in the company."
-      }]},"integrasi":{"text":"","list":[]},"fitur":{"text":"","list":[]},"kelebihan":{"text":"Excess","list":[
-        {
-          "name": "Administrative Efficiency",
-          "description":"This system can automate administrative tasks such as payroll processing, leave management, and employee reporting. In addition, STARA reduces the risk of human error such as incorrect payroll calculations and inaccurate leave tracking. Thus creating a more efficient, productive, and organized environment in human resource management."
-        },{
-          "name": "Data Accuracy",
-          "description":"This platform is a technology that can store more structured and accurate employee data. So that information about work history, and performance evaluations can be accessed easily and up to date."
-        },{
-          "name": "Increased Employee Satisfaction",
-          "description":"STARA enables companies to better plan, track, and measure employee quality improvements. So that employees feel more empowered and have a significant impact on the performance produced to increase company productivity."
-        },{
-          "name": "Legal Compliance",
-          "description":"STARA helps companies comply with employment laws and regulations by automating administrative processes that follow legal standards."
-       
-        }
-      ]}
-    },
-    "OSBOND":{
-      "portfolio":"OSBOND GYM",
-      "description":"",
-      "modul":{"text":"","list":[]},"integrasi":{"text":"","list":[]},"fitur":{"text":"","list":[]},"kelebihan":{"text":"","list":[]}
-    }
-  }
-  
+}

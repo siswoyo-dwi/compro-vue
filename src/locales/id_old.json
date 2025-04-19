@@ -1,0 +1,376 @@
+{
+    "navbar": {
+      "home": "Beranda",
+      "about": "Tentang",
+      "contact": "Kontak",
+      "services": "Layanan",
+      "technology": "Teknologi",
+      "portfolio": "Portofolio"
+    },
+    "penggunaan_teknologi":"Teknologi dan Platform yang Kami Gunakan",
+    "partner":"Pengakuan dan Kemitraan",
+    "running_text":"Selamat Datang di Fosan",
+    "jelajah":"Jelajah",
+    "welcome": "Selamat datang di website kami!",
+    "kategori":{
+      "hospitality":"Kesehatan",
+      "education":"Pendidikan",
+      "WMS":"Pengelola operasional gudang",
+      "HR":"Sumber Daya Manusia"
+    },
+    "company":{
+      "tentang":"Tentang Company",
+      "company":"Tentang Fosan",
+      "deskripsi":"Fosan merupakan perusahaan konsultasi IT dan pengembang perangkat lunak yang berawal dari Bootcamp Coding Full Stack Developer. Fokus kami yang berfokus pada perkembangan industri saat ini, menunjukkan bahwa kami dapat bersikap fleksibel dan siap meningkatkan keahlian untuk memenuhi tuntutan project di masa depan. Transparansi kerja, pengendalian timeline, dan kualitas layanan yang tinggi secara konsisten merupakan wujud professional kami dalam memberikan solusi dan membantu klien mencapai tujuan bisnis mereka."
+    },
+    "lokasi":{
+      "lokasi":"Lokasi kami",
+      "visit":"Kunjungi Kami",
+      "alamat":"Alamat"
+    },
+    "kembali":"Kembali",
+    "pemimpin":"Kepemimpinan Tim",
+    "layanan":{
+      "hero":"Jasa Konsultasi IT dan Pengembangan Software",
+      "deskripsi_hero":"Kami membantu bisnis Anda berkembang dengan software modern, cepat, dan responsif",
+      "button_hero":"Lihat Layanan Kami",
+      "layanan":"Layanan Kami",
+      "layanan1":"Pengembangan Web",
+      "layanan2":"Konsultasi",
+      "alasan":"Mengapa Memilih Kami?",
+      "alasan1":{"title":"Desain Modern","deskripsi":"Menggunakan teknologi terbaru untuk desain yang elegan."},
+      "alasan2":{"title":"Keamanan Terjamin","deskripsi":"Keamanan data pelanggan adalah prioritas utama kami."},
+      "alasan3":{"title":"Support 24/7","deskripsi":"Tim kami siap membantu kapan saja jika ada kendala."},
+      "desk_job":[
+        {"title": "Konsultasi perangkat lunak","text": "Kami menggabungkan keahlian multi-domain yang mendalam, pemikiran yang berpusat pada klien, dan pendekatan inovatif untuk merancang dan merencanakan solusi andal yang sangat sesuai dengan kebutuhan dan perilaku penggunanya."},
+        {"title": "Pengembangan perangkat lunak khusus","text": "Kami mengembangkan perangkat lunak dengan nilai bisnis jangka panjang – disesuaikan secara unik dengan proses bisnis anda dan disesuaikan dengan kebutuhan masa depan."},
+        {"title": "Pengembangan perangkat lunak perusahaan","text": "Kami membangun solusi perusahaan multi-segi yang dapat dengan mudah menahan beban tertinggi, ditingkatkan seiring pertumbuhan bisnis anda, dan secara fleksibel mengakomodasi perluasan fungsional."},
+        {"title": "Pengembangan produk perangkat lunak","text": "Kami menciptakan produk perangkat lunak SaaS, seluler, dan desktop yang tangguh dengan UX yang hebat dan mendorong pengembangan yang bergerak cepat."},
+        {"title": "Pengembangan Cloud","text": "Kami merancang dan menghadirkan aplikasi cloud yang skalabel, portabel, dan aman serta membantu memigrasikan aplikasi dengan kompleksitas apa pun dari infrastruktur lokal ke cloud."},
+        {"title": "Dukungan dan pemeliharaan","text": "Kami memastikan kelancaran fungsi dan relevansi perangkat lunak anda melalui pemantauan kinerja berkelanjutan, pengoptimalan proaktif, penyelesaian masalah dengan cepat, pengiriman fitur dan integrasi baru."},
+        {"title": "Modernisasi perangkat lunak lama","text": "Kami mendesain ulang dan meningkatkan perangkat lunak yang ada untuk membantu anda mendapatkan solusi modern dengan biaya optimal dan gangguan minimal terhadap alur kerja bisnis."},
+        {"title": "Portal Web","text": "Portal web yang kami buat secara otomatis mengumpulkan data dari sistem perusahaan dan menjadi sumber informasi terkini dan bantuan bagi pengguna."},
+        {"title": "Situs web","text": "Kami memastikan situs web kami memiliki editor halaman yang mudah digunakan untuk pengelolaan konten dinamis."},
+        {"title": "Aplikasi Web","text": "Kami meningkatkan efisiensi bisnis dengan menggunakan arsitektur layanan mikro yang dapat diskalakan dan memungkinkan otomatisasi tinggi pada semua proses bisnis."},
+        {"title": "Perdagangan elektronik","text": "Kami menerapkan otomatisasi cerdas untuk menyederhanakan alur kerja dan mengintegrasikan aplikasi perusahaan untuk pengoperasian yang koheren."},
+        {"title": "Transformasi Digital","text":{"a":"a. Digital transformation consulting","b":"b.Software modernization","c":"c.Software consulting","d":"d. Custom software","e":"e. Cloud enablement"}},
+        {"title": "Dukungan TI dan Perangkat Lunak","text": {"a":"a. Application maintenance and support","b":"b.IT infrastructure support","c":"c.Managed IT services","d":"d. Helpdesk"}},
+        {"title": "Manajemen Layanan TI","text": {"a":"a. ITSM consulting","b":"b. Softwre QA consulting","c":"c. DevOps consulting"}},
+        {"title": "Keamanan siber","text": {"a":"a.Cybersecurity consulting","b":"b.Security testing","c":"c.Managed security services","d":"d.Compliance assessment & consulting"}}
+      ]
+    
+    },
+    "simpus":{
+      "portfolio": "Sistem Informasi Manajemen Puskesmas (SIMPUS)", 
+      "description":"Merupakan SIMPUS yang dikembangkan oleh tim FOSAN dengan menggunakan teknologi terbaru yang bertujuan untuk meningkatkan efektivitas dan efisiensi pengelolaan data dan informasi di puskesmas."
+      ,"modul":{"text":"SIMPUS yang dikembangkan oleh FOSAN mengakomodasi Modul:","list":[{
+        "name":"EMR (Electronic Medical Record) Modul yang berisi seluruh data rekam medis pasien dan pelayanan yang telah diberikan selama di puskesmas."},{
+        "name":"Pendaftaran (Manual/ APM)"},{
+        "name":"Layanan Instalasi Rawat Jalan"},{
+        "name":"Layanan Instalasi Rawat Inap"},{
+        "name":"Layanan Instalasi UGD"},{
+        "name":"Manajemen Bed"},{
+        "name":"Manajemen Obat"},{
+        "name":"Manajemen Pasien"},{
+        "name":"Manajemen Laboratorium"},{
+        "name":"Manajemen Gudang Obat"},{
+        "name":"Manajemen Keuangan"},{
+        "name":"Laporan Harian"},{
+        "name":"Laporan Bulanan"},{
+        "name":"Grafik Kesehatan"},{
+        "name":"Sistem Backdate"},{
+        "name":"Dashboard Puskesmas"},{
+        "name":"Control Manajemen Akses"}]},
+       "integrasi":{
+        "text":"FOSAN mengembangkan SIMPUS yang terintegrasi dengan:",
+        "list":["1.PCare BPJS","2.ICare BPJS","3.Mobile JKN","4.SATU SEHAT Kemenkes"]},
+        "fitur":{
+        "text":"New Features:",
+        "list":[
+          {"name":"1.Skrining Kesehatan - Integrasi Layanan Primer (ILP) Sesuai dengan Kepmenkes No.01.07/MENKES/2025/2023 Tentang Juknis Integrasi Pelayanan Kesehatan Primer."},
+          {"name":"2.Dashboard Integrasi Layanan Primer (ILP)"},{"name":"3.Verifikasi Profil  KYC (Know Your Customer) SATU SEHAT Mobile"}
+          ]
+        },
+          "kelebihan":{
+            "text":"Kelebihan SIMPUS - FOSAN",
+            "list":[
+              {"name":"Informasi Real -Time Data pasien secara real-time dapat diperbaharui dan dilihat secara langsung oleh dokter dan atau tenaga medis lain, sehingga keputusan perawatan lebih tepat waktu."},
+              {"name":"Dapat Dikirim Secara Periodik (Mengurangi Beban Network) Kunjungan khususnya homecare yang dilakukan oleh petugas kesehatan dapat dikirimkan datanya secara periodik dan kolektif sesuai format yang tersedia. Sehingga meningkatkan efisiensi pengiriman data ke server."            }
+            ]
+        }
+      },
+    "simrs":{ 
+      "portfolio": "Sistem Informasi Rumah Sakit (SIMRS)",
+      "description":"Merupakan SIMRS yang dikembangkan oleh tim FOSAN dengan menggunakan teknologi terbaru berbasis Enterprise Resources Planning (ERP) yang bertujuan untuk mengelola aktivitas dalam rumah sakit secara mudah, efektif, akurat, dan efisien.",
+      "modul":{"text":"SIMRS yang dikembangkan oleh FOSAN mengakomodasi Modul:","list":[
+        {
+          "name": "EMR (Electronic Medical Record)",
+          "description": "Modul yang berisi seluruh data rekam medis pasien dan pelayanan yang telah diberikan selama di rumah sakit."
+        },
+        {
+          "name": "Modul Front Office",
+          "description": "Modul dalam SIMRS yang mengakomodasi aktivitas manajemen operasional rumah sakit termasuk pengelolaan dan pelayanan pasien, penjadwalan poli dan dokter, serta administrasi keuangan.",
+          "subModules": [
+            {
+              "name": "Pendaftaran pasien rawat jalan maupun rawat inap"
+            },
+            {
+              "name": "Manajemen dan monitoring bed"
+            },
+            {
+              "name": "Pengelolaan jadwal dokter"
+            },
+            {
+              "name": "Booking kunjungan"
+            },
+            {
+              "name": "Layanan Instalasi Rawat Jalan",
+              "description": "Memproses pendaftaran pasien rawat jalan, pelayanan IGD, pengaturan dokter jaga sampai pembuatan resep dan registrasi ke layanan instalasi lain seperti laboratorium dan radiologi."
+            },
+            {
+              "name": "Layanan Instalasi Gawat Darurat",
+              "description": "Memproses pendaftaran pasien gawat darurat, manajemen bed, dan layanan penunjang lainnya."
+            },
+            {
+              "name": "Layanan Instalasi Rawat Inap",
+              "description": "Memproses pelayanan instalasi rawat inap yang meliputi penginputan SOAP dan mempermudah manajemen bed secara real time hingga otomatisasi rekapitulasi biaya perawatan."
+            },
+            {
+              "name": "Layanan Instalasi Laboratorium",
+              "description": "Memproses pendaftaran dan memproses pelayanan pemeriksaan penunjang laboratorium sampai dengan cetak hasil."
+            },
+            {
+              "name": "Layanan Instalasi Radiologi",
+              "description": "Memproses pendaftaran dan memproses pelayanan pemeriksaan penunjang radiologi sampai dengan cetak hasil."
+            },
+            {
+              "name": "Layanan Instalasi Bedah Sentral",
+              "description": "Memproses pendaftaran dan memproses kamar operasi serta jadwalnya, hingga manajemen operasi."
+            },
+            {
+              "name": "Manajemen Farmasi",
+              "description": "Inventarisasi farmasi yang terdiri dari master farmasi, pengelolaan transaksi pengeluaran resep, inventory control, dan pelaporan penggunaan stock dalam farmasi."
+            },
+            {
+              "name": "Manajemen Rujukan"
+            }
+          ]
+        },
+        {
+          "name": "Modul Back Office",
+          "subModules" :[
+            {
+              "name": "Manajemen Kepegawaian",
+              "description": "Modul yang dikembangkan untuk mengelola manajemen data karyawan/ pegawai yang ada di rumah sakit (tenaga medis dan bukan tenaga medis) secara efisien."
+            },
+            {
+              "name": "Modul Warehouse",
+              "description": "Modul yang dikembangkan untuk mengelola stock obat dan peralatan medis, mengelola pengadaan barang, memonitor penggunaan stock, mengevaluasi proses pembayaran pada supplier, dan secara otomatis memberikan laporan ketersediaan stock secara real time."
+            },
+            {
+              "name": "Modul Penjualan",
+              "description": "Modul yang dikembangkan untuk mengelola transaksi pasien, memberikan informasi tagihan, memproses pembayaran, dan menghasilkan laporan keuangan dalam periode tertentu."
+            },
+            {
+              "name": "Modul Tagihan",
+              "description": "Modul yang berisi informasi tagihan dan status pembayaran dari pelayanan pasien."
+            },
+            {
+              "name": "Modul Akuntansi",
+              "description": "Modul yang dikembangkan untuk mengelola laporan keuangan rumah sakit dan mengawasi arus kas secara efektif."
+            },
+            {
+              "name": "Manajemen Asset",
+              "description": "Modul yang dikembangkan untuk mengelola aset rumah sakit, meliputi inventaris aset, memonitor perawatan/pemeliharaan, dan mengoptimalkan penggunaan sarana dan prasarana."
+            }
+          ] 
+        },
+        {
+          "name": "Integrasi BPJS Kesehatan",
+          "description": "Modul yang dikembangkan ini berfungsi untuk mendukung pengelolaan rujukan pasien BPJS untuk mempermudah arus layanan kesehatan.",
+          "subModules": [
+            { "name": "V-Claim" },
+            { "name": "Aplicare" },
+            { "name": "Mobile JKN" },
+            { "name": "I-Care" }
+          ]
+        },
+        {
+          "name": "Integrasi INACBG’s",
+          "description": "Modul ini digunakan untuk mempermudah rumah sakit dalam menyusun laporan klaim dan grup biaya secara cepat dan akurat."
+        },
+        {
+          "name": "Integrasi SATU SEHAT Kemenkes",
+          "description": "Modul ini memungkinkan arus pertukaran data secara real-time, meliputi data rekam medis pasien, dan informasi pasien antar SIM-RS dan SATU SEHAT Platform."
+        }
+      ]
+    }
+  },"BPSDM":{
+    "portfolio":"BPSDM",
+    "modul":{"text":"","list":[]},"integrasi":{"text":"","list":[]},"fitur":{"text":"","list":[]},"kelebihan":{"text":"","list":[]}
+
+  },"Simadu":{
+    "portfolio":"Simadu",
+    "description":"Merupakan platform sistem informasi akademik mahasiswa Poltekkes Kemenkes Semarang yang dapat mengelola kegiatan-kegiatan yang berhubungan dengan perkuliahan.",
+    "modul":{"text":"Fitur yang ditawarkan:","list":[
+      {
+        "name": "Content Management",
+        "description":"Fitur yang membuat user memiliki batasan akses dalam menggunakan sistem. User dapat ditentukan oleh pihak kampus, sehingga pengguna yang mengakses mendapatkan manfaat yang berbeda-beda sesuai dengan fungsinya."
+      },{
+        "name": "Kalender Akademik",
+        "description":"Fitur ini memungkinkan admin dapat mengelola kalender akademik dan periode perkuliahan yang sesuai dengan semester saat ini. Selain itu, mahasiswa dapat secara langsung melihat kalender akademik dan periode perkuliahan yang telah di-update oleh admin."
+      },{
+        "name": "Her-Registrasi",
+        "description":"Fitur yang memudahkan pengguna untuk mengelola data registrasi, registrasi cuti, data mahasiswa yang belum melakukan registrasi, data pengajuan cuti, status aktif perkuliahan, dan status pembayaran dari mahasiswa."
+      },{
+        "name": "Kegiatan Perkuliahan",
+        "description":"fitur yang memudahkan pengguna mengelola dan menampilkan data mata kuliah, substansi kuliah, kurikulum, mata kuliah kurikulum, kelas kuliah, jadwal perkuliahan, jadwal UAT, jadwal UAS, dan paket KRS. "
+      },{
+        "name": "Manajemen Nilai",
+        "description":"Fitur yang memudahkan pengguna dalam melakukan setting manajemen nilai sesuai dengan mata kuliah yang diampu oleh dosen dan pengelolaan skala nilai masing-masing prodi yang ada di kampus."
+      },{
+        "name": "Nilai Mahasiswa",
+        "description":"Fitur ini memudahkan pengajar dalam menyusun dan mendapatkan laporan perkembangan mahasiswa. Fitur ini akan memberikan laporan monitoring seperti tingkat kehadiran, seberapa sering mahasiswa mengakses materi pembelajaran, hingga rekap hasil penilaian mata kuliah, UTS, dan UAS yang telah dilakukan oleh mahasiswa. Selain pengajar, mahasiswa juga dapat melihat perkembangan kemampuannya dalam fitur tersebut."
+      },{
+        "name": "Manajemen Tugas Akhir",
+        "description":"Fitur ini memudahkan pengguna dalam memonitori perkembangan tugas akhir yang sedang berlangsung. Manajemen tugas akhir yang meliputi pengajuan judul dan pengajuan ujian/ seminar hasil."
+      },{
+        "name": "Wisuda",
+        "description":"Fitur yang memudahkan pengguna dalam memantau kegiatan wisuda yang meliputi daftar periode wisuda dan peserta wisuda yang tersedia."
+      },{
+        "name": "Penjaminan Mutu",
+        "description":"Fitur penjaminan mutu, memudahkan pengguna dalam mendapatkan informasi terkait profil perguruan tinggi dan akreditasi setiap prodi yang yang dimiliki oleh kampus."
+      },{
+        "name": "Management Ruangan",
+        "description":"Fitur ini memudahkan pengguna dalam memonitori ruangan/ kelas yang digunakan untuk perkuliahan dan melakukan booking ruangan untuk kegiatan perkuliahan berikutnya."
+      }
+    ]},
+    "kelebihan":{"text":"Kelebihan","list":[
+      {
+        "name": "Tampilan mudah digunakan",
+        "description":""
+      },{
+        "name": "Efisiensi Sistem",
+        "description":""
+      },{
+        "name": "Memudahkan Evaluasi",
+        "description":""
+      }
+    ]}
+  },
+  "live_japan":{
+    "portfolio":"Live English Japan",
+    "description":"Merupakan platform yang dikembangkan untuk pembelajaran/ kursus digital yang membuat proses pembelajaran bahasa inggris, manajemen materi, evaluasi perkembangan siswa dan pembayaran kelas menjadi lebih mudah. Sehingga kegiatan kursus online menjadi lebih fleksibel, interaktif, dan efisien.",
+    "modul":{"text":"Fitur yang kami tawarkan:",
+    "list":[
+      {
+        "name": "Content Management",
+        "description":"Fitur yang membuat pengajar dan siswa memiliki batasan akses dalam menggunakan sistem. Pengajar dapat mengelola materi ajar berupa teks, video, maupun audio. Sedangkan siswa dapat menggunakan akunnya untuk mendapatkan kelas dan materi yang ada di sistem."
+      },
+      {
+        "name": "Pendaftaran Online",
+        "description":"Fitur ini memungkinkan siswa dapat melakukan pendaftaran secara online dengan mudah dan cepat. Selain itu, siswa dapat melakukan booking kelas kursus sesuai dengan jadwal dan guru yang ada pada sistem."
+      },
+      {
+        "name": "Kelas Online",
+        "description":"Fitur ini digunakan untuk melakukan pembelajaran online. Siswa dapat belajar melalui materi dalam bentuk teks, video, maupun audio yang telah disiapkan oleh pengajar."
+      },
+      {
+        "name": "Forum Diskusi",
+        "description":"Fitur ini memungkinkan siswa dan pengajar dapat berdiskusi membahas materi yang diberikan melalui forum. Fitur ini dapat dibuat dalam bentuk privat maupun publik (kelas besar)."
+      },
+      {
+        "name": "Video Conference",
+        "description":"Fitur ini membuat pengajar dan siswa dapat berinteraksi secara langsung melalui panggilan video tanpa harus bertatap muka."
+      },
+      {
+        "name": "Evaluations",
+        "description":"Fitur evaluations berisi kuis dan ujian online. Kuis dan ujian online dalam sistem memudahkan siswa dalam melakukan kuis atau ujian online yang telah disiapkan oleh pengajar sebagai bagian dari evaluasi kegiatan kursus."
+      },
+      {
+        "name": "Lesson Hystory",
+        "description":"Fitur ini memudahkan pengajar dalam menyusun dan mendapatkan laporan perkembangan siswa. Fitur ini akan memberikan laporan monitoring seperti tingkat kehadiran siswa, seberapa sering siswa mengakses materi pembelajaran, hingga rekap hasil kuis dan ujian siswa. Selain pengajar, siswa juga dapat melihat perkembangan kemampuannya dalam fitur tersebut."
+      },
+      {
+        "name": "Order and Payment System",
+        "description":"Fitur ini memudahkan siswa dalam melihat kelas dan jadwal yang tersedia, melakukan booking kelas, serta pembayaran kelas yang dapat dilakukan dengan beberapa jenis pembayaran digital. Sehingga dari awal pendaftaran, pembayaran, dan kegiatan pembelajaran dapat dilakukan dalam satu sistem ini."
+      }
+    ]
+  },
+  "kelebihan":{
+    "text":"Kelebihan",
+    "list":[
+      {
+        "name": "Tampilan mudah digunakan"
+      },
+      {
+        "name": "Meningkatkan efektivitas pembelajaran"
+      },
+      {
+        "name": "Memudahkan Evaluasi"
+      }
+    ]
+  }
+  },
+  "Manfaat":{
+    "portfolio":"Manfaat [Penjualan Tepung]",
+    "description":"",
+    "modul":{"text":"","list":[]},"integrasi":{"text":"","list":[]},"fitur":{"text":"","list":[]},"kelebihan":{"text":"","list":[]}
+  },
+  "wms":{
+    "portfolio":"Warehouse Management System Bahtera Adi Jaya",
+    "description":"",
+    "modul":{"text":"","list":[]},"integrasi":{"text":"","list":[]},"fitur":{"text":"","list":[]},"kelebihan":{"text":"","list":[]}
+  },
+  "STARA":{
+    "portfolio":"STARA",
+    "description":"Merupakan platform Human Reosurces Information System yang dapat mengelola dan mengotomatisasi berbagai aspek sumber daya manusia dalam perusahaan, mulai dari manajemen data karyawan, rekrutmen, manajemen kinerja, manajemen gaji, pelaporan, dan lainnya. Sistem ini bukan sekedar alat teknologi, tetapi menjadi strategi yang memberikan banyak manfaat terhadap perusahaan.",
+    "modul":{"text":"Fitur yang kami tawarkan:","list":[{
+      "name": "Content Management",
+      "description":"Fitur yang membuat pengguna memiliki batasan akses dalam menggunakan sistem berdasarkan rolenya di perusahaan."
+    },{
+      "name": "Management Karyawan",
+      "description":"Fitur ini memudahkan pengguna dalam mengelola data karyawan secara keseluruhan seperti  identitas lengkap karyawan, perjanjian kerja, perintah kerja, dan data mutasi."
+    },{
+      "name": "Lowongan Pekerjaan",
+      "description":"Fitur ini memudahkan pengguna dalam mengelola daftar lowongan pekerjaan akan dilakukan oleh perusahaan. Fitur ini juga memungkinkan pengguna dapat memonitori dan mengevaluasi kegiatan perekrutan dari penyebaran lowongan pekerjaan sampai dengan hasil tahap seleksi pelamar."
+    },{
+
+      "name": "Laporan Kecelakaan Kerja",
+      "description":"Fitur ini memudahkan pengguna dalam mengelola data kecelakaan kerja yang terjadi pada karyawan selama melakukan pekerjaan."
+    },{
+      "name": "Laporan Karyawan",
+      "description":"Fitur ini memungkinkan pengguna dapat mengelola laporan terkait karyawan yang meliputi proyeksi gaji, rekap gaji, potongan gaji, THR, dan akumulasi lembur."
+    },{
+      "name": "Penilaian Karyawan",
+      "description":"Fitur ini memudahkan pengguna dalam melakukan evaluasi kinerja masing-masing karyawan. Sehingga data tersebut dapat digunakan untuk peningkatan kualitas sumber daya manusia di perusahaan."
+    }]},"integrasi":{"text":"","list":[]},"fitur":{"text":"","list":[]},"kelebihan":{"text":"Kelebihan","list":[
+      {
+        "name": "Efisiensi Administrasi",
+        "description":"Sistem ini dapat mengotomatisasi tugas-tugas administrasi seperti pemrosesan gaji, manajemen cuti, dan pelaporan karyawan. Selain itu STARA mengurangi risiko kesalahan manusiawi seperti penghitungan gaji yang salah dan pelacakan cuti yang tidak akurat. Sehingga menciptakan lingkungan yang lebih efisien, produktif, dan terorganisir dalam manajemen sumber daya manusia."
+      },{
+        "name": "Akurasi Data",
+        "description":"Platform ini  merupakan teknologi yang dapat menyimpan data karyawan yang lebih terstruktur dan akurat. Sehingga informasi tentang riwayat pekerjaan, dan evaluasi kinerja dapat diakses dengan mudah dan terkini.  "
+      },{
+        "name": "Peningkatan Kepuasan Karyawan",
+        "description":"STARA memungkinkan perusahaan dapat merencanakan, melacak, dan mengukur peningkatan kualitas karyawan dengan lebih baik. Sehingga karyawan merasa lebih diberdayakan dan memberikan dampak yang signifikan terhadap kinerja yang dihasilkan untuk meningkatkan produktivitas perusahaan."
+      },{
+        "name": "Kepatuhan Hukum ",
+        "description":"STARA membantu perusahaan untuk mematuhi peraturan dan undang-undang ketenagakerjaan dengan mengotomatisasi proses administrasi yang mengikuti standar hukum."
+     
+      }
+    ]}
+  },
+  "OSBOND":{
+    "portfolio":"OSBOND GYM",
+    "description":"",
+    "modul":{"text":"","list":[]},"integrasi":{"text":"","list":[]},"fitur":{"text":"","list":[]},"kelebihan":{"text":"","list":[]}
+  },
+  "template":{
+    "portfolio":"",
+    "description":"",
+    "modul":{"text":"","list":[]},"integrasi":{"text":"","list":[]},"fitur":{"text":"","list":[]},"kelebihan":{"text":"","list":[]}
+  }
+  
+}
+  

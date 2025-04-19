@@ -44,7 +44,7 @@
         </div>
       </section>
       <!-- Keunggulan Section -->
-      <section class="py-16 ">
+      <!-- <section class="py-16 ">
         <div class="container mx-auto px-6 text-center">
           <h2 class="text-3xl font-bold mb-10">Mengapa Memilih Kami?</h2>
           <div class="grid md:grid-cols-3 gap-6">
@@ -54,7 +54,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </div>
   </template>
   

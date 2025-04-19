@@ -1,6 +1,7 @@
 <template>
     <section class="mt-36">
         <KategoriService :descriptions="descriptions" :services="services"/>
+    
     </section>
 </template>
 
@@ -16,6 +17,7 @@ const { t, locale } = useI18n();
     { id: 2, title: t('layanan.layanan1'), description: t('') },
     { id: 3, title: t('layanan.layanan2'), description: t('') },
   ]);
+  
 const descriptions = computed(()=>[
         {   id:1,
             kategori:1,
@@ -73,22 +75,26 @@ const descriptions = computed(()=>[
         {    id:12,
             kategori:3,
             title: t("layanan.desk_job[11].title"),
-            text: [t("layanan.desk_job[11].text.a"),t("layanan.desk_job[11].text.b"),t("layanan.desk_job[11].text.c"),t("layanan.desk_job[11].text.d"),t("layanan.desk_job[11].text.e"),]},
-          {    id:13,
+            // text: [t("layanan.desk_job[11].text.a"),t("layanan.desk_job[11].text.b"),t("layanan.desk_job[11].text.c"),t("layanan.desk_job[11].text.d"),t("layanan.desk_job[11].text.e"),]},
+        },
+            {    id:13,
             kategori:3,
             title: t("layanan.desk_job[12].title"),
-            text: [t("layanan.desk_job[12].text.a"),t("layanan.desk_job[12].text.b"),t("layanan.desk_job[12].text.c"),t("layanan.desk_job[12].text.d")]},
-      
+            // text: [t("layanan.desk_job[12].text.a"),t("layanan.desk_job[12].text.b"),t("layanan.desk_job[12].text.c"),t("layanan.desk_job[12].text.d")]},
+        },
+
        {    id:14,
             kategori:3,
             title: t("layanan.desk_job[13].title"),
-            text: [t("layanan.desk_job[13].text.a"),t("layanan.desk_job[13].text.b"),t("layanan.desk_job[13].text.c")]},
-   
+            // text: [t("layanan.desk_job[13].text.a"),t("layanan.desk_job[13].text.b"),t("layanan.desk_job[13].text.c")]},
+        },
+
         {    id:15,
             kategori:3,
             title: t("layanan.desk_job[14].title"),
-            text: [t("layanan.desk_job[14].text.a"),t("layanan.desk_job[14].text.b"),t("layanan.desk_job[14].text.c"),t("layanan.desk_job[14].text.d")]}
-   
+            // text: [t("layanan.desk_job[14].text.a"),t("layanan.desk_job[14].text.b"),t("layanan.desk_job[14].text.c"),t("layanan.desk_job[14].text.d")]}
+        },
+
     ])
 
     const item = computed(() => {        
