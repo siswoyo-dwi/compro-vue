@@ -43,12 +43,12 @@
             <div class="w-full lg:w-1/2 flex flex-col items-end">
               <h1 class="text-3xl font-bold mb-4 text-gray-900 text-left">
                 {{ filteredProjects[0].portfolio }}</h1>
-              <router-link 
-                to="https://api.whatsapp.com/send/?phone=6282227470745"
+              <a 
+                href="https://api.whatsapp.com/send/?phone=6282227470745"
                 class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition"
               >
                 Contact Us
-              </router-link>
+              </a>
             </div>
           </div>
           <section v-if="filteredProjects[0].id!=1">
@@ -84,12 +84,12 @@
             <div class="w-full lg:w-3/4 bg-blue-50 rounded-xl p-8 shadow-md text-center space-y-4">
               <h4 class="text-2xl font-bold text-blue-700">{{ hubungi }}</h4>
               <p class="mb-4 text-gray-600">Ready to Collaborate</p>
-              <router-link 
-                to="https://api.whatsapp.com/send/?phone=6282227470745"
+              <a 
+                href="https://api.whatsapp.com/send/?phone=6282227470745"
                 class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-medium hover:bg-blue-700 transition"
               >
                 Contact Us
-              </router-link>
+              </a>
             </div>
           </section>
         </main>
