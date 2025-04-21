@@ -75,24 +75,24 @@ const descriptions = computed(()=>[
         {    id:12,
             kategori:3,
             title: t("layanan.desk_job[11].title"),
-            // text: [t("layanan.desk_job[11].text.a"),t("layanan.desk_job[11].text.b"),t("layanan.desk_job[11].text.c"),t("layanan.desk_job[11].text.d"),t("layanan.desk_job[11].text.e"),]},
+            text: [t("layanan.desk_job[11].text.a"),t("layanan.desk_job[11].text.b"),t("layanan.desk_job[11].text.c"),t("layanan.desk_job[11].text.d"),t("layanan.desk_job[11].text.e"),]
         },
             {    id:13,
             kategori:3,
             title: t("layanan.desk_job[12].title"),
-            // text: [t("layanan.desk_job[12].text.a"),t("layanan.desk_job[12].text.b"),t("layanan.desk_job[12].text.c"),t("layanan.desk_job[12].text.d")]},
+            text: [t("layanan.desk_job[12].text.a"),t("layanan.desk_job[12].text.b"),t("layanan.desk_job[12].text.c"),t("layanan.desk_job[12].text.d")]
         },
 
        {    id:14,
             kategori:3,
             title: t("layanan.desk_job[13].title"),
-            // text: [t("layanan.desk_job[13].text.a"),t("layanan.desk_job[13].text.b"),t("layanan.desk_job[13].text.c")]},
+            text: [t("layanan.desk_job[13].text.a"),t("layanan.desk_job[13].text.b"),t("layanan.desk_job[13].text.c")]
         },
 
         {    id:15,
             kategori:3,
             title: t("layanan.desk_job[14].title"),
-            // text: [t("layanan.desk_job[14].text.a"),t("layanan.desk_job[14].text.b"),t("layanan.desk_job[14].text.c"),t("layanan.desk_job[14].text.d")]}
+            text: [t("layanan.desk_job[14].text.a"),t("layanan.desk_job[14].text.b"),t("layanan.desk_job[14].text.c"),t("layanan.desk_job[14].text.d")]
         },
 
     ])

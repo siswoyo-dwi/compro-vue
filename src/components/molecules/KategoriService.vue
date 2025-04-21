@@ -25,19 +25,16 @@
                 </div>
                 <div v-if="getDescription">
                     <div v-for="(item, index) in getDescription" :key="index" >
-                    <p class="text-base text-gray-900 font-semibold">
-                        {{ item.title }}
+                        <p class="text-base text-blue-700 mt-12 font-semibold">
+                            {{ item.title }}
+                        </p>
+
+                    <p class="text-sm text-gray-700 mt-2" v-if="typeof item.text === 'string'">
+                        {{ item.text }}
                     </p>
 
-                    <p
-                    class="text-gray-700 mt-4"
-                    v-if="typeof item.text === 'string'"
-                    >
-                    {{ item.text }}
-                    </p>
-
-                    <div class="text-gray-700 mt-4" v-else>
-                    <ul>
+                    <div class="text-sm text-gray-700 mt-2" v-else>
+                        <ul>
                         <li v-for="(text, idx) in item.text" :key="idx">
                         {{ text }}
                         </li>
@@ -62,7 +59,6 @@ const activeIndex = ref(0);
 const activeId = ref(services[0].id);
 
 function showContent(id,index) {
-    console.log(index);
     activeIndex.value = index
     activeId.value = id;
 }

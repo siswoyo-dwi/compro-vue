@@ -9,7 +9,7 @@
         class="relative w-80 h-48 p-5 border border-gray-300 rounded-lg shadow-lg bg-white">
         
         <!-- Title di pojok kiri atas -->
-        <h3 class="absolute top-2 left-2 text-lg font-bold"> {{ item.kategori }}</h3>
+        <h3 class="absolute top-2 left-2 text-lg font-bold text-black"> {{ item.kategori }}</h3>
         
         <!-- Tombol check di pojok kanan bawah -->
         <button class="absolute bottom-2 right-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">

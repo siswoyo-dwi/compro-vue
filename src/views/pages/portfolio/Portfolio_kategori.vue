@@ -27,6 +27,8 @@ import simadu from '../../../components/images/simadu.jpg';
 import stara from '../../../components/images/stara.jpg';
 import wmsbaj from '../../../components/images/wmsbaj.jpg';
 import mdclinic from '../../../components/images/mdclinic.jpg';
+import bpsdm from '../../../components/images/bpsdm.jpg';
+
   const route = useRoute(); // Akses route params
   import { useI18n } from 'vue-i18n';
 
@@ -42,7 +44,7 @@ import mdclinic from '../../../components/images/mdclinic.jpg';
     // { id: 7, kategori_id: 3, portfolio: "BAJ", foto: "https://fosan.id/images/fosanlogo.png" },
     { id: 1, kategori_id: 1, portfolio: "Sistem Informasi Manajemen Puskesmas (SIMPUS)", foto: simpus },
     { id: 2, kategori_id: 1, portfolio: "Sistem Informasi Rumah Sakit (SIMRS)", foto: simrs },
-    { id: 3, kategori_id: 2, portfolio: "BPSDM", foto: mdclinic },
+    { id: 3, kategori_id: 2, portfolio: "BPSDM", foto: bpsdm },
     { id: 4, kategori_id: 2, portfolio: "Poltekkes KEMENKES Semarang", foto: simadu},
     // { id: 5, kategori_id: 3, portfolio: "Manfaat [Penjualan Tepung]", foto: "https://fosan.id/images/fosanlogo.png" },
     { id: 6, kategori_id: 3, portfolio: "Warehouse Management System Bahtera Adi Jaya", foto: wmsbaj },
@@ -55,9 +57,17 @@ import mdclinic from '../../../components/images/mdclinic.jpg';
     { id: 13, kategori_id: 1, portfolio: "OSBOND GYM", foto:osbond},
     { id: 14, kategori_id: 2, portfolio: "Live English Japan", foto: livejapan  },
     { id: 15, kategori_id: 4, portfolio: "STARA", foto: stara  },
+    { id: 20, kategori_id: 3, portfolio: t('MD_Clinic.portfolio'), foto: mdclinic },
 
   ]);
-  const projects =computed(()=> [
+  const projects =computed(()=> [{ id: 20, kategori_id: 3, portfolio:  t('MD_Clinic.portfolio') ,foto: mdclinic , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:t('MD_Clinic.description'),modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},
+    kelebihan:{text:t('MD_Clinic.kelebihan.text'),list:[
+  {text:t("MD_Clinic.kelebihan[0].text"),list:t("MD_Clinic.kelebihan[0].list[0].name")},
+  {text:t("MD_Clinic.kelebihan[1].text"),list:t("MD_Clinic.kelebihan[1].list[0].name")},
+  {text:t("MD_Clinic.kelebihan[2].text"),list:t("MD_Clinic.kelebihan[2].list[0].name")},
+  {text:t("MD_Clinic.kelebihan[3].text"),list:t("MD_Clinic.kelebihan[3].list[0].name")},
+
+]}},
 { id: 13, kategori_id: 1, portfolio: t('OSBOND.portfolio'), foto:osbond, technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:t('OSBOND.description'),modul:{text:t('OSBOND.modul.text'),list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:t("OSBOND.kelebihan.text"),list:[
   {text:t("OSBOND.kelebihan[0].text"),list:t("OSBOND.kelebihan[0].list[0].name")},
   {text:t("OSBOND.kelebihan[1].text"),list:t("OSBOND.kelebihan[1].list[0].name")},
@@ -212,7 +222,7 @@ import mdclinic from '../../../components/images/mdclinic.jpg';
   {text:t("simrs.kelebihan[3].text"),list:t("simrs.kelebihan[3].list[0].name")},
 
 ]},},
-    { id: 3, kategori_id: 2, portfolio:  t('BPSDM.portfolio'), foto: mdclinic , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:t('BPSDM.kelebihan.text'),list:[
+    { id: 3, kategori_id: 2, portfolio:  t('BPSDM.portfolio'), foto: bpsdm , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},kelebihan:{text:t('BPSDM.kelebihan.text'),list:[
   {text:t("BPSDM.kelebihan[0].text"),list:t("BPSDM.kelebihan[0].list[0].name")},
   {text:t("BPSDM.kelebihan[1].text"),list:t("BPSDM.kelebihan[1].list[0].name")},
   {text:t("BPSDM.kelebihan[2].text"),list:t("BPSDM.kelebihan[2].list[0].name")},
@@ -288,7 +298,7 @@ import mdclinic from '../../../components/images/mdclinic.jpg';
 //   {text:t("Manfaat.kelebihan[3].text"),list:t("Manfaat.kelebihan[3].list[0].name")},
 
 // ]}},
-    { id: 6, kategori_id: 3, portfolio:  t('wms.portfolio') ,foto: wmsbaj , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:'',modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},
+    { id: 6, kategori_id: 3, portfolio:  t('wms.portfolio') ,foto: wmsbaj , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:t('wms.description'),modul:{text:'',list:[]},integrasi:{text:'',list:[]},fitur:{text:'',list:[]},
     kelebihan:{text:t('wms.kelebihan.text'),list:[
   {text:t("wms.kelebihan[0].text"),list:t("wms.kelebihan[0].list[0].name")},
   {text:t("wms.kelebihan[1].text"),list:t("wms.kelebihan[1].list[0].name")},
@@ -296,6 +306,8 @@ import mdclinic from '../../../components/images/mdclinic.jpg';
   {text:t("wms.kelebihan[3].text"),list:t("wms.kelebihan[3].list[0].name")},
 
 ]}},
+
+
     { id: 15, kategori_id: 4, portfolio: t('STARA.portfolio'), foto: stara , technologies: ['Vue.js', 'PostgreSQL', 'Node.js'] ,description:t('STARA.description'),modul:{text:t('STARA.modul.text'),list:[
     {
       name: t('STARA.modul.list[0].name'),

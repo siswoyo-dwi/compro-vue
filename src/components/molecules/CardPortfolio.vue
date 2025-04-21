@@ -8,7 +8,7 @@
       <div class="flex flex-col lg:flex-row bg-white shadow-md rounded-lg overflow-hidden">
         <!-- Sidebar Kategori -->
         <aside class="lg:w-1/4 w-full bg-blue-50 p-6">
-          <h2 class="text-lg font-bold mb-4">{{ categories_portfolio[0].kategori }}</h2>
+          <h2 class="text-lg font-bold mb-4 text-gray-900">{{ categories_portfolio[0].kategori }}</h2>
           <ul>
             <li 
               v-for="(categorie, index) in categories" 
@@ -29,7 +29,7 @@
         <main class="lg:w-3/4 w-full p-6 space-y-12">
           <div class="flex justify-between items-center mb-4">
         <router-link :to="'/portfolio'" class="text-gray-900">&lt; Back to Our Services</router-link>
-        <p class="text-base text-gray-900 font-semibold">
+        <p class="text-base text-gray-900  font-semibold">
           {{ activeIndex ? categories[activeIndex].portfolio : categories[0].portfolio }}
         </p>
       </div>
@@ -40,8 +40,9 @@
                 <img :src="filteredProjects[0].foto" alt="Portfolio Image" />
               </div>
             </div>
-            <div class="w-full lg:w-1/2 flex flex-col items-start">
-              <h1 class="text-2xl font-bold mb-4">{{ filteredProjects[0].portfolio }}</h1>
+            <div class="w-full lg:w-1/2 flex flex-col items-end">
+              <h1 class="text-3xl font-bold mb-4 text-gray-900 text-left">
+                {{ filteredProjects[0].portfolio }}</h1>
               <router-link 
                 to="https://api.whatsapp.com/send/?phone=6282227470745"
                 class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition"
@@ -61,7 +62,7 @@
           </section>
           <!-- Deskripsi SIMPUS -->
           <section>
-            <h2 class="text-xl font-semibold mb-2">{{ filteredProjects[0].portfolio }}</h2>
+            <h2 class="text-xl font-semibold mb-2 text-gray-900 ">{{ filteredProjects[0].portfolio }}</h2>
             <p class="text-gray-700 leading-relaxed">
               {{ filteredProjects[0].description }}
             </p>
@@ -69,11 +70,11 @@
 
           <!-- Kelebihan -->
           <section>
-            <h3 class="text-lg font-bold mb-3">Kelebihan</h3>
+            <h3 class="text-lg font-bold mb-3 text-gray-900 ">{{ kelebihan }}</h3>
             <div v-for="(item, index) in filteredProjects" :key="index" class="space-y-4">
               <div v-for="(kelebihanItem, idx) in item.kelebihan.list" :key="idx">
-                <p class="font-bold">{{ idx + 1 }}. {{ kelebihanItem.text }}</p>
-                <p class="font-bold">{{ kelebihanItem.list }}</p>
+                <p class="font-bold text-gray-900 ">{{ idx + 1 }}. {{ kelebihanItem.text }}</p>
+                <p class="font-bold text-gray-900 ">{{ kelebihanItem.list }}</p>
               </div>
             </div>
           </section>
@@ -81,7 +82,7 @@
           <!-- Hubungi -->
           <section class="flex justify-center">
             <div class="w-full lg:w-3/4 bg-blue-50 rounded-xl p-8 shadow-md text-center space-y-4">
-              <h4 class="text-2xl font-bold text-blue-700">Hubungi Konsultan Kami</h4>
+              <h4 class="text-2xl font-bold text-blue-700">{{ hubungi }}</h4>
               <p class="mb-4 text-gray-600">Ready to Collaborate</p>
               <router-link 
                 to="https://api.whatsapp.com/send/?phone=6282227470745"
@@ -100,6 +101,10 @@
 
 <script setup>
 import { ref, computed } from 'vue';
+import { useI18n } from 'vue-i18n';
+const { t, locale } = useI18n();
+const kelebihan = ref(t("kelebihan"));
+const hubungi = ref(t("hubungi"));
 
 const { categories, categories_portfolio, projects } = defineProps({
   categories_portfolio: Array,
